@@ -14,11 +14,11 @@ export const Footer = () => {
             </div>
             <div className="content">
                 <div data-aos="fade-up" data-aos-duration="1500 " className="row">
-                    <img src="/images/map-pin.svg " alt="" height="30px "/>
+                    <img src="/images/map-pin.svg " alt="" height="30px" width='30px'/>
                     <p>Av. Labna #1530 Col. Mirador del Sol<br/>C.P. 45054, Zapopan, Jalisco, México.</p>
                 </div>
                 <div data-aos="fade-up " data-aos-duration="1500 " className="row">
-                    <img src="/images/at-sign.svg " alt="" height="30px "/>
+                    <img src="/images/at-sign.svg " alt="" height="30px" width='30px'/>
                     <p>proyectos@mxmart.mx<br/>33 3271 2247</p>
                 </div>
             </div>

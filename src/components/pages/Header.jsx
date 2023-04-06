@@ -28,8 +28,11 @@ export const Header = () => {
         </div>
     </div>
     <video className='video' autoPlay muted loop id="video_bg">
-            <source src="https://mxmartsolutions.com/assets/images/video_bg.mp4" type="video/mp4" />
+            <source src="/videos/video_bg.mp4" type="video/mp4" />
         </video>
+        {/* <video className='video' autoPlay muted loop id="video_bg">
+            <source src="https://mxmartsolutions.com/assets/images/video_bg.mp4" type="video/mp4" />
+        </video> */}
 </section>
 <div className="public-sector-div">
     <a href="./nosotros.html#reconocimientos">

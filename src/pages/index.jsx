@@ -1,4 +1,5 @@
 import { PageLayout } from '@/components/layout/PageLayout'
+import { Header } from '@/components/pages/Header';
 import React, { useState } from 'react'
 
 const HomePage = () => {
@@ -37,7 +38,12 @@ const HomePage = () => {
     }
 
   return (
-    <PageLayout>
+    <PageLayout 
+        title={'Inicio | Mxmart Solutions'}
+    >
+
+        <Header/>
+
         <section id="main_a">
             <div className="block">
                 <div className="side_a">
@@ -130,7 +136,7 @@ const HomePage = () => {
             </p>
     </div>
     <div className="content"><div className="card"data-aos="zoom-in"data-aos-duration="3000">
-                <img src="/images/migracion_nube.png " height="80px " alt=""/>
+                <img src="/images/migracion_nube.png " height="80px" width='80px' alt=""/>
                 <h4>Migración a la nube</h4>
                 <div className="btn_more ">
                     <a>
@@ -140,7 +146,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="card " data-aos="zoom-in " data-aos-duration="3000">
-                <img src="/images/ciberseguridad_icon.png " height="80px " alt=""/>
+                <img src="/images/ciberseguridad_icon.png " height="80px" width='80px' alt=""/>
                 <h4>Analítica de datos</h4>
                 <div className="btn_more ">
                     <a>
@@ -150,7 +156,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="card " data-aos="zoom-in " data-aos-duration="3000">
-                <img src="/images/DRP_icon.png " height="80px " alt=""/>
+                <img src="/images/DRP_icon.png " height="80px" width='80px' alt=""/>
                 <h4>Recuperación ante desastres</h4>
                 <div className="btn_more ">
                     <a>
@@ -160,7 +166,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="card " data-aos="zoom-in " data-aos-duration="3000">
-                <img src="/images/hibridos_icon.png " height="80px " alt=""/>
+                <img src="/images/hibridos_icon.png " height="80px" width='80px' alt=""/>
                 <h4>Ambientes híbridos</h4>
                 <div className="btn_more ">
                     <a>
@@ -170,7 +176,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="card " data-aos="zoom-in " data-aos-duration="3000">
-                <img src="/images/desarrollo_icon.png " height="80px " alt=""/>
+                <img src="/images/desarrollo_icon.png " height="80px" width='80px' alt=""/>
                 <h4>Escritorios virtuales</h4>
                 <div className="btn_more ">
                     <a>
