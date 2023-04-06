@@ -2259,12 +2259,12 @@ body.landing_content #main_h .side_b .col-lg-6 {
   /* border: solid 1px white; */
 }
 
-/* .framework-png {
+ .framework-png {
   display: flex;
   flex-direction: column;
   width: 380px;
   height: 386px;
-  background: url(./images/framework-page.png);
+  background: url(/images/framework-page.png);
   background-size: contain;
   margin-left: 75px;
 }
@@ -2274,37 +2274,38 @@ body.landing_content #main_h .side_b .col-lg-6 {
   flex-direction: column;
   width: 380px;
   height: 386px;
-  background: url(./images/framework-page-Seguridad.png);
+  background: url(/images/framework-page-Seguridad.png);
   background-size: contain;
   margin-left: 75px;
-} */
+} 
 
-/* .framework-png-arquitectura {
+ .framework-png-arquitectura {
   display: flex;
   flex-direction: column;
   width: 380px;
   height: 386px;
-  background: url(./images/framework-page-arquitectura.png);
-  background-size: contain;
-  margin-left: 75px;
-} */
-
-/* .framework-png-recuperacion {
-  display: flex;
-  flex-direction: column;
-  width: 380px;
-  height: 386px;
-  background: url(./images/framework-page-recuperación-ante-desastres.png);
+  background: url(/images/framework-page-arquitectura.png);
   background-size: contain;
   margin-left: 75px;
 }
+
+ .framework-png-recuperacion {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 386px;
+  background: url(/images/framework-page-recuperación-ante-desastres.png);
+  background-size: contain;
+  margin-left: 75px;
+}
+
 
 .framework-png-desarrollo {
   display: flex;
   flex-direction: column;
   width: 380px;
   height: 386px;
-  background: url(./images/framework-page-desarrollo.png);
+  background: url(/images/framework-page-desarrollo.png);
   background-size: contain;
   margin-left: 75px;
 }
@@ -2314,7 +2315,7 @@ body.landing_content #main_h .side_b .col-lg-6 {
   flex-direction: column;
   width: 380px;
   height: 386px;
-  background: url(./images/framework-page-automatización.png);
+  background: url(/images/framework-page-automatización.png);
   background-size: contain;
   margin-left: 75px;
 }
@@ -2324,10 +2325,10 @@ body.landing_content #main_h .side_b .col-lg-6 {
   flex-direction: column;
   width: 380px;
   height: 386px;
-  background: url(./images/framework-page-analitica-datos.png);
+  background: url(/images/framework-page-analitica-datos.png);
   background-size: contain;
   margin-left: 75px;
-} */
+}
 
 .f-side-0 {
   width: 100%;

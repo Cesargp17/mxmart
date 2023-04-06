@@ -69,7 +69,7 @@ export const Navbar = () => {
                     <a className='navbar' onMouseOver={ () => onExpandDropdown( 'empresa' ) } onMouseOut={ onMouseOut }>Empresa</a>
                     <div className={ `dropdown ${ isDropdownExpanded['empresa'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'empresa' ) } onMouseOut={ onMouseOut }>
                         <Link href="/nosotros">Nosotros</Link>
-                        <a href="/framework.html">Framework</a>
+                        <Link href="/framework">Framework</Link>
                         <a href="/#casos_de_exito">Casos de éxito</a>
                         <a href="/recursos.html">Recursos</a>
                         <a href="/vacantes.html">Vacantes</a>
@@ -129,7 +129,7 @@ export const Navbar = () => {
                         </a>
                         <div className={ `mobile_submenu ${ isDropdownExpanded['empresa_mobil'] ? showVariable : null }`} style={{display: isDropdownExpanded['empresa_mobil'] ? 'block' : 'none' }}>
                             <Link href="/nosotros">Nosotros</Link>
-                            <a href="/framework.html">Framework</a>
+                            <Link href="/framework">Framework</Link>
                             <a href="/#casos_de_exito">Casos de éxito</a>
                             <a href="/recursos.html">Recursos</a>
                             <a href="/vacantes.html">Vacantes</a>
