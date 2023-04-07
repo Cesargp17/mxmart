@@ -16,22 +16,22 @@ const FrameworkAutomatizacionPage = () => {
             subtitle={'Infraestructura como código'}
         />
 
-        <div class="all-framework">
-            <div class="framework-margin">
-                <div class="main-framework">
+        <div className="all-framework">
+            <div className="framework-margin">
+                <div className="main-framework">
 
                 <FrameworkContent
                     classFramework={'framework-png-automatizacion'}
                 />
 
-                  <div class="main-framework-side-b">
-                    <div class="framework-side-b-content">
+                  <div className="main-framework-side-b">
+                    <div className="framework-side-b-content">
                         <h4>Infraestructura como código</h4>
                         <p>Generación de stacks de desarrollo para la construcción de infraestructura tecnológica en la nube basados en código de programación, entre las principales ventajas se encuentra la generación de estructuras de centros de datos informáticos en tan sólo minutos, reduciendo considerablemente los tiempos y costos de ejecución y configuración de múltiples servicios y herramientas tecnológicas.</p>
                         <h5>Servicios más importantes:</h5>
 
-                      <div class="fs-center">
-                        <div class="framework-servicios">
+                      <div className="fs-center">
+                        <div className="framework-servicios">
 
                         <FrameworkArquitecturaImages
                           img={'/images/Icon-CloudFormation.png'}

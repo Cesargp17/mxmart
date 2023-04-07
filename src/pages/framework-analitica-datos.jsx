@@ -16,16 +16,16 @@ const FrameworkAnaliticaPage = () => {
             subtitle={'Generación de información a partir de los datos'}
         />
 
-        <div class="all-framework">
-            <div class="framework-margin">
-                <div class="main-framework">
+        <div className="all-framework">
+            <div className="framework-margin">
+                <div className="main-framework">
 
                 <FrameworkContent
                     classFramework={'framework-png-analitica'}
                 />
 
-                <div class="main-framework-side-b">
-                    <div class="framework-side-b-content">
+                <div className="main-framework-side-b">
+                    <div className="framework-side-b-content">
                         <h4>Analítica de datos</h4>
                         <p>Analizar todos sus datos (en tiempo real, históricos, no estructurados, estructurados, cualitativos) para identificar patrones y generar conocimientos para informar y, en algunos casos, automatizar decisiones, conectando la inteligencia y la acción.</p>
                         <h5>Desliza hacia abajo para poder ver todas las categorías y sus servicios más destacados:</h5>

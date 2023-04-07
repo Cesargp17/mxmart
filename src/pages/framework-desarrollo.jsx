@@ -16,22 +16,22 @@ const FrameworkDesarrollo = () => {
             subtitle={'Mejores prácticas para desarrollo y operaciones de TI.'}
         />
 
-          <div class="all-framework">
-            <div class="framework-margin">
-                <div class="main-framework">
+          <div className="all-framework">
+            <div className="framework-margin">
+                <div className="main-framework">
 
                 <FrameworkContent
                     classFramework={'framework-png-desarrollo'}
                 />
 
-                  <div class="main-framework-side-b">
-                    <div class="framework-side-b-content">
+                  <div className="main-framework-side-b">
+                    <div className="framework-side-b-content">
                       <h4>DevOps</h4>
                       <p>Metodologías y mejores practicas para la integración del desarrollo de software y las operaciones de tecnológicas de la empresa. Parte de los objetivos es el agilizar el proceso de construcción del desarrollo de software y proporcionar una entrega continua y de calidad.</p>
                       <h5>Servicios más destacados:</h5>
 
-                      <div class="fs-center">
-                        <div class="framework-servicios3">
+                      <div className="fs-center">
+                        <div className="framework-servicios3">
 
                         <FrameworkArquitecturaImages
                           img={'/images/Icon-Amplify.png'}

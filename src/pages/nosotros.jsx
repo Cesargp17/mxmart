@@ -1,4 +1,5 @@
 import { PageLayout } from '@/components/layout/PageLayout'
+import { HeaderSections } from '@/components/pages/HeaderSections'
 import React from 'react'
 
 const NosotrosPage = () => {
@@ -6,17 +7,14 @@ const NosotrosPage = () => {
     <PageLayout
         title={'Nosotros | Mxmart Solutions'}
     >
-        <div>
-            <section style={{backgroundImage: 'url(/images/Mxmart_Empresarial_Nosotros.png)', paddingTop: '120px', paddingBottom: '120px'}}>
-                <div style={{opacity: '0', backgroundColor: 'rgb(32, 99, 138)'}}></div>
-                    <div style={{ textAlign: 'center', fontFamily: 'Montserrat, sans-serif' }} class="montserrat col-md-8 col-md-offset-2 text-xs-center">
-                        <h3 className='text-white' style={{marginBottom: '20px', fontSize: '48px'}}>Nosotros</h3>
-                        <div ><p style={{ fontSize: '30px', color: 'white' }}>Potenciamos el éxito de su empresa</p></div>
-                    </div>
-            </section>
-        </div>
 
-    <div class="flex justify-center bg-white">
+    <HeaderSections
+        portada={'/images/Mxmart_Empresarial_Nosotros.png'}
+        titulo={'Nosotros'}
+        descripcion={'Potenciamos el éxito de su empresa '}
+    />
+
+    <div className="flex justify-center bg-white">
         <div className="container max-w-5xl">
 
         <div className="flex flex-col lg:flex-row items-center justify-between mt-4">
@@ -108,24 +106,24 @@ const NosotrosPage = () => {
 
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8">
                 <div className="flex flex-col gap-6 p-8 h-56 items-center">
-                    <i class="fas fa-graduation-cap text-sky-800 text-6xl"></i>
+                    <i className="fas fa-graduation-cap text-sky-800 text-6xl"></i>
                     <span className='font-bold text-center mt-2 text-lg'>E-Learning</span>
                 </div>   
 
                 <div className="flex flex-col gap-6 p-8 h-56 items-center">
-                    <i class="fas fa-store-alt text-sky-800 text-6xl"></i>
+                    <i className="fas fa-store-alt text-sky-800 text-6xl"></i>
                     <span className='font-bold text-center mt-2 text-lg'>E-Commerce</span>
                 </div>  
 
                 <div className="flex flex-col gap-6 p-8 h-56 items-center">
-                    <i class="fas fa-cogs text-sky-800 text-6xl"></i>
+                    <i className="fas fa-cogs text-sky-800 text-6xl"></i>
                     <span className='font-bold text-center mt-2 text-lg'>Servicios avanzados</span>
                 </div>  
             </div>
 
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8">
                 <div className="flex flex-col gap-6 p-8 h-56 items-center">
-                    <i class="fas fa-laptop-code text-sky-800 text-6xl"></i>
+                    <i className="fas fa-laptop-code text-sky-800 text-6xl"></i>
                     <span className='font-bold text-center mt-2 text-lg'>Desarrollo</span>
                     <p className='text-center'>
                         Web<br />
@@ -134,12 +132,12 @@ const NosotrosPage = () => {
                 </div>   
 
                 <div className="flex flex-col gap-6 p-8 h-56 items-center">
-                    <i class="fas fa-award text-sky-800 text-6xl"></i>
+                    <i className="fas fa-award text-sky-800 text-6xl"></i>
                     <span className='font-bold text-center mt-2 text-lg'>Pólizas de servicios</span>
                 </div>  
 
                 <div className="flex flex-col gap-6 p-8 h-56 items-center">
-                    <i class="fab fa-aws text-sky-800 text-6xl"></i>
+                    <i className="fab fa-aws text-sky-800 text-6xl"></i>
                     <span className='font-bold text-center mt-2 text-lg'>Amazon Web Services AWS</span>
                     <p className='text-center'>
                         Migración<br />

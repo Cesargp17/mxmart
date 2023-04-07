@@ -16,16 +16,16 @@ const FrameworkSeguridadPage = () => {
             subtitle={'Servicios de seguridad y metodologías de trabajo para proyectos tecnológicos'}
         />
 
-        <div class="all-framework">
-            <div class="framework-margin">
-                <div class="main-framework">
+        <div className="all-framework">
+            <div className="framework-margin">
+                <div className="main-framework">
 
                 <FrameworkContent
                     classFramework={'framework-png-seguridad'}
                 />
 
-                <div class="main-framework-side-b">
-                    <div class="framework-side-b-content">
+                <div className="main-framework-side-b">
+                    <div className="framework-side-b-content">
                         <h4>Arquitecturas y configuraciones de seguridad</h4>
                         <p>Mxmart implementa en sus servicios y soluciones diferentes capas de seguridad, de acuerdo con cada proyecto es posible ir incrementando los niveles de seguridad, esto lo realizamos mediante configuraciones internas de cada tecnología, así como con el apoyo de los diferentes servicios de seguridad que nos ofrece la nube de AWS.</p>
                         <h5>Desliza hacia abajo para poder ver todas las categorías y sus servicios más destacados:</h5>

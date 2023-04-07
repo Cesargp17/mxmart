@@ -59,9 +59,9 @@ export const Navbar = () => {
     <>
     <header className={`fadeInName ${isHoverNavbar ? 'hover-navbar' : null}`} id="navbar">
         <div className="div_logo">
-            <a href="/">
+            <Link href="/">
                 <div className="header_logo"></div>
-            </a>
+            </Link>
         </div>
         <div className="div_menu">
             <ul onMouseOver={ () => setIsHoverNavbar(true) } onMouseOut={ () => setIsHoverNavbar(false) }>
@@ -70,9 +70,9 @@ export const Navbar = () => {
                     <div className={ `dropdown ${ isDropdownExpanded['empresa'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'empresa' ) } onMouseOut={ onMouseOut }>
                         <Link href="/nosotros">Nosotros</Link>
                         <Link href="/framework">Framework</Link>
-                        <a href="/#casos_de_exito">Casos de éxito</a>
-                        <a href="/recursos.html">Recursos</a>
-                        <a href="/vacantes.html">Vacantes</a>
+                        <Link href="/#casos_de_exito">Casos de éxito</Link>
+                        <Link href="/recursos">Recursos</Link>
+                        <Link href="/vacantes">Vacantes</Link>
                     </div>
                 </li>
                 <li>
@@ -130,9 +130,9 @@ export const Navbar = () => {
                         <div className={ `mobile_submenu ${ isDropdownExpanded['empresa_mobil'] ? showVariable : null }`} style={{display: isDropdownExpanded['empresa_mobil'] ? 'block' : 'none' }}>
                             <Link href="/nosotros">Nosotros</Link>
                             <Link href="/framework">Framework</Link>
-                            <a href="/#casos_de_exito">Casos de éxito</a>
-                            <a href="/recursos.html">Recursos</a>
-                            <a href="/vacantes.html">Vacantes</a>
+                            <Link href="/#casos_de_exito">Casos de éxito</Link>
+                            <Link href="/recursos">Recursos</Link>
+                            <Link href="/vacantes">Vacantes</Link>
                         </div>
                     </div>
 

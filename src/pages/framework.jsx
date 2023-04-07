@@ -16,22 +16,22 @@ const FrameworkPage = () => {
             subtitle={'Pilares fundamentales para proyectos tecnológicos'}
         />
 
-        <div class="all-framework">
-            <div class="framework-margin">
-                <div class="main-framework">
+        <div className="all-framework">
+            <div className="framework-margin">
+                <div className="main-framework">
 
                 <FrameworkContent
                     classFramework={'framework-png'}
                 />
 
-                    <div class="main-framework-side-b">
-                        <div class="framework-side-b-content">
+                    <div className="main-framework-side-b">
+                        <div className="framework-side-b-content">
                             <h4>Marco general</h4>
                             <p>Mxmart ha desarrollado un framework propio que le permite trabajar en múltiples proyectos tecnológicos con las mejores prácticas y metodologías, entregando así soluciones seguras, eficientes y optimizadas para su funcionamiento.
                                 <br/> <br/> Nuestro framework está conformado por seis pilares fundamentales, cada uno de ellos proporciona diferentes herramientas para asegurar un óptimo funcionamiento y solución en base a cada proyecto.
                                 <br/><strong>De click en cada uno de ellos para conocer más información:</strong></p>
                             <p><strong>Pilares:</strong></p>
-                            <div class="framework-lista">
+                            <div className="framework-lista">
                                 <Link href='/framework-seguridad'>Seguridad, </Link>
                                 <Link href='./framework-arquitectura.html'>Arquitectura, </Link>
                                 <Link href='./framework-recuperacion-ante-desastres.html'>Recuperación ante desastres, </Link>

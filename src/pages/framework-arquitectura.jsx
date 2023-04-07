@@ -16,22 +16,22 @@ const FrameworkArquitecturaPage = () => {
             subtitle={'Construcción de infraestructuras tecnológicas en alta disponibilidad'}
         />
 
-        <div class="all-framework">
-            <div class="framework-margin">
-                <div class="main-framework">
+        <div className="all-framework">
+            <div className="framework-margin">
+                <div className="main-framework">
 
                 <FrameworkContent
                     classFramework={'framework-png-arquitectura'}
                 />
 
-                    <div class="main-framework-side-b">
-                        <div class="framework-side-b-content">
+                    <div className="main-framework-side-b">
+                        <div className="framework-side-b-content">
                             <h4>Alta disponibilidad</h4>
                             <p>Análisis, diseño, generación, configuración y puesta a punto de arquitecturas en AWS, diseñadas para alta disponibilidad y elasticidad de los servicios, ofreciendo optimización de los recursos y pudiéndose implementar en diferentes sistemas y plataformas web, como pudiera ser: Moodle, WordPress, Drupal, Laravel, Codelgniter por mencionar algunos, así como desarrollos realizados a la medida.</p>
                             <h5>Servicios más destacados:</h5>
 
-                            <div class="fs-center">
-                                <div class="framework-servicios3">
+                            <div className="fs-center">
+                                <div className="framework-servicios3">
 
                                 <FrameworkArquitecturaImages
                                     img={'/images/Icon-cloud-front.png'}

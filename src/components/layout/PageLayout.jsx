@@ -5,9 +5,12 @@ import { Navbar } from '../ui/Navbar'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useRouter } from 'next/router';
 // ..
 
-export const PageLayout = ({ children, title }) => {
+export const PageLayout = ({ children, title, isWhite }) => {
+
+    const { asPath }= useRouter();
 
     useEffect(() => {
         AOS.init();
@@ -24,11 +27,13 @@ export const PageLayout = ({ children, title }) => {
             <Navbar/>
         </nav>
 
-        <main>
+        <main className={ isWhite && 'bg-white' }>
             { children }
         </main>
 
-        <Footer/>
+        {
+            asPath !== '/recursos' && <Footer/>
+        }
     </>
   )
 }

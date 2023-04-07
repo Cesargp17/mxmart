@@ -329,7 +329,7 @@ const HomePage = () => {
         </div>
     </section>
 
-    <div id="casos_de_exito "></div>
+    <div id="casos_de_exito"></div>
     <section id="main_g">
         <div className="title h1_center ">
             <h1 data-aos="fade-up " data-aos-duration="1500 ">Casos de éxito</h1>

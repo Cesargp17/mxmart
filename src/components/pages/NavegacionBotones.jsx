@@ -7,18 +7,18 @@ export const NavegacionBotones = ({ anterior, siguiente, isMobile }) => {
       {
         isMobile
         ? (
-          <div class="framework-footer">
-            <div class="f-navegacion-movil">
-                <Link class='button' href={`${anterior}`}>Anterior</Link>
+          <div className="framework-footer">
+            <div className="f-navegacion-movil">
+                <Link className='button' href={`${anterior}`}>Anterior</Link>
                 <p></p>
-                <Link class='button' href={`${siguiente}`}>Siguiente</Link>
+                <Link className='button' href={`${siguiente}`}>Siguiente</Link>
             </div>
           </div>
         ) : (
-          <div class="f-navegacion">
-            <Link class='button' href={`${anterior}`}>Anterior</Link>
+          <div className="f-navegacion">
+            <Link className='button' href={`${anterior}`}>Anterior</Link>
             <p></p>
-            <Link class='button' href={`${siguiente}`}>Siguiente</Link>
+            <Link className='button' href={`${siguiente}`}>Siguiente</Link>
           </div>
         )
       }
