@@ -21,7 +21,7 @@ const FrameworkAnaliticaPage = () => {
                 <div className="main-framework">
 
                 <FrameworkContent
-                    classFramework={'framework-png-analitica'}
+                    classNameFramework={'framework-png-analitica'}
                 />
 
                 <div className="main-framework-side-b">

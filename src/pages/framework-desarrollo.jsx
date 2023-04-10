@@ -21,7 +21,7 @@ const FrameworkDesarrollo = () => {
                 <div className="main-framework">
 
                 <FrameworkContent
-                    classFramework={'framework-png-desarrollo'}
+                    classNameFramework={'framework-png-desarrollo'}
                 />
 
                   <div className="main-framework-side-b">

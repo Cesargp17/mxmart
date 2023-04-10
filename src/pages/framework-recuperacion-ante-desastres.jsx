@@ -21,7 +21,7 @@ const FrameworkRecuperacionPage = () => {
                 <div className="main-framework">
 
                 <FrameworkContent
-                    classFramework={'framework-png-recuperacion'}
+                    classNameFramework={'framework-png-recuperacion'}
                 />
                 
                 <div className="main-framework-side-b">

@@ -78,8 +78,8 @@ export const Navbar = () => {
                 <li>
                         <a className="navbar" onMouseOver={ () => onExpandDropdown( 'educacion' ) } onMouseOut={ onMouseOut }>Educación</a>
                         <div className={ `dropdown ${ isDropdownExpanded['educacion'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'educacion' ) } onMouseOut={ onMouseOut }>
-                            <a href="/competencia-de-educacion.html">Soluciones en la nube para la educación</a>
-                            <a href="/competencia-de-educacion.html#casos-de-exito">Casos de éxito</a>
+                            <Link href="/competencia-de-educacion">Soluciones en la nube para la educación</Link>
+                            <Link href="/competencia-de-educacion#casos-de-exito">Casos de éxito</Link>
                         </div>
                     </li>
                     <li>
@@ -143,8 +143,8 @@ export const Navbar = () => {
                         </svg>
                         </a>
                         <div className={ `mobile_submenu ${ isDropdownExpanded['educacion_mobil'] && showVariable }`} style={{display: isDropdownExpanded['educacion_mobil'] ? 'block' : 'none' }}>
-                            <a href="/competencia-de-educacion.html">Soluciones en la nube para la educación</a>
-                            <a href="/competencia-de-educacion.html#casos-de-exito">Casos de éxito</a>
+                            <Link href="/competencia-de-educacion">Soluciones en la nube para la educación</Link>
+                            <Link href="/competencia-de-educacion#casos-de-exito">Casos de éxito</Link>
                         </div>
                     </div>
 

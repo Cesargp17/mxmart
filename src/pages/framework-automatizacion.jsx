@@ -21,7 +21,7 @@ const FrameworkAutomatizacionPage = () => {
                 <div className="main-framework">
 
                 <FrameworkContent
-                    classFramework={'framework-png-automatizacion'}
+                    classNameFramework={'framework-png-automatizacion'}
                 />
 
                   <div className="main-framework-side-b">

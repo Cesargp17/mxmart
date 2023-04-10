@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 export const FrameworkContent = ({ classNameFramework }) => {
+
   return (
     <div className="main-framework-side-a">
         <div className="main-title-png">

@@ -21,7 +21,7 @@ const FrameworkArquitecturaPage = () => {
                 <div className="main-framework">
 
                 <FrameworkContent
-                    classFramework={'framework-png-arquitectura'}
+                    classNameFramework={'framework-png-arquitectura'}
                 />
 
                     <div className="main-framework-side-b">

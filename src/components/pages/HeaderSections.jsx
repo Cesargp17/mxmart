@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const HeaderSections = ({ portada, titulo, descripcion, isDifferent = false }) => {
+export const HeaderSections = ({ portada, titulo, descripcion, isDifferent = false, texto3 }) => {
   return (
     <>
     {
@@ -12,6 +12,7 @@ export const HeaderSections = ({ portada, titulo, descripcion, isDifferent = fal
                     <div style={{ textAlign: 'center', fontFamily: 'Montserrat, sans-serif' }} className="montserrat col-md-8 col-md-offset-2 text-xs-center">
                         <h3 className='text-white' style={{marginBottom: '20px', fontSize: '48px'}}>{ titulo }</h3>
                         <div ><p style={{ fontSize: '30px', color: 'white' }}>{ descripcion }</p></div>
+                        <p className='text-white mt-6 text-lg'>{ texto3 }</p>
                     </div>
             </section>
         </div>
