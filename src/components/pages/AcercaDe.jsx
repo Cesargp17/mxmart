@@ -6,7 +6,7 @@ export const AcercaDe = ({ img, title, subtitle }) => {
         <div className="flex flex-col lg:flex-row items-center">    
             <img
             src={ img }
-            className="w-[344px] h-[144px] mt-10 mx-auto border border-gray-300 bg-gray-50 ms-20"
+            className="w-[344px] h-[144px] mt-10 mx-auto border border-gray-300 bg-gray-50 ms-20 mr-20"
             />
 
         <div className="flex flex-col">

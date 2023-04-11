@@ -85,17 +85,17 @@ export const Navbar = () => {
                     <li>
                     <a className="navbar" onMouseOver={ () => onExpandDropdown( 'servicios' ) } onMouseOut={ onMouseOut }>Servicios</a>
                     <div className={ `dropdown ${ isDropdownExpanded['servicios'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'servicios' ) } onMouseOut={ onMouseOut }>
-                            <a href="/assessments.html">Assessment</a>
-                            <a href="/modernizacion-infraestructura.html">Modernización de infraestructura para sistemas</a>
-                            <a href="/desarrollo-aplicaciones.html">Desarrollo de aplicaciones modernas</a>
-                            <a href="/poliza-consultoria.html">Póliza de consultoría</a>
+                            <Link href="/assessments">Assessment</Link>
+                            <Link href="/modernizacion-infraestructura">Modernización de infraestructura para sistemas</Link>
+                            <Link href="/desarrollo-aplicaciones">Desarrollo de aplicaciones modernas</Link>
+                            <Link href="/poliza-consultoria">Póliza de consultoría</Link>
                         </div>
                     </li>
                     <li>
                     <a className="navbar" onMouseOver={ () => onExpandDropdown( 'soluciones' ) } onMouseOut={ onMouseOut }>Soluciones</a>
                     <div className={ `dropdown ${ isDropdownExpanded['soluciones'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'soluciones' ) } onMouseOut={ onMouseOut }>
-                            <a href="/e-learning.html">E-learning</a>
-                            <a href="/e-commerce.html">E-commerce</a>
+                            <Link href="/e-learning">E-learning</Link>
+                            <Link href="/e-commerce">E-commerce</Link>
                             <a href="/escritorios-virtuales.html">Escritorios virtuales</a>
                             <a href="/ambientes-hibridos.html">Ambientes híbridos</a>
                             <a href="/analitica-datos.html">Analítica de datos</a>
@@ -155,10 +155,10 @@ export const Navbar = () => {
                         </svg>
                         </a>
                         <div className={ `mobile_submenu ${ isDropdownExpanded['servicios_mobil'] && showVariable }`} style={{display: isDropdownExpanded['servicios_mobil'] ? 'block' : 'none' }}>
-                            <a href="/assessments.html">Assessment</a>
-                            <a href="/modernizacion-infraestructura.html">Modernización de infraestructura para sistemas</a>
-                            <a href="/desarrollo-aplicaciones.html">Desarrollo de aplicaciones modernas</a>
-                            <a href="/poliza-consultoria.html">Póliza de consultoría</a>
+                            <Link href="/assessments">Assessment</Link>
+                            <Link href="/modernizacion-infraestructura">Modernización de infraestructura para sistemas</Link>
+                            <Link href="/desarrollo-aplicaciones">Desarrollo de aplicaciones modernas</Link>
+                            <Link href="/poliza-consultoria">Póliza de consultoría</Link>
                         </div>
                     </div>
 
@@ -169,8 +169,8 @@ export const Navbar = () => {
                         </svg>
                         </a>
                         <div className={ `mobile_submenu ${ isDropdownExpanded['soluciones_mobil'] && showVariable }`} style={{display: isDropdownExpanded['soluciones_mobil'] ? 'block' : 'none' }}>
-                            <a href="/e-learning.html">E-learning</a>
-                            <a href="/e-commerce.html">E-commerce</a>
+                            <Link href="/e-learning">E-learning</Link>
+                            <Link href="/e-commerce">E-commerce</Link>
                             <a href="/escritorios-virtuales.html">Escritorios virtuales</a>
                             <a href="/ambientes-hibridos.html">Ambientes híbridos</a>
                             <a href="/analitica-datos.html">Analítica de datos</a>
