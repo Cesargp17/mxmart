@@ -1,8 +1,12 @@
 import { PageLayout } from '@/components/layout/PageLayout'
 import { Header } from '@/components/pages/Header';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 
 const HomePage = () => {
+
+    const router = useRouter();
 
     const [contractVariable, setContractVariable] = useState(null);
     const [isExpandedCard, setIsExpandedCard] = useState({
@@ -13,7 +17,8 @@ const HomePage = () => {
         lms: false,
         ecommerce: false,
         cms: false,
-        programacion: false
+        programacion: false,
+        db2: false
     });
 
     const onExpandCard = (card) => {
@@ -33,56 +38,59 @@ const HomePage = () => {
             lms: false,
             ecommerce: false,
             cms: false,
-            programacion: false
+            programacion: false,
+            db2: false
         });
     }
 
   return (
     <PageLayout 
         title={'Inicio | Mxmart Solutions'}
+        isHome={ true }
     >
 
         <Header/>
 
-        <section id="main_a">
-            <div className="block">
-                <div className="side_a">
-                    <div className="div_title">
-                        <h2 data-aos="fade-up" data-aos-duration="1500">Mxmart</h2>
-                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart"/>
-                    </div>
-                    <p data-aos="fade-up" data-aos-duration="1500">Somos una empresa que desarrolla soluciones y ofrece servicios en la nube, nos enfocamos en resolver las necesidades del cliente, proponiendo siempre alternativas y soluciones para cubrir las mismas.
-                        </p>
-                        <div className="btn_more" data-aos="fade-up" data-aos-duration="1500">
-                <a href="./nosotros.html">
-                    <p>Descubrir más</p>
+        <section>
+            <div className="flex justify-center items-center mt-20 text-center">
+                <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">Acerca de Mxmart</h2>
+                <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+            </div>
+            <div className='flex flex-row justify-center grid grid-cols-4 lg:grid-cols-7 mx-auto max-w-5xl mt-10'>
+                <img className='mx-auto' src="/images/Badge_AdvancedTierServices.svg" alt="" width='150px' />
+                <img className='mx-auto' src="/images/Badge_PublicSector.svg" alt="" width='150px' />
+                <img className='mx-auto' src="/images/Badge_EducationServices.svg" alt="" width='150px' />
+                <img className='mx-auto' src="/images/Badge_EC2forWindows.svg" alt="" width='150px' />
+                <img className='mx-auto' src="/images/Badge_AmazonRDSDelivery.svg" alt="" width='150px' />
+                <img className='mx-auto' src="/images/Badge_AWSLambdaDelivery.svg" alt="" width='150px' />
+                <img className='mx-auto' src="/images/Badge_ImmersionDay.svg" alt="" width='150px' />
+            </div>
+
+            <p className='text-center text-white max-w-5xl mx-auto mt-8 p-4'>
+            Somos una empresa que desarrolla soluciones y servicios basados en la nube, enfocándonos en resolver de manera efectiva las necesidades de nuestros clientes. Además, somos socios Advanced de Consultoría de Amazon Web Services (AWS) y tenemos amplia experiencia implementando la nube de AWS.
+            </p>
+
+            <div className='flex flex-row justify-center grid grid-cols-4 lg:grid-cols-7 mx-auto max-w-5xl mt-10'>
+                <img className='mx-auto' src="/images/Certification_CCP.png" alt="" width='120px' />
+                <img className='mx-auto' src="/images/Certification_SAA.png" alt="" width='120px' />
+                <img className='mx-auto' src="/images/Certification_SAP.png" alt="" width='120px' />
+                <img className='mx-auto' src="/images/Certification_SysOps.png" alt="" width='120px' />
+                <img className='mx-auto' src="/images/Certification_DEV.png" alt="" width='120px' />
+                <img className='mx-auto' src="/images/Certification_DBS.png" alt="" width='120px' />
+                <img className='mx-auto' src="/images/Certification_DOP.png" alt="" width='120px' />
+            </div>
+
+            <p className='text-center text-white max-w-5xl mx-auto mt-8 p-4'>
+            Estamos comprometidos con nuestros clientes, capacitándonos constantemente y obteniendo certificaciones que nos avalan para ofrecer soluciones y servicios a la vanguardia.
+            </p>
+
+                <Link className='flex justify-center mt-6' href="/nosotros">
+                    <p className='text-white text-lg'>Descubrir más</p>
                     <img src="/images/arrow-right-circle.svg" width="22px" alt=""/>
-                </a>
-            </div>
-                </div>
-            </div>
+                </Link>
         </section>
-        <section id="main_b">
-    <div className="block">
-        <div className="side_a">
-            <div className="div_title">
-                <h2 data-aos="fade-up" data-aos-duration="1500">Certificaciones</h2>
-                <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart"/>
-            </div>
-            <p data-aos="fade-up" data-aos-duration="1500">Estamos comprometidos con nuestros clientes, capacitándonos constantemente y obteniendo certificaciones que nos avalan para ofrecer soluciones y servicios a la vanguardia.                
-                </p>
-            <div className="btn_more" data-aos="fade-up" data-aos-duration="1500">
-                <a href="./nosotros.html">
-                    <p>Descubrir más</p>
-                    <img src="/images/arrow-right-circle.svg" width="22px" alt=""/>
-                </a>
-            </div>
-        </div>
-        <div className="side_b" data-aos="zoom-in" data-aos-duration="1500">
-            <img src="/images/Badges.png" alt=""/>
-        </div>
-    </div>
-</section>
+
+        <hr className='max-w-7xl mx-auto mt-20 bg-blue-500 h-0.5' />
 
 <section id="main_c">
     <div className="title h1_center">
@@ -135,53 +143,53 @@ const HomePage = () => {
         <p data-aos="fade-up" data-aos-duration="1500" style={{ margin: '16px 0px 0px 0px' }}>Contamos con soluciones flexibles que se adaptan a las necesidades específicas en su institución. Buscando la excelencia operativa y la optimización de recursos.
             </p>
     </div>
-    <div className="content"><div className="card"data-aos="zoom-in"data-aos-duration="3000">
+            <div className="content"><div className="card"data-aos="zoom-in"data-aos-duration="3000">
                 <img src="/images/migracion_nube.png " height="80px" width='80px' alt=""/>
                 <h4>Migración a la nube</h4>
-                <div className="btn_more ">
+                <div className="btn_more items-center">
                     <a>
                         <p>Descubrir más</p>
-                        <img src="/images/arrow-right-circle.svg " width="22px " alt=""/>
+                        <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
-            <div className="card " data-aos="zoom-in " data-aos-duration="3000">
+            <div onClick={ () => router.push('/analitica-datos') } className="card " data-aos="zoom-in " data-aos-duration="3000">
                 <img src="/images/ciberseguridad_icon.png " height="80px" width='80px' alt=""/>
                 <h4>Analítica de datos</h4>
-                <div className="btn_more ">
+                <div className="btn_more items-center">
                     <a>
                         <p>Descubrir más</p>
-                        <img src="/images/arrow-right-circle.svg " width="22px " alt=""/>
+                        <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
-            <div className="card " data-aos="zoom-in " data-aos-duration="3000">
+            <div onClick={ () => router.push('/drp') } className="card " data-aos="zoom-in " data-aos-duration="3000">
                 <img src="/images/DRP_icon.png " height="80px" width='80px' alt=""/>
                 <h4>Recuperación ante desastres</h4>
-                <div className="btn_more ">
+                <div className="btn_more items-center">
                     <a>
                         <p>Descubrir más</p>
-                        <img src="/images/arrow-right-circle.svg " width="22px " alt=""/>
+                        <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
-            <div className="card " data-aos="zoom-in " data-aos-duration="3000">
+            <div onClick={ () => router.push('/ambientes-hibridos') } className="card " data-aos="zoom-in " data-aos-duration="3000">
                 <img src="/images/hibridos_icon.png " height="80px" width='80px' alt=""/>
                 <h4>Ambientes híbridos</h4>
-                <div className="btn_more ">
+                <div className="btn_more items-center">
                     <a>
                         <p>Descubrir más</p>
-                        <img src="/images/arrow-right-circle.svg " width="22px " alt=""/>
+                        <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
-            <div className="card " data-aos="zoom-in " data-aos-duration="3000">
+            <div onClick={ () => router.push('/escritorios-virtuales') } className="card " data-aos="zoom-in " data-aos-duration="3000">
                 <img src="/images/desarrollo_icon.png " height="80px" width='80px' alt=""/>
                 <h4>Escritorios virtuales</h4>
-                <div className="btn_more ">
+                <div className="btn_more items-center">
                     <a>
                         <p>Descubrir más</p>
-                        <img src="/images/arrow-right-circle.svg " width="22px " alt=""/>
+                        <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
@@ -229,8 +237,8 @@ const HomePage = () => {
                     El equipo de Mxmart cuenta con el conocimiento y la experiencia para integrar plataformas y herramientas tecnológicas que permitan generar soluciones que cumplan con sus requerimientos.
                 </p>    
             </div>
-            <div className="content" data-aos="zoom-in" data-aos-duration="1500 ">
-                <img src="/images/vector.png" alt=""/>
+            <div className="content flex justify-center">
+                <img src="/images/vector.png" alt="" width='350px'/>
             </div>
         </div>
         <div className="side_b">
@@ -305,7 +313,7 @@ const HomePage = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={`tab ${ isExpandedCard['db'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('db') } onMouseOut={onMouseOut}>
+                <div className={`tab ${ isExpandedCard['db2'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('db2') } onMouseOut={onMouseOut}>
                     <div className="row">
                         <h3>Motores de Bases de Datos</h3>
                         {/* <img src="/images/plus.svg" width="20px" alt=""/> */}

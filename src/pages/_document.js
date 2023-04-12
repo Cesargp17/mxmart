@@ -8,6 +8,7 @@ export default function Document() {
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://kit.fontawesome.com/19d9df46df.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
+        <link rel="shortcut icon" href="/images/Mxmart_Empresarial_Favicon.png"/>
         <script src='js/index.js'></script>
       </Head>
       <body>

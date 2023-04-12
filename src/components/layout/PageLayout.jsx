@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useRouter } from 'next/router';
 // ..
 
-export const PageLayout = ({ children, title, isWhite }) => {
+export const PageLayout = ({ children, title, isWhite, isHome = false }) => {
 
     const { asPath }= useRouter();
 
@@ -24,7 +24,7 @@ export const PageLayout = ({ children, title, isWhite }) => {
         </Head>
 
         <nav>
-            <Navbar/>
+            <Navbar isHome={ isHome }/>
         </nav>
 
         <main className={ isWhite && 'bg-white' }>

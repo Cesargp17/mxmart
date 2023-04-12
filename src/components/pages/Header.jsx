@@ -1,8 +1,33 @@
+import Link from "next/link"
+
 export const Header = () => {
 
   return (
     <>
-<section>
+    <section>
+        <div className="heroe_layer">
+            <div className="principal flex-col" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img src="/images/Logo.png" className="w-[200px] lg:w-[350px] mb-10"/>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <h1 style={{textAlign: 'center'}}>
+                        Soluciones tecnológicas <br /> <span>hacia la transformación digital</span>
+                    </h1>
+                </div>
+            </div>
+            <div className="div_btn mx-auto">
+                <Link href="/nosotros" className="btn btn-5">Más información</Link>
+            </div>
+            <div className="scroll-downs">
+                <div className="mousey">
+                    <div className="scroller"></div>
+                </div>
+            </div>
+        </div>
+        <video className='video' autoPlay muted loop id="video_bg">
+            <source src="https://mxmartsolutions.com/assets/images/BKG_Index_05.mp4" type="video/mp4" />
+        </video>
+    </section>
+{/* <section>
     <div className="heroe_layer">
         <div className="principal" style={{ display: 'flex', alignItems: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -27,9 +52,6 @@ export const Header = () => {
             </div>
         </div>
     </div>
-    {/* <video className='video' autoPlay muted loop id="video_bg">
-            <source src="/videos/video_bg.mp4" type="video/mp4" />
-        </video> */}
         <video className='video' autoPlay muted loop id="video_bg">
             <source src="https://mxmartsolutions.com/assets/images/video_bg.mp4" type="video/mp4" />
         </video>
@@ -38,7 +60,7 @@ export const Header = () => {
     <a href="./nosotros.html#reconocimientos">
         <img src="/images/AWS-Public-Sector-Rising-Star.png" alt="" className="public-sector-img-movil"/>
     </a>
-</div>
+</div> */}
     </>
 
   )

@@ -18,6 +18,10 @@ body {
   background: #191919;
 }
 
+.bg-home{
+  background-color: #282424;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -674,10 +678,11 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 
 /*********/
 #main_c {
-  width: 100%;
+  width: 90%;
   margin-top: 100px;
   padding: 0 4.5vw;
-  ; }
+  margin: auto;
+}
 
 #main_c .title {
   text-align: center;
@@ -693,7 +698,9 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 #main_c .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 75px;
+  margin: auto;
+  margin-top: 62px;
+  max-width: 1200px;
 }
 
 #main_c .content a {
@@ -702,7 +709,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 
 #main_c .box-grid {
   width: 31%;
-  height: 400px;
+  height: 260px;
   background-color: #212121;
   display: flex;
   justify-content: center;
@@ -713,81 +720,81 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 }
 
 #main_c .box-grid.expand {
-  width: 600px;
+  width: 460px;
   transition: all ease-in-out 0.5s;
 }
 
-#main_c .box-grid.contract {
+#main_c .box-grid.contract{
   width: 300px;
   transition: all ease-in-out 0.5s;
 }
 
 #main_c .box-grid:first-child {
-  background-image: url('/images/e-learning_card.png');
+  background-image: url('/images/Index_card_elearning.png');
   background-size: cover;
   border-radius: 5px;
 }
 
 #main_c .box-grid:nth-child(2n) {
-  background-image: url('/images/serverless_card.png');
+  background-image: url('/images/Index_card_serverless.png');
   background-size: cover;
   border-radius: 5px;
 }
 
 #main_c .box-grid:nth-child(3n) {
-  background-image: url('/images/BaseDatos_Home.png');
+  background-image: url('/images/index_card_database.png');
   background-size: cover;
   border-radius: 5px;
 }
 
-#main_c .box-grid h2 {
+#main_c .box-grid h2{
   color: white;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 28px;
   text-align: center;
 }
 
-#main_c .box-grid p {
+#main_c .box-grid p{
   margin-top: 15px;
   color: white;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   display: none;
   max-width: 400px;
   transition: all ease-in-out 0.5s;
 }
 
-#main_c .box-grid.expand p {
+#main_c .box-grid.expand p{
   display: block;
   transition: all ease-in-out 0.5s;
 }
 
-#main_c .box-grid img {
+#main_c .box-grid img{
   margin-top: 10px;
   display: none;
 }
 
-#main_c .box-grid.expand img {
+#main_c .box-grid.expand img{
   display: block;
   transition: all ease-in-out 0.5s;
   padding-top: 7px;
 }
 
-#main_c .btn_more {
+#main_c .btn_more{
   width: fit-content;
   margin-top: 20px;
 }
 
-#main_c .btn_more a {
+#main_c .btn_more a{
   display: flex;
   text-decoration: none;
   justify-content: center;
   align-items: center;
 }
 
-#main_c .btn_more p {
+#main_c .btn_more p{
   font-size: 16px;
   padding-top: 2px;
 }
@@ -807,10 +814,10 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 /*********/
 #main_d {
   width: 100%;
-  margin-top: 125px;
+  margin-top: 120px;
   padding: 0 4.5vw;
   background: url('/images/bg.svg');
-  background-size: cover;
+  background-size:cover;
   padding-bottom: 150px;
 }
 
@@ -836,18 +843,23 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 }
 
 #main_d .content {
-  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 64px;
   display: flex;
   justify-content: space-between;
+  max-width: 1100px;
 }
+
 
 #main_d .content .card {
   width: 17%;
-  height: 265px;
+  height: 200px;
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0.07) 0%, rgba(128,128,128,0.2) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.038) 0%, rgba(128, 128, 128, 0.103) 100%); 
   border-radius: 10px;
-  border: 2px solid #707070;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -868,40 +880,47 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 }
 
 #main_d .content .card:nth-child(3n):hover {
-  border: 2px solid #4B58BE;
+  border: 2px solid #3175DF;
 }
 
 #main_d .content .card:nth-child(4n):hover {
-  border: 2px solid #6C3496;
+  border: 2px solid #3175DF;
 }
 
 #main_d .content .card:nth-child(5n):hover {
-  border: 2px solid #712F90;
+  border: 2px solid #3175DF;
 }
 
-#main_d .content .card img {
-  margin-bottom: 40px;
+#main_d .content .card img{
+  margin-bottom: 24px;
 }
 
-#main_d .content .card h4 {
+#main_d .content .card h4{
   color: white;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-#main_d .content .card .btn_more a {
+#main_d .content .card .btn_more a{
   color: white;
   text-decoration: none;
   display: flex;
 }
 
-#main_d .content .card .btn_more {
+#main_d .content .card .btn_more a p {
+  margin: 8px 0px 0px 0px! important;
+  padding: 0px;
+  max-height: 16px;
+  font-size: 13px;
+}
+
+#main_d .content .card .btn_more{
   display: none;
 }
 
-#main_d .content .card:hover .btn_more {
+#main_d .content .card:hover .btn_more{
   display: block;
 }
 
@@ -909,6 +928,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   #main_d {
       background-position: bottom;
       background-position-y: 190px;
+      margin-top: 54px;
   }
 
   #main_d .content {
@@ -928,11 +948,12 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 }
 
 #main_e .block {
-  height: 900px;
-  background-image: url('/images/block.png');
-  background-size: contain;
+  height: 640px;
+  /* background-image: url(./images/bg.svg); */
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 0 4.5vw;
+  margin-top: 28px;
 }
 
 #main_e .block .title {
@@ -940,7 +961,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   padding-top: 50px;
 }
 
-#main_e .block .title h1 {
+#main_e .block .title h1{
   color: white;
   text-align: center;
   font-size: 45px;
@@ -957,19 +978,21 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   font-weight: 300;
 }
 
-#main_e .block .content {
-  margin-top: 75px;
+#main_e .block .content{
+  margin-top: 75px;    
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  padding-top: 52px;
+  max-width: 1000px;
 }
 
-#main_e .block .content .card {
+#main_e .block .content .card{
   width: 21%;
-  min-height: 275px;
+  min-height: 175px;
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0.07) 0%, rgba(128,128,128,0.2) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.038) 0%, rgba(128, 128, 128, 0.103) 100%); 
   border-radius: 10px;
-  border: 2px solid #707070;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -979,26 +1002,26 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   padding: 10px;
 }
 
-#main_e .block .content .card img {
-  margin-bottom: 30px;
-}
-
-#main_e .block .content .card h4 {
-  color: white;
+#main_e .block .content .card img{
   margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 18px;
 }
 
-#main_e .block .content .card .btn_more {
+#main_e .block .content .card h4{
+  color: white;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#main_e .block .content .card .btn_more{
   display: none;
 }
 
-#main_e .block .content .card:hover .btn_more {
+#main_e .block .content .card:hover .btn_more{
   display: block;
 }
 
-#main_e .block .content .card .btn_more a {
+#main_e .block .content .card .btn_more a{
   color: white;
   font-weight: 400;
   font-size: 16px;
@@ -1012,23 +1035,33 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
       align-items: center;
   }
 
-  #main_e .block .content .card {
+  #main_e .block .content .card{
       margin-bottom: 50px;
       width: 275px !important;
   }
+
+  #main_e .block {
+  margin-top: 0px;
+}
+
+#main_e .block .title {
+  text-align: center;
+  padding-top: 10px;
+}
+
 }
 
 /*********/
 #main_f {
   width: 100%;
-  margin-top: -125px;
-  padding: 0 4.5vw;
+  padding: 5vw 4.5vw;
   display: flex;
   background-image: url('/images/bg.svg');
-  background-size: cover;
+  background-size:cover;
   background-position-x: -600px;
   background-position-y: -150px;
-  padding-bottom: 130px;
+  padding-bottom: 70px;
+  margin: auto;
 }
 
 #main_f .side_a {
@@ -1052,17 +1085,21 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   font-size: 20px;
   margin-top: 25px;
   font-weight: 300;
+  font-size: 19px;
 }
 
 #main_f .side_a .content {
   margin-top: 75px;
 }
 
+#main_f .side_b .content {
+  margin-top: 100px;
+}
+
 #main_f .side_b .content .tab {
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0.07) 0%, rgba(128,128,128,0.2) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,0.07) 0%, rgba(128,128,128,0.2) 100%); 
   border-radius: 10px;
-  border: 2px solid #707070;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -1078,8 +1115,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 }
 
 #main_f .side_b .content .tab img {
-  transform: rotate(0deg);
-  transition: all ease-in-out 0.5s;
+  
 }
 
 #main_f .side_b .content .tab:hover img {
@@ -1115,9 +1151,20 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   margin-bottom: 5px;
 }
 
+.tcn_content {
+  display: flex;
+  margin-top: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tcn_content img {
+  width: 350px;
+}
+
 @media screen and (max-width: 1000px) {
   #main_f {
-      margin-top: 850px;
+      margin-top: 720px;
       flex-direction: column;
   }
 
@@ -1126,13 +1173,20 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
       padding-right: 0px;
   }
 
-  #main_f .side_a img {
-      width: 100%;
+  .tcn_content {
+      display: flex;
+      margin-top: 74px;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .tcn_content img {
+      width: 340px;
   }
 
   #main_f .side_b {
       width: 100%;
-      margin-top: 60px;
+      margin-top: 14px;
   }
 }
 

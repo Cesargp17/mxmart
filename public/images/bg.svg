@@ -1,1 +1,24 @@
-<svg width="757" height="687" viewBox="0 0 757 687" xmlns="http://www.w3.org/2000/svg"><title>background-gradients-d9d4212eec</title><defs><radialGradient cx="50.848%" cy="48.729%" fx="50.848%" fy="48.729%" r="49.897%" id="a"><stop stop-color="#2F78E2" stop-opacity=".506" offset="0%"/><stop stop-color="#141515" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="50.848%" cy="48.729%" fx="50.848%" fy="48.729%" r="49.897%" id="b"><stop stop-color="#68399B" stop-opacity=".704" offset="0%"/><stop stop-color="#141515" stop-opacity="0" offset="100%"/></radialGradient></defs><g transform="translate(-7)" fill="none"><circle fill="url(#a)" cx="343.022" cy="343.485" r="342.591"/><circle fill="url(#b)" opacity=".706" cx="420.463" cy="353.647" r="342.591"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 757 687" style="enable-background:new 0 0 757 687;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{opacity:0.706;fill:url(#SVGID_00000093885385651522315570000012885665581235166090_);enable-background:new    ;}
+</style>
+<g transform="translate(-7)">
+	
+		<radialGradient id="SVGID_1_" cx="241.167" cy="543.7229" r="0.499" gradientTransform="matrix(685.182 0 0 -685.182 -164894.4375 372883.9062)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#2F93FF;stop-opacity:0.51"/>
+		<stop  offset="1" style="stop-color:#141515;stop-opacity:0"/>
+	</radialGradient>
+	<circle class="st0" cx="343" cy="343.5" r="342.6"/>
+	
+		<radialGradient id="SVGID_00000077289595390820598640000016603507798694669220_" cx="241.167" cy="543.7229" r="0.499" gradientTransform="matrix(685.182 0 0 -685.182 -164816.9844 372894.0625)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#005082;stop-opacity:0.7"/>
+		<stop  offset="1" style="stop-color:#141515;stop-opacity:0"/>
+	</radialGradient>
+	
+		<circle style="opacity:0.706;fill:url(#SVGID_00000077289595390820598640000016603507798694669220_);enable-background:new    ;" cx="420.5" cy="353.6" r="342.6"/>
+</g>
+</svg>

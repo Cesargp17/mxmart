@@ -15,7 +15,7 @@ const menuItems = {
     migracion_mobil: false,
 }
 
-export const Navbar = () => {
+export const Navbar = ({ isHome }) => {
 
     const [showVariable, setShowVariable] = useState(null);
     const [isDropdownExpanded, setIsDropdownExpanded] = useState( menuItems );
@@ -57,16 +57,16 @@ export const Navbar = () => {
 
   return (
     <>
-    <header className={`fadeInName ${isHoverNavbar ? 'hover-navbar' : null}`} id="navbar">
+    <header className={`fadeInName ${ isHome && 'lg:justify-center bg-home' }`} id="navbar">
         <div className="div_logo">
             <Link href="/">
-                <div className="header_logo"></div>
+                <div className={`header_logo ${ isHome && 'hidden' }`}></div>
             </Link>
         </div>
         <div className="div_menu">
             <ul onMouseOver={ () => setIsHoverNavbar(true) } onMouseOut={ () => setIsHoverNavbar(false) }>
                 <li>
-                    <a className='navbar' onMouseOver={ () => onExpandDropdown( 'empresa' ) } onMouseOut={ onMouseOut }>Empresa</a>
+                    <a className='navbar flex gap-1' onMouseOver={ () => onExpandDropdown( 'empresa' ) } onMouseOut={ onMouseOut }>Empresa { isHome && <img src="/images/chevron.svg" width='10px' /> } </a>
                     <div className={ `dropdown ${ isDropdownExpanded['empresa'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'empresa' ) } onMouseOut={ onMouseOut }>
                         <Link href="/nosotros">Nosotros</Link>
                         <Link href="/framework">Framework</Link>
@@ -76,14 +76,14 @@ export const Navbar = () => {
                     </div>
                 </li>
                 <li>
-                        <a className="navbar" onMouseOver={ () => onExpandDropdown( 'educacion' ) } onMouseOut={ onMouseOut }>Educación</a>
+                        <a className="navbar flex gap-1" onMouseOver={ () => onExpandDropdown( 'educacion' ) } onMouseOut={ onMouseOut }>Educación { isHome && <img src="/images/chevron.svg" width='10px' /> }</a>
                         <div className={ `dropdown ${ isDropdownExpanded['educacion'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'educacion' ) } onMouseOut={ onMouseOut }>
                             <Link href="/competencia-de-educacion">Soluciones en la nube para la educación</Link>
                             <Link href="/competencia-de-educacion#casos-de-exito">Casos de éxito</Link>
                         </div>
                     </li>
                     <li>
-                    <a className="navbar" onMouseOver={ () => onExpandDropdown( 'servicios' ) } onMouseOut={ onMouseOut }>Servicios</a>
+                    <a className="navbar flex gap-1" onMouseOver={ () => onExpandDropdown( 'servicios' ) } onMouseOut={ onMouseOut }>Servicios { isHome && <img src="/images/chevron.svg" width='10px' /> }</a>
                     <div className={ `dropdown ${ isDropdownExpanded['servicios'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'servicios' ) } onMouseOut={ onMouseOut }>
                             <Link href="/assessments">Assessment</Link>
                             <Link href="/modernizacion-infraestructura">Modernización de infraestructura para sistemas</Link>
@@ -92,7 +92,7 @@ export const Navbar = () => {
                         </div>
                     </li>
                     <li>
-                    <a className="navbar" onMouseOver={ () => onExpandDropdown( 'soluciones' ) } onMouseOut={ onMouseOut }>Soluciones</a>
+                    <a className="navbar flex gap-1" onMouseOver={ () => onExpandDropdown( 'soluciones' ) } onMouseOut={ onMouseOut }>Soluciones { isHome && <img src="/images/chevron.svg" width='10px' /> }</a>
                     <div className={ `dropdown ${ isDropdownExpanded['soluciones'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'soluciones' ) } onMouseOut={ onMouseOut }>
                             <Link href="/e-learning">E-learning</Link>
                             <Link href="/e-commerce">E-commerce</Link>
@@ -103,7 +103,7 @@ export const Navbar = () => {
                         </div>
                     </li>
                     <li>
-                    <a className="navbar" onMouseOver={ () => onExpandDropdown( 'migracion' ) } onMouseOut={ onMouseOut }>Migración</a>
+                    <a className="navbar flex gap-1" onMouseOver={ () => onExpandDropdown( 'migracion' ) } onMouseOut={ onMouseOut }>Migración { isHome && <img src="/images/chevron.svg" width='10px' /> }</a>
                     <div className={ `dropdown ${ isDropdownExpanded['migracion'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'migracion' ) } onMouseOut={ onMouseOut }>
                             <Link href="/amazon-aurora">Base de datos</Link>
                             <Link href="/infraestructura-servidores">Infraestructura para servidores</Link>
