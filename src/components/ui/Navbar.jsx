@@ -99,15 +99,15 @@ export const Navbar = () => {
                             <Link href="/escritorios-virtuales">Escritorios virtuales</Link>
                             <Link href="/ambientes-hibridos">Ambientes híbridos</Link>
                             <Link href="/analitica-datos">Analítica de datos</Link>
-                            <a href="/aws-lambda.html">Desarrollo Serverless</a>
+                            <Link href="/aws-lambda">Desarrollo Serverless</Link>
                         </div>
                     </li>
                     <li>
                     <a className="navbar" onMouseOver={ () => onExpandDropdown( 'migracion' ) } onMouseOut={ onMouseOut }>Migración</a>
                     <div className={ `dropdown ${ isDropdownExpanded['migracion'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'migracion' ) } onMouseOut={ onMouseOut }>
-                            <a href="/amazon-aurora.html">Base de datos</a>
-                            <a href="/infraestructura-servidores.html">Infraestructura para servidores</a>
-                            <a href="/drp.html">Recuperación ante desastres</a>
+                            <Link href="/amazon-aurora">Base de datos</Link>
+                            <Link href="/infraestructura-servidores">Infraestructura para servidores</Link>
+                            <Link href="/drp">Recuperación ante desastres</Link>
                         </div>
                     </li>
             </ul>
@@ -174,7 +174,7 @@ export const Navbar = () => {
                             <Link href="/escritorios-virtuales">Escritorios virtuales</Link>
                             <Link href="/ambientes-hibridos">Ambientes híbridos</Link>
                             <Link href="/analitica-datos">Analítica de datos</Link>
-                            <a href="/aws-lambda.html">Desarrollo Serverless</a>
+                            <Link href="/aws-lambda">Desarrollo Serverless</Link>
                         </div>
                     </div>
 
@@ -185,9 +185,9 @@ export const Navbar = () => {
                         </svg>
                         </a>
                         <div className={ `mobile_submenu ${ isDropdownExpanded['migracion_mobil'] && showVariable }`} style={{display: isDropdownExpanded['migracion_mobil'] ? 'block' : 'none' }}>
-                            <a href="/amazon-aurora.html">Base de datos</a>
-                            <a href="/infraestructura-servidores.html">Infraestructura para servidores</a>
-                            <a href="/drp.html">Recuperación ante desastres</a>
+                            <Link href="/amazon-aurora">Base de datos</Link>
+                            <Link href="/infraestructura-servidores">Infraestructura para servidores</Link>
+                            <Link href="/drp">Recuperación ante desastres</Link>
                         </div>
                     </div>
 
