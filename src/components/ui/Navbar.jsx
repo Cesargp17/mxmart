@@ -96,9 +96,9 @@ export const Navbar = () => {
                     <div className={ `dropdown ${ isDropdownExpanded['soluciones'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'soluciones' ) } onMouseOut={ onMouseOut }>
                             <Link href="/e-learning">E-learning</Link>
                             <Link href="/e-commerce">E-commerce</Link>
-                            <a href="/escritorios-virtuales.html">Escritorios virtuales</a>
-                            <a href="/ambientes-hibridos.html">Ambientes híbridos</a>
-                            <a href="/analitica-datos.html">Analítica de datos</a>
+                            <Link href="/escritorios-virtuales">Escritorios virtuales</Link>
+                            <Link href="/ambientes-hibridos">Ambientes híbridos</Link>
+                            <Link href="/analitica-datos">Analítica de datos</Link>
                             <a href="/aws-lambda.html">Desarrollo Serverless</a>
                         </div>
                     </li>
@@ -171,9 +171,9 @@ export const Navbar = () => {
                         <div className={ `mobile_submenu ${ isDropdownExpanded['soluciones_mobil'] && showVariable }`} style={{display: isDropdownExpanded['soluciones_mobil'] ? 'block' : 'none' }}>
                             <Link href="/e-learning">E-learning</Link>
                             <Link href="/e-commerce">E-commerce</Link>
-                            <a href="/escritorios-virtuales.html">Escritorios virtuales</a>
-                            <a href="/ambientes-hibridos.html">Ambientes híbridos</a>
-                            <a href="/analitica-datos.html">Analítica de datos</a>
+                            <Link href="/escritorios-virtuales">Escritorios virtuales</Link>
+                            <Link href="/ambientes-hibridos">Ambientes híbridos</Link>
+                            <Link href="/analitica-datos">Analítica de datos</Link>
                             <a href="/aws-lambda.html">Desarrollo Serverless</a>
                         </div>
                     </div>

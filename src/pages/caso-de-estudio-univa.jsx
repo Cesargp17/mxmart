@@ -80,7 +80,7 @@ const CasoUnivaPage = () => {
             </div>
 
             <Diagrama/>
-
+ 
             <div className='p-5'>
                 <h3 className="font-normal text-3xl mt-10 mb-2 lg:ms-20">Los beneficios</h3>
                 <div className="flex flex-col lg:flex-row items-center justify-between mt-4 ms-20">
