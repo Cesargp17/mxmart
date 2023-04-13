@@ -1,5 +1,6 @@
-import { AppLocaleContext } from '@/context/AppLocaleContext';
+
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useContext, useState } from 'react'
 
 const menuItems = {
@@ -26,7 +27,9 @@ export const Navbar = ({ isHome }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [isHoverNavbar, setIsHoverNavbar] = useState(false);
 
-    const { onChangeLangSite } = useContext( AppLocaleContext );
+    const { asPath } =  useRouter();
+
+    // const { onChangeLangSite } = useContext( AppLocaleContext );
 
     const onExpandDropdown = (item) => {
 
@@ -131,8 +134,10 @@ export const Navbar = ({ isHome }) => {
                     <li>
                     <a className="navbar flex gap-1" onMouseOver={ () => onExpandDropdown( 'lang' ) } onMouseOut={ onMouseOut }><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></a>
                     <div className={ `dropdown ${ isDropdownExpanded['lang'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'lang' ) } onMouseOut={ onMouseOut }>
-                            <Link href="javascript:void(0)" onClick={() => onChangeLangSite('es')}>Español</Link>
-                            <Link href="javascript:void(0)" onClick={() => onChangeLangSite('en')}>English</Link>
+                            <Link href={ asPath } locale="es">Español</Link>
+                            <Link href={ asPath } locale="en">English</Link>
+                            {/* <Link href="javascript:void(0)" onClick={() => onChangeLangSite('es')}>Español</Link>
+                            <Link href="javascript:void(0)" onClick={() => onChangeLangSite('en')}>English</Link> */}
                         </div>
                     </li>
             </ul>

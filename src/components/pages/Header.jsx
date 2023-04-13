@@ -1,11 +1,10 @@
-import { AppLocaleContext } from "@/context/AppLocaleContext";
 import Link from "next/link"
+import { LanguageContext } from "@/context/LanguageContext";
 import { useContext } from "react";
 
 export const Header = () => {
 
-    const { language } = useContext( AppLocaleContext );
-    const { index } = language;
+    const { index } = useContext( LanguageContext );
 
   return (
     <>
@@ -15,12 +14,12 @@ export const Header = () => {
                 <img src="/images/Logo.png" className="w-[200px] lg:w-[350px] mb-10"/>
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                     <h1 style={{textAlign: 'center'}}>
-                        { index?.t1 } <br /> <span>{ index?.t2 }</span>
+                        { index.t1 } <br /> <span>{ index.t2 }</span>
                     </h1>
                 </div>
             </div>
             <div className="div_btn mx-auto">
-                <Link href="/nosotros" className="btn btn-5">{ index?.button1 }</Link>
+                <Link href="/nosotros" className="btn btn-5">{ index.button1 }</Link>
             </div>
             <div className="scroll-downs">
                 <div className="mousey">

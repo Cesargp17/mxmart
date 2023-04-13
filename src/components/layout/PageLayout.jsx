@@ -6,13 +6,12 @@ import { Navbar } from '../ui/Navbar'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useRouter } from 'next/router';
-import { AppLocaleContext } from '@/context/AppLocaleContext';
 // ..
 
 export const PageLayout = ({ children, title, isWhite, isHome = false }) => {
 
     const { asPath }= useRouter();
-    const { lang } = useContext( AppLocaleContext );
+    // const { lang } = useContext( AppLocaleContext );
 
     useEffect(() => {
         AOS.init();

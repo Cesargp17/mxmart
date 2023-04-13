@@ -3,16 +3,13 @@ import { Header } from '@/components/pages/Header';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useContext, useState } from 'react'
-import en from '../../../public/locale/en';
-import es from '../../../public/locale/es';
-import { AppLocaleContext } from '@/context/AppLocaleContext';
+import es from '../../public/locale/es';
+import en from '../../public/locale/en';
+import { LanguageContext } from '@/context/LanguageContext';
 
 const HomePage = () => {
 
-     const { language } = useContext( AppLocaleContext );
-     const { index } = language;
-
-    const router = useRouter();
+    const { index } = useContext( LanguageContext );
 
     const [contractVariable, setContractVariable] = useState(null);
     const [isExpandedCard, setIsExpandedCard] = useState({
@@ -51,7 +48,7 @@ const HomePage = () => {
 
   return (
     <PageLayout 
-        title={ index?.metaTitle }
+        title={index.metaTitle}
         isHome={ true }
     >
 
@@ -59,7 +56,7 @@ const HomePage = () => {
 
         <section>
             <div className="flex justify-center items-center mt-20 text-center">
-                <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">Acerca de Mxmart</h2>
+                <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ index.aboutTitle }</h2>
                 <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
             </div>
             <div className='flex flex-row justify-center grid grid-cols-4 lg:grid-cols-7 mx-auto max-w-5xl mt-10'>
@@ -72,7 +69,7 @@ const HomePage = () => {
                 <img className='mx-auto' src="/images/Badge_ImmersionDay.svg" alt="" width='150px' />
             </div>
             <p className='text-center text-white max-w-5xl mx-auto mt-8 p-4'>
-            Somos una empresa que desarrolla soluciones y servicios basados en la nube, enfocándonos en resolver de manera efectiva las necesidades de nuestros clientes. Además, somos socios Advanced de Consultoría de Amazon Web Services (AWS) y tenemos amplia experiencia implementando la nube de AWS.
+            { index.aboutText }
             </p>
 
             <div className='flex flex-row justify-center grid grid-cols-4 lg:grid-cols-7 mx-auto max-w-5xl mt-10'>
@@ -86,11 +83,11 @@ const HomePage = () => {
             </div>
 
             <p className='text-center text-white max-w-5xl mx-auto mt-8 p-4'>
-            Estamos comprometidos con nuestros clientes, capacitándonos constantemente y obteniendo certificaciones que nos avalan para ofrecer soluciones y servicios a la vanguardia.
+            { index.aboutText2 }
             </p>
 
                 <Link className='flex justify-center mt-6' href="/nosotros">
-                    <p className='text-white text-lg'>Descubrir más</p>
+                    <p className='text-white text-lg'>{ index.learnMore }</p>
                     <img src="/images/arrow-right-circle.svg" width="22px" alt=""/>
                 </Link>
         </section>
@@ -99,39 +96,36 @@ const HomePage = () => {
 
 <section id="main_c">
     <div className="title h1_center">
-        <h1 data-aos="fade-up" data-aos-duration="1500">Expertos</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1500">{ index.expertsTitle }</h1>
         <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart2"/>
     </div>
     <div className="content" data-aos="zoom-in" data-aos-duration="1500">
         <div className={`box-grid ${ isExpandedCard['e-learning'] ? 'expand' : contractVariable }`} onMouseOver={ () => onExpandCard('e-learning') } onMouseOut={onMouseOut}>
-            <h2>E-learning</h2>
-            <p>Implementamos y migramos plataformas de E-Learning para instituciones, permitiendo optimizar recursos y costos en la nube.
-                </p>
+            <h2>{ index.eLearning }</h2>
+            <p>{ index.eLearningText }</p>
             <div className="btn_more" data-aos="fade-up" data-aos-duration="1500">
                 <a>
-                    <p>Descubrir más</p>
+                    <p>{ index.learnMore }</p>
                     <img src="/images/arrow-right-circle.svg" width="22px" alt=""/>
                 </a>
             </div>
         </div>
         <div className={`box-grid ${ isExpandedCard['serverless'] ? 'expand' : contractVariable }`} onMouseOver={ () => onExpandCard('serverless') } onMouseOut={onMouseOut}>
-            <h2>Serverless</h2>
-            <p>Construimos y modernizamos aplicaciones mediante código sin la necesidad de aprovisionar ni administrar servidores.
-                </p>
+            <h2>{ index.serverless }</h2>
+            <p>{ index.serverlessText }</p>
             <div className="btn_more" data-aos="fade-up" data-aos-duration="1500">
                 <a>
-                    <p>Descubrir más</p>
+                    <p>{ index.learnMore }</p>
                     <img src="/images/arrow-right-circle.svg" width="22px" alt=""/>
                 </a>
             </div>
         </div>
         <div className={`box-grid ${ isExpandedCard['db'] ? 'expand' : contractVariable }`} onMouseOver={ () => onExpandCard('db') } onMouseOut={onMouseOut}>
-            <h2>Bases de datos</h2>
-            <p>Migración de bases de datos hacia servicios administrados en AWS, que permiten la gestión de diferentes motores de Bases de Datos relacionales y no relacionales.
-                </p>
+            <h2>{ index.db }</h2>
+            <p>{ index.dbText }</p>
             <div className="btn_more" data-aos="fade-up" data-aos-duration="1500">
                 <a>
-                    <p>Descubrir más</p>
+                    <p>{ index.learnMore }</p>
                     <img src="/images/arrow-right-circle.svg" width="22px" alt=""/>
                 </a>
             </div>
@@ -142,58 +136,57 @@ const HomePage = () => {
 <section id="main_d">
     <div className="title title_center">
         <div className="div_title">
-            <h1 data-aos="fade-up" data-aos-duration="1500">Soluciones</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1500">{ index.solutionsTitle }</h1>
             <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart2"/>
         </div>
-        <p data-aos="fade-up" data-aos-duration="1500" style={{ margin: '16px 0px 0px 0px' }}>Contamos con soluciones flexibles que se adaptan a las necesidades específicas en su institución. Buscando la excelencia operativa y la optimización de recursos.
-            </p>
+        <p data-aos="fade-up" data-aos-duration="1500" style={{ margin: '16px 0px 0px 0px' }}>{ index.solutionsText }</p>
     </div>
             <div className="content"><div className="card"data-aos="zoom-in"data-aos-duration="3000">
                 <img src="/images/migracion_nube.png " height="80px" width='80px' alt=""/>
-                <h4>Migración a la nube</h4>
+                <h4>{ index.migracion }</h4>
                 <div className="btn_more items-center">
                     <a>
-                        <p>Descubrir más</p>
+                        <p>{ index.learnMore }</p>
                         <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
             <div onClick={ () => router.push('/analitica-datos') } className="card " data-aos="zoom-in " data-aos-duration="3000">
                 <img src="/images/ciberseguridad_icon.png " height="80px" width='80px' alt=""/>
-                <h4>Analítica de datos</h4>
+                <h4>{ index.analitica }</h4>
                 <div className="btn_more items-center">
                     <a>
-                        <p>Descubrir más</p>
+                        <p>{ index.learnMore }</p>
                         <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
             <div onClick={ () => router.push('/drp') } className="card " data-aos="zoom-in " data-aos-duration="3000">
                 <img src="/images/DRP_icon.png " height="80px" width='80px' alt=""/>
-                <h4>Recuperación ante desastres</h4>
+                <h4>{ index.recuperacion }</h4>
                 <div className="btn_more items-center">
                     <a>
-                        <p>Descubrir más</p>
+                        <p>{ index.learnMore }</p>
                         <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
             <div onClick={ () => router.push('/ambientes-hibridos') } className="card " data-aos="zoom-in " data-aos-duration="3000">
                 <img src="/images/hibridos_icon.png " height="80px" width='80px' alt=""/>
-                <h4>Ambientes híbridos</h4>
+                <h4>{ index.ambientes }</h4>
                 <div className="btn_more items-center">
                     <a>
-                        <p>Descubrir más</p>
+                        <p>{ index.learnMore }</p>
                         <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
             </div>
             <div onClick={ () => router.push('/escritorios-virtuales') } className="card " data-aos="zoom-in " data-aos-duration="3000">
                 <img src="/images/desarrollo_icon.png " height="80px" width='80px' alt=""/>
-                <h4>Escritorios virtuales</h4>
+                <h4>{ index.escritorios }</h4>
                 <div className="btn_more items-center">
                     <a>
-                        <p>Descubrir más</p>
+                        <p>{ index.learnMore }</p>
                         <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
                     </a>
                 </div>
@@ -204,29 +197,29 @@ const HomePage = () => {
         <div className="block">
             <div className="title title_center">
                 <div className="div_title">
-                    <h1 data-aos="fade-up" data-aos-duration="1500 ">Servicios</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1500 ">{ index.services }</h1>
                     <img data-aos="fade-up" data-aos-duration="1500 " src="/images/arrow_w.png " alt="" className="arrow_mxmart2 "/>
                 </div>
                 <p data-aos="fade-up" data-aos-duration="1500 " style={{ margin: '16px 0px 0px 0px' }}>
-                    Ofrecemos servicios especializados en Nube, consultoría en bases de datos, servicios administrados de infraestructura, así como servicios de consultoría para la optimización de sus recursos tecnológicos.
+                { index.servicesText }
                 </p>    
             </div>
             <div className="content" data-aos="zoom-in" data-aos-duration="3000 ">
                 <div className="card">
                     <img src="/images/settings_icon.svg" alt="" width="50px "/>
-                    <h4>Servicios de configuración a la nube</h4>
+                    <h4>{ index.configuracion }</h4>
                 </div>
                 <div className="card">
                     <img src="/images/database_icon.svg" alt="" width="50px "/>
-                    <h4>Consultoría en bases de datos</h4>
+                    <h4>{ index.consultoria }</h4>
                 </div>
                 <div className="card">
                     <img src="/images/code_icon.svg" alt="" width="50px "/>
-                    <h4>Servicios administrados</h4>
+                    <h4>{ index.serviciosAdministrados }</h4>
                 </div>
                 <div className="card">
                     <img src="/images/file_icon.svg " alt="" width="50px "/>
-                    <h4>Servicios de consultoría</h4>
+                    <h4>{ index.serviciosConsultoria }</h4>
                 </div>
             </div>
         </div>
@@ -235,11 +228,11 @@ const HomePage = () => {
         <div className="side_a">
             <div className="title">
                 <div className="div_title">
-                    <h1 data-aos="fade-up" data-aos-duration="1500 ">Tecnologías</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1500 ">{ index.tecTitle }</h1>
                     <img data-aos="fade-up" data-aos-duration="1500 " src="/images/arrow.png " alt="" className="arrow_mxmart2"/>
                 </div>
                 <p data-aos="fade-up" data-aos-duration="1500">
-                    El equipo de Mxmart cuenta con el conocimiento y la experiencia para integrar plataformas y herramientas tecnológicas que permitan generar soluciones que cumplan con sus requerimientos.
+                { index.tecText }
                 </p>    
             </div>
             <div className="content flex justify-center">
@@ -250,91 +243,91 @@ const HomePage = () => {
             <div className="content">
                 <div className={`tab ${ isExpandedCard['nube'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('nube') } onMouseOut={onMouseOut}>
                     <div className="row">
-                        <h3>Nube</h3>
+                        <h3>{ index.tNube }</h3>
                         {/* <img src="/images/plus.svg" width="20px" alt=""/> */}
                     </div>
                     <ul>
                         <li>
-                            AWS (Amazon Web Services)
+                            { index.dNube }
                         </li>
                     </ul>
                 </div>
                 <div className={`tab ${ isExpandedCard['lms'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('lms') } onMouseOut={onMouseOut}>
                     <div className="row">
-                        <h3>LMS</h3>
+                        <h3>{ index.tLms }</h3>
                         {/* <img src="/images/plus.svg" width="20px" alt=""/> */}
                     </div>
                     <ul>
                         <li>
-                            Moodle
+                            { index.dLms }
                         </li>
                     </ul>
                 </div>
                 <div className={`tab ${ isExpandedCard['ecommerce'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('ecommerce') } onMouseOut={onMouseOut}>
                     <div className="row">
-                        <h3>Plataformas E-commerce</h3>
+                        <h3>{ index.t3 }</h3>
                         {/* <img src="/images/plus.svg" width="20px" alt=""/> */}
                     </div>
                     <ul>
                         <li>
-                            Magento
+                            { index.d3 }
                         </li>
                         <li>
-                            Prestashop
+                            { index.d4 }
                         </li>
                     </ul>
                 </div>
                 <div className={`tab ${ isExpandedCard['cms'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('cms') } onMouseOut={onMouseOut}>
                     <div className="row">
-                        <h3>CMS</h3>
+                        <h3>{ index.t4 }</h3>
                         {/* <img src="/images/plus.svg" width="20px" alt=""/> */}
                     </div>
                     <ul>
                         <li>
-                            WordPress
+                            { index.d5 }
                         </li>
                         <li>
-                            WooCommerce
+                            { index.d6 }
                         </li>
                     </ul>
                 </div>
                 <div className={`tab ${ isExpandedCard['programacion'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('programacion') } onMouseOut={onMouseOut}>
                     <div className="row">
-                        <h3>Lenguajes de programación</h3>
+                        <h3>{ index.t5 }</h3>
                         {/* <img src="/images/plus.svg" width="20px" alt=""/> */}
                     </div>
                     <ul>
                         <li>
-                            PHP
+                            { index.d7 }
                         </li>
                         <li>
-                            Python
+                            { index.d8 }
                         </li>
                         <li>
-                            JavaScript
+                            { index.d9 }
                         </li>
                         <li>
-                            React
+                            { index.d10 }
                         </li>
                     </ul>
                 </div>
                 <div className={`tab ${ isExpandedCard['db2'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('db2') } onMouseOut={onMouseOut}>
                     <div className="row">
-                        <h3>Motores de Bases de Datos</h3>
+                        <h3>{ index.t6 }</h3>
                         {/* <img src="/images/plus.svg" width="20px" alt=""/> */}
                     </div>
                     <ul>
                         <li>
-                            PostgreSQL
+                            { index.d11 }
                         </li>
                         <li>
-                            MySQL
+                            { index.d12 }
                         </li>
                         <li>
-                            MariaDB
+                            { index.d13 }
                         </li>
                         <li>
-                            SQL Server
+                            { index.d14 }
                         </li>
                     </ul>
                 </div>
@@ -345,7 +338,7 @@ const HomePage = () => {
     <div id="casos_de_exito"></div>
     <section id="main_g">
         <div className="title h1_center ">
-            <h1 data-aos="fade-up " data-aos-duration="1500 ">Casos de éxito</h1>
+            <h1 data-aos="fade-up " data-aos-duration="1500 ">{ index.casosDeExito }</h1>
             <img data-aos="fade-up " data-aos-duration="1500 " src="/images/arrow.png " alt="" className="arrow_mxmart2 "/>
         </div>
         <div className="content " data-aos="fade-up " data-aos-duration="1500 ">
