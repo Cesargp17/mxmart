@@ -1,5 +1,6 @@
+import { AppLocaleContext } from '@/context/AppLocaleContext';
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 const menuItems = {
     empresa: false,
@@ -7,12 +8,15 @@ const menuItems = {
     servicios: false,
     soluciones: false,
     migracion: false,
+    lang: false,
 
     empresa_mobil: false,
     educacion_mobil: false,
     servicios_mobil: false,
     soluciones_mobil: false,
     migracion_mobil: false,
+    contact_mobil: false,
+    lang_mobil: false,
 }
 
 export const Navbar = ({ isHome }) => {
@@ -22,7 +26,15 @@ export const Navbar = ({ isHome }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [isHoverNavbar, setIsHoverNavbar] = useState(false);
 
+    const { onChangeLangSite } = useContext( AppLocaleContext );
+
     const onExpandDropdown = (item) => {
+
+        if( item === 'contact_mobil' ){
+            setToggleMenu( !toggleMenu );
+            return;
+        }
+
         if( item.includes('mobil') ){
             const updatedItemState = {[item]: true};
             setIsDropdownExpanded({...menuItems, ...updatedItemState});
@@ -46,12 +58,15 @@ export const Navbar = ({ isHome }) => {
             servicios: false,
             soluciones: false,
             migracion: false,
+            lang: false,
 
             empresa_mobil: false,
             educacion_mobil: false,
             servicios_mobil: false,
             soluciones_mobil: false,
             migracion_mobil: false,
+            contact_mobil: false,
+            lang_mobil: false,
         });
     }
 
@@ -108,6 +123,16 @@ export const Navbar = ({ isHome }) => {
                             <Link href="/amazon-aurora">Base de datos</Link>
                             <Link href="/infraestructura-servidores">Infraestructura para servidores</Link>
                             <Link href="/drp">Recuperación ante desastres</Link>
+                        </div>
+                    </li>
+                    <li>
+                        <Link href='#main_h' className="navbar flex gap-1">Contáctanos </Link>
+                    </li>
+                    <li>
+                    <a className="navbar flex gap-1" onMouseOver={ () => onExpandDropdown( 'lang' ) } onMouseOut={ onMouseOut }><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></a>
+                    <div className={ `dropdown ${ isDropdownExpanded['lang'] && showVariable }`} onMouseOver={ () => onExpandDropdown( 'lang' ) } onMouseOut={ onMouseOut }>
+                            <Link href="javascript:void(0)" onClick={() => onChangeLangSite('es')}>Español</Link>
+                            <Link href="javascript:void(0)" onClick={() => onChangeLangSite('en')}>English</Link>
                         </div>
                     </li>
             </ul>
@@ -188,6 +213,23 @@ export const Navbar = ({ isHome }) => {
                             <Link href="/amazon-aurora">Base de datos</Link>
                             <Link href="/infraestructura-servidores">Infraestructura para servidores</Link>
                             <Link href="/drp">Recuperación ante desastres</Link>
+                        </div>
+                    </div>
+
+                    <div>
+                        {/* <Link href='#main_h' className="navbar flex gap-1">Contáctanos </Link> */}
+                        <Link href='#main_h' onClick={ () => onExpandDropdown( 'contact_mobil' ) }>Contáctanos</Link>
+                    </div>
+
+                    <div>
+                        <a className={`${ isDropdownExpanded['lang_mobil'] && 'menu-border' }`} onClick={ () => onExpandDropdown( 'lang_mobil' ) }>Idioma
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-down">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                        </a>
+                        <div className={ `mobile_submenu ${ isDropdownExpanded['lang_mobil'] && showVariable }`} style={{display: isDropdownExpanded['lang_mobil'] ? 'block' : 'none' }}>
+                            <Link href="/amazon-aurora">Español</Link>
+                            <Link href="/infraestructura-servidores">English</Link>
                         </div>
                     </div>
 

@@ -1,6 +1,10 @@
+import { AppLocaleContext } from '@/context/AppLocaleContext'
 import { Html, Head, Main, NextScript } from 'next/document'
+import { useRouter } from 'next/router'
+import { useContext } from 'react'
 
 export default function Document() {
+
   return (
     <Html lang="en">
       <Head>
@@ -9,7 +13,7 @@ export default function Document() {
         <script src="https://kit.fontawesome.com/19d9df46df.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
         <link rel="shortcut icon" href="/images/Mxmart_Empresarial_Favicon.png"/>
-        <script src='js/index.js'></script>
+        <script src='../js/index.js'></script>
       </Head>
       <body>
         <Main />

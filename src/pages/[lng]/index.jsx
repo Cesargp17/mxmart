@@ -2,9 +2,15 @@ import { PageLayout } from '@/components/layout/PageLayout'
 import { Header } from '@/components/pages/Header';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import en from '../../../public/locale/en';
+import es from '../../../public/locale/es';
+import { AppLocaleContext } from '@/context/AppLocaleContext';
 
 const HomePage = () => {
+
+     const { language } = useContext( AppLocaleContext );
+     const { index } = language;
 
     const router = useRouter();
 
@@ -45,7 +51,7 @@ const HomePage = () => {
 
   return (
     <PageLayout 
-        title={'Inicio | Mxmart Solutions'}
+        title={ index?.metaTitle }
         isHome={ true }
     >
 
@@ -65,7 +71,6 @@ const HomePage = () => {
                 <img className='mx-auto' src="/images/Badge_AWSLambdaDelivery.svg" alt="" width='150px' />
                 <img className='mx-auto' src="/images/Badge_ImmersionDay.svg" alt="" width='150px' />
             </div>
-
             <p className='text-center text-white max-w-5xl mx-auto mt-8 p-4'>
             Somos una empresa que desarrolla soluciones y servicios basados en la nube, enfocándonos en resolver de manera efectiva las necesidades de nuestros clientes. Además, somos socios Advanced de Consultoría de Amazon Web Services (AWS) y tenemos amplia experiencia implementando la nube de AWS.
             </p>
