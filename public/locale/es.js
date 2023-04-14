@@ -5,11 +5,12 @@ export default {
 
         t1: "Soluciones tecnológicas",
         t2: "hacia la transformación digital",
-        button1: 'MÁS INFORMACIÓN',
+        button1: 'LEER MÁS',
 
         aboutTitle: 'Acerca de Mxmart',
         aboutText: 'Somos una empresa que desarrolla soluciones y servicios basados en la nube, enfocándonos en resolver de manera efectiva las necesidades de nuestros clientes. Además, somos socios Advanced de Consultoría de Amazon Web Services (AWS) y tenemos amplia experiencia implementando la nube de AWS.',
         aboutText2: 'Estamos comprometidos con nuestros clientes, capacitándonos constantemente y obteniendo certificaciones que nos avalan para ofrecer soluciones y servicios a la vanguardia.',
+        learnMoreAbout: 'Descubrir más',
         learnMore: 'Descubrir más',
 
         expertsTitle: 'Expertos',

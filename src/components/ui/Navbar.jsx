@@ -77,7 +77,7 @@ export const Navbar = ({ isHome }) => {
     <>
     <header className={`fadeInName ${ isHome && 'lg:justify-center bg-home' }`} id="navbar">
         <div className="div_logo">
-            <Link href="/">
+            <Link href="/" aria-label='Logo de la empresa Mxmart Solutions - Página principal'>
                 <div className={`header_logo ${ isHome && 'hidden' }`}></div>
             </Link>
         </div>
@@ -86,7 +86,7 @@ export const Navbar = ({ isHome }) => {
                 <li>
                     <a href='#' onClick={ ( e ) => e.preventDefault() } className='navbar flex gap-1' onMouseOver={ (e) => onExpandDropdown( 'empresa', e ) } onMouseOut={ onMouseOut }>Empresa { isHome && <img src="/images/chevron.svg" width='10px' /> } </a>
                     <div className={ `dropdown ${ isDropdownExpanded['empresa'] && showVariable }`} onMouseOver={ (e) => onExpandDropdown( 'empresa', e ) } onMouseOut={ onMouseOut }>
-                        <Link href="/sobre-nosotros">Nosotros</Link>
+                        <Link href="/nosotros">Nosotros</Link>
                         <Link href="/framework">Framework</Link>
                         <Link href="/#casos_de_exito">Casos de éxito</Link>
                         <Link href="/recursos">Recursos</Link>
@@ -158,7 +158,7 @@ export const Navbar = ({ isHome }) => {
                         </svg>
                         </a>
                         <div className={ `mobile_submenu ${ isDropdownExpanded['empresa_mobil'] ? showVariable : null }`} style={{display: isDropdownExpanded['empresa_mobil'] ? 'block' : 'none' }}>
-                            <Link href="/sobre-nosotros">Nosotros</Link>
+                            <Link href="/nosotros">Nosotros</Link>
                             <Link href="/framework">Framework</Link>
                             <Link href="/#casos_de_exito">Casos de éxito</Link>
                             <Link href="/recursos">Recursos</Link>
@@ -233,8 +233,8 @@ export const Navbar = ({ isHome }) => {
                         </svg>
                         </a>
                         <div className={ `mobile_submenu ${ isDropdownExpanded['lang_mobil'] && showVariable }`} style={{display: isDropdownExpanded['lang_mobil'] ? 'block' : 'none' }}>
-                            <Link href="/amazon-aurora">Español</Link>
-                            <Link href="/infraestructura-servidores">English</Link>
+                            <Link href={ asPath } locale="es">Español</Link>
+                            <Link href={ asPath } locale="en">English</Link>
                         </div>
                     </div>
 

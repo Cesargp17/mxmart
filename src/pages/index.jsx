@@ -133,7 +133,7 @@ const HomePage = () => {
         <section>
             <div className="flex justify-center items-center mt-20 text-center">
                 <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ index.aboutTitle }</h2>
-                <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+                <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" width={17} height={25} className="arrow_mxmart "/>
             </div>
             <div className='flex flex-row justify-center grid grid-cols-4 lg:grid-cols-7 mx-auto max-w-5xl mt-10'>
                 {
@@ -166,8 +166,8 @@ const HomePage = () => {
 
             <h3 className='text-center text-white max-w-5xl mx-auto mt-8 p-4'>{ index.aboutText2 }</h3>
                 <Link className='flex justify-center mt-6' href="/nosotros">
-                    <p className='text-white text-lg'>{ index.learnMore }</p>
-                    <img src="/images/arrow-right-circle.svg" width="22px" alt=""/>
+                    <p className='text-white text-lg'>{ index.learnMoreAbout }</p>
+                    <img src="/images/arrow-right-circle.svg" width="22px" height='22px' alt=""/>
                 </Link>
         </section>
 
@@ -176,7 +176,7 @@ const HomePage = () => {
         <section id="main_c">
             <div className="flex justify-center items-center mt-20 text-center">
                 <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ index.expertsTitle }</h2>
-                <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+                <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" width={17} height={25} className="arrow_mxmart "/>
             </div>
             <div className="content" data-aos="zoom-in" data-aos-duration="1500">
                 {
@@ -185,9 +185,9 @@ const HomePage = () => {
                             <h3>{ item.title }</h3>
                             <p>{ item.subtitle }</p>
                             <div className="btn_more" data-aos="fade-up" data-aos-duration="1500">
-                                <a href='#' onClick={ ( e ) => e.preventDefault() }>
+                                <a href='#' aria-label={`Información sobre ${ item.title }`} onClick={ ( e ) => e.preventDefault() }>
                                     <p>{ index.learnMore }</p>
-                                    <img src="/images/arrow-right-circle.svg" width="22px" alt=""/>
+                                    <img src="/images/arrow-right-circle.svg" width="22px" height='22px' alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ const HomePage = () => {
             <div className="title title_center">
                 <div className="flex justify-center items-center mt-20 text-center">
                     <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ index.solutionsTitle }</h2>
-                    <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+                    <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" width={17} height={25} className="arrow_mxmart "/>
                 </div>
                 <h3 data-aos="fade-up" data-aos-duration="1500" style={{ margin: '16px 0px 0px 0px' }}>{ index.solutionsText }</h3>
             </div>
@@ -218,7 +218,7 @@ const HomePage = () => {
                         <div className="btn_more items-center">
                             <a href='#' onClick={ ( e ) => e.preventDefault() }>
                                 <p>{ index.learnMore }</p>
-                                <img src="/images/arrow-right-circle.svg" className='mt-2' width="22px " alt=""/>
+                                <img src="/images/arrow-right-circle.svg" width="22px" height='22px' alt=""/>
                             </a>
                         </div>
                     </div>
@@ -232,7 +232,7 @@ const HomePage = () => {
                 <div className="title title_center">
                     <div className="flex justify-center items-center mt-20 text-center">
                         <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ index.services }</h2>
-                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" width={17} height={25} className="arrow_mxmart "/>
                     </div>
                     <h3 data-aos="fade-up" data-aos-duration="1500 " style={{ margin: '16px 0px 0px 0px' }}>{ index.servicesText }</h3>    
                 </div>
@@ -259,7 +259,7 @@ const HomePage = () => {
                 <div className="title">
                     <div className="flex items-center mt-10 text-center">
                         <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ index.tecTitle }</h2>
-                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" width={17} height={25} className="arrow_mxmart "/>
                     </div>
                     <h3 data-aos="fade-up" data-aos-duration="1500">{ index.tecText }</h3>    
                 </div>
@@ -277,7 +277,7 @@ const HomePage = () => {
                     <div className={`tab ${ isExpandedCard['nube'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('nube') } onMouseOut={onMouseOut}>
                         <div className="row">
                             <h4>{ index.tNube }</h4>
-                            <img src="/images/plus.svg" width="20px" alt=""/> 
+                            <img src="/images/plus.svg" width="20px" height='23px' alt=""/> 
                         </div>
                         <ul>
                             <li>
@@ -288,7 +288,7 @@ const HomePage = () => {
                     <div className={`tab ${ isExpandedCard['lms'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('lms') } onMouseOut={onMouseOut}>
                         <div className="row">
                             <h4>{ index.tLms }</h4>
-                            <img src="/images/plus.svg" width="20px" alt=""/> 
+                            <img src="/images/plus.svg" width="20px" height='23px' alt=""/> 
                         </div>
                         <ul>
                             <li>
@@ -299,7 +299,7 @@ const HomePage = () => {
                     <div className={`tab ${ isExpandedCard['ecommerce'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('ecommerce') } onMouseOut={onMouseOut}>
                         <div className="row">
                             <h4>{ index.t3 }</h4>
-                            <img src="/images/plus.svg" width="20px" alt=""/> 
+                            <img src="/images/plus.svg" width="20px" height='23px' alt=""/> 
                         </div>
                         <ul>
                             <li>
@@ -313,7 +313,7 @@ const HomePage = () => {
                     <div className={`tab ${ isExpandedCard['cms'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('cms') } onMouseOut={onMouseOut}>
                         <div className="row">
                             <h4>{ index.t4 }</h4>
-                            <img src="/images/plus.svg" width="20px" alt=""/> 
+                            <img src="/images/plus.svg" width="20px" height='23px' alt=""/> 
                         </div>
                         <ul>
                             <li>
@@ -327,7 +327,7 @@ const HomePage = () => {
                     <div className={`tab ${ isExpandedCard['programacion'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('programacion') } onMouseOut={onMouseOut}>
                         <div className="row">
                             <h4>{ index.t5 }</h4>
-                            <img src="/images/plus.svg" width="20px" alt=""/> 
+                            <img src="/images/plus.svg" width="20px" height='23px' alt=""/> 
                         </div>
                         <ul>
                             <li>
@@ -347,7 +347,7 @@ const HomePage = () => {
                     <div className={`tab ${ isExpandedCard['db2'] && 'show_tab' } `} onMouseOver={ () => onExpandCard('db2') } onMouseOut={onMouseOut}>
                         <div className="row">
                             <h4>{ index.t6 }</h4>
-                            <img src="/images/plus.svg" width="20px" alt=""/> 
+                            <img src="/images/plus.svg" width="20px" height='23px' alt=""/> 
                         </div>
                         <ul>
                             <li>
@@ -373,7 +373,7 @@ const HomePage = () => {
     <section id="main_g">
         <div className="flex justify-center items-center mt-20 text-center">
             <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ index.casosDeExito }</h2>
-            <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+            <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" width={17} height={25} className="arrow_mxmart "/>
         </div>
         <div className="content " data-aos="fade-up " data-aos-duration="1500 ">
             {

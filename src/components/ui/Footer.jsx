@@ -14,7 +14,7 @@ export const Footer = () => {
             <div className="title">
                     <div className="flex items-center mt-10 text-center">
                         <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ footer.contactanos }</h2>
-                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" width={17} height={25} className="arrow_mxmart "/>
                     </div>
                 <p data-aos="fade-up" data-aos-duration="1500 ">{ footer.description }</p>    
             </div>

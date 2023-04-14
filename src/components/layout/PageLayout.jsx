@@ -11,7 +11,9 @@ const currentUrl = typeof window == 'undefined' ? '' : window.location.origin;
 
 export const PageLayout = ({ children, title, description, isWhite, isHome = false }) => {
 
-    const { asPath }= useRouter();
+    const { asPath, locale }= useRouter();
+
+    const canonicalUrl = locale === 'es' ? `${currentUrl}${ asPath }` : `${currentUrl}/en${ asPath }`
 
     useEffect(() => {
         AOS.init();
@@ -21,7 +23,7 @@ export const PageLayout = ({ children, title, description, isWhite, isHome = fal
   return (
     <>
         <Head>
-            <link rel="canonical" href={`${currentUrl}${ asPath }`} />
+            <link rel="canonical" href={ canonicalUrl } />
 
             <title>{ title }</title>
 

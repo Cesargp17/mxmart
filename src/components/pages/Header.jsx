@@ -11,7 +11,7 @@ const { index } = useContext( LanguageContext );
     <section>
         <div className="heroe_layer">
             <div className="principal flex-col" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img src="/images/Logo.png" className="w-[200px] lg:w-[350px] mb-10" alt="Mxmart Solutions Logo"/>
+                <img src="/images/Logo.png" className="w-[200px] lg:w-[350px] mb-10 h-[73px] lg:h-[130px]" alt="Mxmart Solutions Logo"/>
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                     <h1 className='text-3xl lg:text-5xl text-white font-bold text-center mb-8' data-aos="fade-up" data-aos-duration="1500">
                         { index.t1 } <br /> <span className="font-normal">{ index.t2 }</span>

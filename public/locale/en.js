@@ -5,11 +5,12 @@ export default {
 
         t1: "Technological solutions",
         t2: "towards digital transformation",
-        button1: 'MORE INFO',
+        button1: 'ABOUT MXMART',
 
         aboutTitle: 'About Mxmart',
         aboutText: 'We are a company that develops solutions and offers cloud services, we focus on solving customer needs. Additionally, we are an Amazon Web Services (AWS) Advanced Consulting Partner and have extensive experience implementing the AWS cloud.',
         aboutText2: 'We are committed to our customers, constantly training and obtaining certifications that support us to offer solutions and services at the forefront.',
+        learnMoreAbout: 'Learn more about Mxmart',
         learnMore: 'Learn more',
 
         expertsTitle: 'Experts',
