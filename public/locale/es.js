@@ -1,6 +1,7 @@
 export default {
     index: {
         metaTitle: "Inicio | Mxmart Solutions",
+        metaDescription: 'Potenciamos el éxito de su empresa. Desarrollo web. Diseño web responsivo. Tiendas en línea. Arquitectura, implementación y migración de servicios en la nube.',
 
         t1: "Soluciones tecnológicas",
         t2: "hacia la transformación digital",
@@ -66,5 +67,48 @@ export default {
         d14: 'SQL Server',
 
         casosDeExito: 'Casos de éxito',
+
+        caso1Title: 'Replicación y Retención de Amazon WorkDocs',
+        caso1Description: 'Mover manualmente objetos individuales de Amazon WorkDocs a Amazon S3 puede resultar...',
+        caso1Tag1: 'WorkDocs',
+        caso1Tag2: 'Lambda',
+
+        caso2Title: 'Arquitectura de alta disponibilidad para LMS', 
+        caso2Description: 'El constante crecimiento de alumnos, maestros y cursos han generado una alta demanda a los…',
+        caso2Tag1: 'Backup',
+        caso2Tag2: 'Cloudfront', 
+
+        caso3Title: 'Sistema de Control Escolar en la nube', 
+        caso3Description: 'La UNICLA buscaba migrar todo su entorno de soluciones tecnológicas a la nube para optimizar…',
+        caso3Tag1: 'EC2',
+        caso3Tag2: 'AWS WAF', 
+
+        caso4Title: 'Moodle sobre Amazon Web Services', 
+        caso4Description: 'La UNIVA ha implementado educación en línea a través de la plataforma de gestión de…',
+        caso4Tag1: 'EC',
+        caso4Tag2: 'CloudFront', 
+
+        caso5Title: 'Campus Online basado en AWS', 
+        caso5Description: 'IEU cuenta con más de 15 años de experiencia en educación en línea y con más de 60 programas…',
+        caso5Tag1: 'Amplify',
+        caso5Tag2: 'Aurora', 
+
+        caso6Title: 'Escritorios virtuales en Amazon Web Services', 
+        caso6Description: 'Por su expansión en la Ciudad de México, la Asesora de inversiones necesitaba crear una…',
+        caso6Tag1: 'WorkSpaces',
+        caso6Tag2: 'WorkDocs', 
+
+        scroll: '- Deslice hacia la derecha para ver todos los casos de éxito -',
+    },
+
+    footer: {
+        contactanos: 'Contactanos',
+        description: 'Nos gustaría conocer más de su compañía o institución y juntos definir una solución que se adapte a sus necesidades, buscando siempre la innovación.',
+        enviar: 'ENVIAR',
+        nombre: 'Nombre',
+        mensaje: 'Mensaje',
+        casosExito: 'CASOS DE EXITO',
+        partners: 'PARTNERS',
+        privacy: 'Política de privacidad y cookies',
     }
 } 

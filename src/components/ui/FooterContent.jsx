@@ -1,6 +1,11 @@
-import React from 'react'
+import { LanguageContext } from '@/context/LanguageContext';
+import React, { useContext } from 'react'
 
 export const FooterContent = () => {
+
+    //Contexto que trae la logica de la traduccion del sitio
+    const { footer } = useContext( LanguageContext );
+
   return (
     <footer>
         <div className="social_block">
@@ -15,19 +20,19 @@ export const FooterContent = () => {
             </a>
         </div>
         <div className="menu_block">
-            <a href="">
-                <span>Casos de éxito</span>
+            <a href='#' onClick={ ( e ) => e.preventDefault() }>
+                <span>{ footer.casosExito }</span>
             </a>
             <img src="/images/square.svg " width="4px " alt=""/>
-            <a href="">
+            <a href='#' onClick={ ( e ) => e.preventDefault() }>
                 <span>Partners</span>
             </a>
         </div>
         <hr/>
         <div className="disclaimer_block ">
             <span>©2014-2023 MXMART DE MEXICO SA DE CV</span>
-            <a href="">
-                <span>Política de privacidad y cookies</span>     
+            <a href='#' onClick={ ( e ) => e.preventDefault() }>
+                <span>{ footer.privacy }</span>     
             </a>
         </div>
     </footer> 

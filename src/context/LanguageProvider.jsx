@@ -9,12 +9,13 @@ export const LanguageProvider = ({ children }) => {
     const { locale } = useRouter();
     const language = locale === 'en' ? en : es;
     
-    const { index } = language;
+    const { index, footer } = language;
 
   return (
     <LanguageContext.Provider value={{
         //Valores
-        index
+        index,
+        footer,
 
         //Funciones
     }}>

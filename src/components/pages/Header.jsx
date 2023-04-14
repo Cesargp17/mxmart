@@ -4,17 +4,17 @@ import { useContext } from "react";
 
 export const Header = () => {
 
-    const { index } = useContext( LanguageContext );
+const { index } = useContext( LanguageContext );
 
   return (
     <>
     <section>
         <div className="heroe_layer">
             <div className="principal flex-col" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img src="/images/Logo.png" className="w-[200px] lg:w-[350px] mb-10"/>
+                <img src="/images/Logo.png" className="w-[200px] lg:w-[350px] mb-10" alt="Mxmart Solutions Logo"/>
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <h1 style={{textAlign: 'center'}}>
-                        { index.t1 } <br /> <span>{ index.t2 }</span>
+                    <h1 className='text-3xl lg:text-5xl text-white font-bold text-center mb-8' data-aos="fade-up" data-aos-duration="1500">
+                        { index.t1 } <br /> <span className="font-normal">{ index.t2 }</span>
                     </h1>
                 </div>
             </div>

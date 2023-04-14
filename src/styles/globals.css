@@ -189,7 +189,6 @@ header.scroll a:hover, header.hover_scroll a:hover {
 
 .heroe_layer h1 {
   color: white;
-  font-size: 45px;
   opacity: 0;
   animation-name: title;
   animation-duration: 8s;
@@ -274,7 +273,6 @@ video#video_bg {
 @media screen and (max-width: 1000px) {
   .heroe_layer h1 {
       width: 100%;
-      font-size: 45px;
       line-height: 45px;
   }
 
@@ -688,7 +686,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   text-align: center;
 }
 
-#main_c .title h1 {
+#main_c .title h2 {
   color: white;
   text-align: center;
   font-size: 45px;
@@ -747,7 +745,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   border-radius: 5px;
 }
 
-#main_c .box-grid h2{
+#main_c .box-grid h3{
   color: white;
   text-transform: uppercase;
   font-weight: 500;
@@ -832,7 +830,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   margin-bottom: 5px;
 }
 
-#main_d .title p {
+#main_d .title h3 {
   color: white;
   text-align: center;
   max-width: 700px;
@@ -968,7 +966,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   margin-bottom: 5px;
 }
 
-#main_e .block .title p {
+#main_e .block .title h3 {
   color: white;
   text-align: center;
   max-width: 700px;
@@ -1079,7 +1077,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   margin-bottom: 5px;
 }
 
-#main_f .title p {
+#main_f .title h3 {
   color: white;
   margin: auto;
   font-size: 20px;
@@ -1123,8 +1121,9 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   transition: all ease-in-out 0.5s;
 }
 
-#main_f .side_b .content .tab h3 {
+#main_f .side_b .content .tab h4 {
   color: white;
+  font-weight: bold;
 }
 
 #main_f .side_b .content .tab ul {
@@ -1283,7 +1282,7 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
   margin-bottom: 10px;
 }
 
-#main_g .content .card_case h2 {
+#main_g .content .card_case h3 {
   color: white;
   font-weight: 400;
   font-size: 20px;
@@ -3922,7 +3921,6 @@ body.landing_content #main_h .side_b .col-lg-6 {
 
 .heroe_layer h1 {
   color: white;
-  font-size: 45px;
   /* opacity: 0; */
   animation-name: title;
   animation-duration: 8s;

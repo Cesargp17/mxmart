@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FooterContent } from './FooterContent'
+import { LanguageContext } from '@/context/LanguageContext';
 
 export const Footer = () => {
+
+    //Contexto que trae la logica de la traduccion del sitio
+    const { footer } = useContext( LanguageContext );
+
   return (
     <>
     <section id="main_h">
         <div className="side_a">
             <div className="title">
-                <div className="div_title">
-                    <h1 data-aos="fade-up" data-aos-duration="1500 ">Contáctanos</h1>
-                    <img data-aos="fade-up" data-aos-duration="1500 " src="/images/arrow.png " alt="" className="arrow_mxmart2 "/>
-                </div>
-                <p data-aos="fade-up" data-aos-duration="1500 ">Nos gustaría conocer más de su compañía o institución y juntos definir una solución que se adapte a sus necesidades, buscando siempre la innovación.</p>    
+                    <div className="flex items-center mt-10 text-center">
+                        <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ footer.contactanos }</h2>
+                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" className="arrow_mxmart "/>
+                    </div>
+                <p data-aos="fade-up" data-aos-duration="1500 ">{ footer.description }</p>    
             </div>
             <div className="content">
                 <div data-aos="fade-up" data-aos-duration="1500 " className="row">
@@ -37,7 +42,7 @@ export const Footer = () => {
                                     <div className="dragArea form-row">
                                         <div className="form-row-mx">
                                             <div className="col-lg-6 col-md-12 col-sm-12 form-group form-input-mx " data-for="Nombre ">
-                                                <input onChange={ () => console.log('Hola') } type="text " name="Nombre " placeholder="Nombre*" data-form-field="Nombre " required="required " className="form-control" value="" id="Nombre-formbuilder-br" />
+                                                <input onChange={ () => console.log('Hola') } type="text " name="Nombre " placeholder={ footer.nombre } data-form-field="Nombre " required="required " className="form-control" value="" id="Nombre-formbuilder-br" />
                                             </div>
                                             <div className="col-lg-6 col-md-12 col-sm-12 form-group form-input-mx " data-for="Email ">
                                                 <input onChange={ () => console.log('Hola') } type="email" name="Email " placeholder="Email*" data-form-field="Email " required="required " className="form-control" value="" id="Email-formbuilder-br" />
@@ -50,12 +55,12 @@ export const Footer = () => {
                                             <input onChange={ () => console.log('Hola') } type="text" name="Empresa " placeholder="Empresa " data-form-field="Empresa " className="form-control" value="Vacío" id="Empresa-formbuilder-br" />
                                         </div>
                                         <div data-for="Mensaje" className="col-lg-12 col-md-12 col-sm-12 form-group ">
-                                            <textarea onChange={ () => console.log('Hola') } name="Mensaje" placeholder="Mensaje " data-form-field="Mensaje" className="form-control " id="Mensaje-formbuilder-br"></textarea>
+                                            <textarea onChange={ () => console.log('Hola') } name="Mensaje" placeholder={ footer.mensaje } data-form-field="Mensaje" className="form-control " id="Mensaje-formbuilder-br"></textarea>
                                         </div>
                                         <div className="captcha_div">
                                             <div id="captcha" className="col-xs-12 g-recaptcha g-recaptcha-response-required" data-sitekey="6Lduvh4bAAAAAMJ1A507Jv02dPbhtpNpsU8fRGxT " required=""></div>
                                             <div className="col-auto">
-                                                <button type="submit" className="btn btn-primary btn-contact">Enviar</button>
+                                                <button type="submit" className="btn btn-primary btn-contact">{ footer.enviar } </button>
                                                 <div id="errorFormulario" style={{float:'right'}}></div>
                                             </div>
                                         </div>
