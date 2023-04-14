@@ -1,4 +1,40 @@
 export default {
+
+    navbar: {
+        empresa: 'Empresa',
+        nosotros: 'Nosotros',
+        framework: 'Framework',
+        casos: 'Casos de éxito',
+        recursos: 'Recursos',
+        vacantes: 'Vacantes',
+
+        educacion: 'Educación',
+        solucionesNube: 'Soluciones en la nube para la educación',
+        casosExito: 'Casos de éxito',
+
+        servicios: 'Servicios',
+        assesment: 'Assesment',
+        modernizacion: 'Modernización de infraestructura para sistemas',
+        desarrollo: 'Desarrollo de aplicaciones modernas',
+        poliza: 'Póliza de consultoría',
+
+        soluciones: 'Soluciones',
+        eLearning: 'E-learning',
+        eCommerce: 'E-commerce',
+        escritorios: 'Escritorios Virtuales',
+        ambientes: 'Ambientes híbridos',
+        analitica: 'Analítica de datos',
+        desarrollo: 'Desarrollo Serverless',
+
+        migracion: 'Migracion',
+        base: 'Base de datos',
+        infraestructura: 'Infraestructura para servidores',
+        recuperacion: 'Recuperación ante desastres',
+
+        contactanos: 'Contáctanos',
+        language: 'Idioma',
+    },
+
     index: {
         metaTitle: "Inicio | Mxmart Solutions",
         metaDescription: 'Potenciamos el éxito de su empresa. Desarrollo web. Diseño web responsivo. Tiendas en línea. Arquitectura, implementación y migración de servicios en la nube.',
@@ -100,6 +136,57 @@ export default {
         caso6Tag2: 'WorkDocs', 
 
         scroll: '- Deslice hacia la derecha para ver todos los casos de éxito -',
+    },
+
+    nosotros: {
+
+        metaTitle: 'Nosotros | Mxmart Solutions',
+        metaDescription: 'Ofrecemos consultoría y soluciones eficaces que se adapten a la necesidades de las empresas, fomentando su crecimiento a través de nuestro equipo profesional con alta capacitación y experiencia.',
+
+        nosotrosTitle: 'Nosotros',
+        nosotrosDescription: 'Potenciamos el éxito de su empresa',
+
+        p1: 'Ofrecemos soluciones que superan las expectativas y objetivos de las empresas gracias a nuestros métodos y estrategias las cuales aplicamos en cada proyecto',
+        p2: 'Nuestra misión en Mxmart es ofrecer consultoría y soluciones eficaces e innovadoras que se adapten a las necesidades de las empresas, instituciones educativas, así como otras entidades, fomentando su crecimiento y desarrollo a través de un equipo profesional con alta capacitación y experiencia.',
+        p3: 'Contamos con un equipo de trabajo profesional con experiencia de más de 15 años desarrollando e implementando sistemas de comercio electrónico como Magento, PrestaShop y Shopify, así como sistemas LMS como Moodle y Chamilo, también contamos con la experiencia en implementaciones de WordPress, Drupal, entre otros, todos estos sistemas pudiéndose integrar hacia un ERP o la generación de sistemas a la medida, nuestras soluciones avanzadas nos permiten realizar integraciones o migraciones de sistemas hacia la nube o en esquemas híbridos.',
+
+        t1: 'Somos socios consultores de AWS',
+        p4: 'Cómo socios Advanced de Consultoría de Amazon Web Services (AWS) tenemos una amplia experiencia implementando la nube de AWS y contamos con las certificaciones necesarias para ser tu aliado estratégico en la transformación digital de tu empresa.',
+        p5: 'Contamos con la experiencia y especialización en el análisis, diseño, generación de arquitecturas, implementación, migración de servidores, todo hacia la nube de AWS, así como el desarrollo o modernización de aplicaciones gracias a nuestro modelo de trabajo basado en DevOps con microservicios y tecnologías Serverless, ofreciendo compromiso y profesionalismo en cada proyecto.',
+
+        t2: 'Reconocimientos de AWS',
+        p6: 'En el evento de AWS Partner Summit 2022 México, fuimos sorprendidos gratamente con el reconocimiento AWS Public Sector Rising Star, estamos muy agradecidos de contar con este valioso reconocimiento que significa un gran logro en la trayectoria de Mxmart. Esto ha sido posible gracias a nuestro maravilloso equipo de trabajo y a todos los clientes de Mxmart, así como al gran apoyo recibido por parte del equipo de AWS.',
+
+        mision: 'Misión',
+        misionText: 'Generar soluciones tecnológicas innovadoras que resuelvan y fomenten la evolución digital de las organizaciones.',
+
+        vision: 'Visión',
+        visionText: 'Consolidarse a nivel global como proveedor de soluciones y servicios tecnológicos, basados en la innovación, experiencia y conocimiento de nuestro personal certificado.',
+
+        valores: 'Valores',
+        valores1: 'Calidad',
+        valores2: 'Compromiso',
+        valores3: 'Confiabilidad',
+        valores4: 'Colaboracion',
+        valores5: 'Continuidad',
+
+        eLearning: 'E-Learning',
+        eCommerce: 'E-Commerce',
+        servicios: 'Servicios avanzados',
+
+        desarrollo: 'Desarrollo',
+        desarrollo1: 'Web',
+        desarrollo2: 'Aplicaciones móviles',
+
+        aws: 'Amazon Web Services AWS',
+        aws1: 'Migración',
+        aws2: 'Escritorios Virtuales',
+        aws3: 'Bases de datos',
+        aws4: 'DRP',
+        aws5: 'Servicios de configuración en la nube',
+        aws6: 'Ciberseguridad',
+
+        poliza: 'Pólizas de servicios',
     },
 
     footer: {

@@ -1,4 +1,40 @@
 export default {
+
+    navbar: {
+        empresa: 'Company',
+        nosotros: 'About us',
+        framework: 'Framework',
+        casos: 'Case studies',
+        recursos: 'Resources',
+        vacantes: 'Vacancies',
+
+        educacion: 'Education',
+        solucionesNube: 'Cloud solutions for education',
+        casosExito: 'Case studies',
+
+        servicios: 'Services',
+        assesment: 'Assesment',
+        modernizacion: 'Modernization of infrastructure for systems',
+        desarrollo: 'Development of modern applications',
+        poliza: 'Consulting policy',
+
+        soluciones: 'Solutions',
+        eLearning: 'E-learning',
+        eCommerce: 'E-commerce',
+        escritorios: 'Virtual Desktops',
+        ambientes: 'Hybrid environments',
+        analitica: 'Data Analytics',
+        desarrollo: 'Code without infrastructure',
+
+        migracion: 'Migration',
+        base: 'Database',
+        infraestructura: 'Server infrastructure',
+        recuperacion: 'Disaster recovery',
+
+        contactanos: 'Contact us',
+        language: 'Language',
+    },
+
     index: {
         metaTitle: "Home | Mxmart Solutions",
         metaDescription: 'We enhance the success of your company. Web development. Responsive web design. Online stores. Architecture, implementation and migration of cloud services.',
@@ -101,6 +137,56 @@ export default {
         caso6Tag2: 'WorkDocs', 
 
         scroll: '- Scroll to the right to view all case studies -',
+    },
+
+    nosotros: {
+        metaTitle: 'Nosotros | Mxmart Solutions',
+        metaDescription: 'Ofrecemos consultoría y soluciones eficaces que se adapten a la necesidades de las empresas, fomentando su crecimiento a través de nuestro equipo profesional con alta capacitación y experiencia.',
+
+        nosotrosTitle: 'About us',
+        nosotrosDescription: 'We boost your company success',
+
+        p1: 'We offer solutions that exceed the expectations and objectives of the companies thanks to our methods and strategies which we apply in each project.',
+        p2: 'Our mission at Mxmart is to offer effective and innovative consulting and solutions that adapt to the needs of companies, educational institutions, as well as other entities, promoting their growth and development through a professional team with high training and experience.',
+        p3: 'We have a professional team with more than 15 years of experience developing and implementing e-commerce systems such as Magento, PrestaShop and Shopify, as well as LMS systems such as Moodle and Chamilo, we also have the experience in implementations of WordPress, Drupal, among others, all these systems can be integrated into an ERP or the generation of custom systems, our advanced solutions allow us to make integrations or migrations of systems to the cloud or hybrid schemes.  ',
+
+        t1: 'We Are AWS Consulting Partners',
+        p4: 'As Amazon Web Services (AWS) Advanced Consulting Partner we have extensive experience implementing the AWS cloud and have the necessary certifications to be your strategic ally in the digital transformation of your company.',
+        p5: 'We specialize in the analysis, design, architecture, generation, implementation, migration of services in the cloud from Amazon Web Services (AWS), we handle advanced services for databases, Linux and Windows Server operating systems, active directory, security, always looking for the highest quality and professionalism.',
+
+        t2: 'AWS Recognitions',
+        p6: 'At the AWS Partner Summit 2022 Mexico event, we were pleasantly surprised with the AWS Public Sector Rising Star recognition, we are very grateful to have this valuable recognition that means a great achievement in Mxmart trajectory. This has been possible thanks to our wonderful team and all Mxmart customers, as well as the great support received from the AWS team.',
+
+        mision: 'Mission',
+        misionText: 'To offer effective and innovative consulting and solutions that adapt to the needs of companies, promoting their growth and development, through a professional team with high training and experience.',
+
+        vision: 'Vision',
+        visionText: 'Consolidate as a reference by offering a wide range of innovative products and services in technologies and their application in a wide range of areas, putting the experience of a great team of professionals at your service.',
+
+        valores: 'Values',
+        valores1: 'Quality',
+        valores2: 'Commitment',
+        valores3: 'Reliability',
+        valores4: 'Collaboration',
+        valores5: 'Continuity',
+
+        eLearning: 'E-Learning',
+        eCommerce: 'E-Commerce',
+        servicios: 'Advanced Services',
+
+        desarrollo: 'Development',
+        desarrollo1: 'Web',
+        desarrollo2: 'Mobile applications',
+
+        aws: 'Amazon Web Services AWS',
+        aws1: 'Migration',
+        aws2: 'Virtual Desktops',
+        aws3: 'Databases',
+        aws4: 'DRP',
+        aws5: 'Cloud configuration services',
+        aws6: 'Cybersecurity',
+
+        poliza: 'Service policies',
     },
 
     footer: {
