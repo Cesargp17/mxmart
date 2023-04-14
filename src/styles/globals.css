@@ -19,7 +19,7 @@ body {
 }
 
 .bg-home{
-  background-color: #282424;
+  background-color: rgb(23, 23, 23);
 }
 
 header {
@@ -45,14 +45,20 @@ header {
 }
 
 header.scroll_landing {
-  box-shadow: 0 2px 12px 0 rgb(36 50 66 / 8%);
-  background: #212121;
+  box-shadow: 0 2px 12px 0 rgb(23, 23, 23);
+  background: rgb(23, 23, 23);
   transition: ease-in-out 0.7s !important;
 }
 
 header.scroll, header.hover_scroll {
-  box-shadow: 0 2px 12px 0 rgb(36 50 66 / 8%);
+  box-shadow: 0 2px 12px 0 rgb(23, 23, 23);
   background: #212121;
+  transition: ease-in-out 0.7s !important;
+}
+
+.scroll-home {
+  box-shadow: 0 2px 12px 0 rgb(23, 23, 23) !important;
+  background: rgb(23, 23, 23) !important;
   transition: ease-in-out 0.7s !important;
 }
 
