@@ -2,18 +2,26 @@ import { PageLayout } from '@/components/layout/PageLayout'
 import { FrameworkContent } from '@/components/pages/FrameworkContent'
 import { FrameworkHeader } from '@/components/pages/FrameworkHeader'
 import { NavegacionBotones } from '@/components/pages/NavegacionBotones'
+import { LanguageContext } from '@/context/LanguageContext'
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 
 const FrameworkPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { framework } = useContext( LanguageContext );
+
   return (
-    <PageLayout title={'Framework | Mxmart Solutions'}>
+    <PageLayout 
+        title={ framework.metaTitle }
+        description={ framework.metaDescription }
+    >
 
         <FrameworkHeader 
             img={'/images/framework-page-image.png'} 
             pageNumber={ 1 }
-            title={'Framework de mxmart'}
-            subtitle={'Pilares fundamentales para proyectos tecnológicos'}
+            title={ framework.title }
+            subtitle={ framework.subtitle }
         />
 
         <div className="all-framework">
@@ -26,18 +34,18 @@ const FrameworkPage = () => {
 
                     <div className="main-framework-side-b">
                         <div className="framework-side-b-content">
-                            <h4>Marco general</h4>
-                            <p>Mxmart ha desarrollado un framework propio que le permite trabajar en múltiples proyectos tecnológicos con las mejores prácticas y metodologías, entregando así soluciones seguras, eficientes y optimizadas para su funcionamiento.
-                                <br/> <br/> Nuestro framework está conformado por seis pilares fundamentales, cada uno de ellos proporciona diferentes herramientas para asegurar un óptimo funcionamiento y solución en base a cada proyecto.
-                                <br/><strong>De click en cada uno de ellos para conocer más información:</strong></p>
-                            <p><strong>Pilares:</strong></p>
+                            <h4>{ framework.marco }</h4>
+                            <p> { framework.description } 
+                                <br/> <br/> { framework.description2 }
+                                <br/><strong>{ framework.masInformacion }</strong></p>
+                            <p><strong>{ framework.pilares }</strong></p>
                             <div className="framework-lista">
-                                <Link href='/framework-seguridad'>Seguridad, </Link>
-                                <Link href='./framework-arquitectura.html'>Arquitectura, </Link>
-                                <Link href='./framework-recuperacion-ante-desastres.html'>Recuperación ante desastres, </Link>
-                                <Link href='./framework-desarrollo.html'>Desarrollo, </Link>
-                                <Link href='./framework-automatizacion.html'>Automatización, </Link>
-                                <Link href='./framework-analitica-datos.html'>Analítica de datos</Link>
+                                <Link href='/framework-seguridad'>{ framework.pilar1 }</Link>
+                                <Link href='./framework-arquitectura.html'>{ framework.pilar2 }</Link>
+                                <Link href='./framework-recuperacion-ante-desastres.html'>{ framework.pilar3 }</Link>
+                                <Link href='./framework-desarrollo.html'>{ framework.pilar4 }</Link>
+                                <Link href='./framework-automatizacion.html'>{ framework.pilar5 }</Link>
+                                <Link href='./framework-analitica-datos.html'>{ framework.pilar6 }</Link>
                             </div>
 
                             <NavegacionBotones

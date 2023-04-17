@@ -189,6 +189,117 @@ export default {
         poliza: 'Service policies',
     },
 
+    framework: {
+        metaTitle: 'Framework | Mxmart Solutions',
+        metaDescription: 'Mxmart has developed a proprietary framework that allows you to work on multiple technology projects with the best practices and methodologies, thus delivering secure, efficient and optimized solutions for their operation.',
+
+        title: 'Mxmart Framework',
+        subtitle: 'Fundamental pillars for technology projects',
+
+        marco: 'General Framework',
+        description: 'Mxmart has developed a proprietary framework that allows you to work on multiple technology projects with the best practices and methodologies, thus delivering secure, efficient and optimized solutions for their operation.',
+        description2: 'Our framework is made up of six fundamental pillars, each one of them provides different tools to ensure an optimal performance and solution based on each project.',
+
+        masInformacion: 'Click on each of them to learn more information:',
+        pilares: 'Pilares:',
+        pilar1: 'Security ',
+        pilar2: 'Architecture ',
+        pilar3: 'Disaster Recovery ',
+        pilar4: 'Development ',
+        pilar5: 'Automation ',
+        pilar6: 'Sata Analytics ',
+
+        clickBold: 'Click on any section',
+        click: 'of the framework to see the corresponding information.',
+        buttonAnterior: 'Previous',
+        buttonSiguiente: 'Next',
+    },
+
+    frameworkSeguridad: {
+        metaTitle: 'Framework - Security | Mxmart Solutions',
+        metaDescription: 'Mxmart implements in its services and solutions different security layers, according to each project it is possible to increase the security levels, this is done through internal configurations of each technology, as well as with the support of the different security services offered by the AWS cloud.',
+
+        title: 'Security',
+        subtitle: 'Security services and working methodologies for technology projects',
+
+        title1: 'Security architectures and configurations',
+        description: 'Mxmart implements in its services and solutions different security layers, according to each project it is possible to increase the security levels, this is done through internal configurations of each technology, as well as with the support of the different security services offered by the AWS cloud.',
+    
+        title2: 'Scroll down to see all the categories and their most outstanding services:',
+
+        cat1: 'Identity and access management:',
+        cat2: 'Detection:',
+        cat3: 'Network and application protection:',
+        cat4: 'Data protection:',
+        cat5: 'Incident response:',
+        cat6: 'Compliance:',
+    },
+
+    frameworkArquitectura: {
+        metaTitle: 'Framework - Architecture | Mxmart Solutions',
+        metaDescription: 'Analysis, design, generation, configuration and tuning of architectures in AWS, designed for high availability and elasticity of services, offering resource optimization and can be implemented in different systems and web platforms, such as: Moodle, WordPress, Drupal, Laravel, Codelgniter to mention a few, as well as custom developments.',
+
+        title: 'Architecture',
+        subtitle: 'Construction of high-availability technological infrastructures',
+
+        title1: 'High Availability',
+        description: 'Analysis, design, generation, configuration and tuning of architectures in AWS, designed for high availability and elasticity of services, offering resource optimization and can be implemented in different systems and web platforms, such as: Moodle, WordPress, Drupal, Laravel, Codelgniter to mention a few, as well as custom developments.',
+        title2: 'Most outstanding services:',
+    },
+
+    frameworkDisasterRecovery: {
+        metaTitle: 'Framework - Disaster Recovery | Mxmart Solutions',
+        metaDescription: 'Generation of a technological infrastructure in the AWS cloud to provide continuity to the operation and technological processes of the company, performing a replication of the main systems and information of the client, thus ensuring continuity in the operation of the business in case of any contingency. There are different recovery options and response times, much depending on the RTO and RPO established by the institution.',
+
+        title: 'Disaster recovery',
+        subtitle: 'Business continuity and operation',
+
+        title1: 'Disaster Recovery (On premise/Cloud)',
+        description: 'Generation of a technological infrastructure in the AWS cloud to provide continuity to the operation and technological processes of the company, performing a replication of the main systems and information of the client, thus ensuring continuity in the operation of the business in case of any contingency. There are different recovery options and response times, much depending on the RTO and RPO established by the institution.',
+        title2: 'Most outstanding services:',
+    },
+
+    frameworkDevelopment: {
+        metaTitle: 'Framework - Development | Mxmart Solutions',
+        metaDescription: 'Methodologies and best practices for the integration of software development and enterprise IT operations. Part of the objectives is to streamline the process of building software development and provide continuous, quality delivery.',
+
+        title: 'Development',
+        subtitle: 'Best practices for IT development and operations.',
+
+        title1: 'DevOps',
+        description: 'Methodologies and best practices for the integration of software development and enterprise IT operations. Part of the objectives is to streamline the process of building software development and provide continuous, quality delivery.',
+        title2: 'Most outstanding services:',
+    },
+
+    frameworkAutomatizacion: {
+        metaTitle: 'Framework - Automation | Mxmart Solutions',
+        metaDescription: 'Generation of development stacks for the construction of technological infrastructure in the cloud based on programming code, among the main advantages is the generation of computer data center structures in just minutes, considerably reducing the time and costs of execution and configuration of multiple services and technological tools.',
+
+        title: 'Automation',
+        subtitle: 'Infrastructure as code',
+
+        title1: 'Infrastructure as code',
+        description: 'Generation of development stacks for the construction of technological infrastructure in the cloud based on programming code, among the main advantages is the generation of computer data center structures in just minutes, considerably reducing the time and costs of execution and configuration of multiple services and technological tools.',
+        title2: 'Most important services:',
+    },
+
+    frameworkAnalitica: {
+        metaTitle: 'Framework - Data Analytics | Mxmart Solutions',
+        metaDescription: 'Analyze all your data (real-time, historical, unstructured, structured, qualitative) to identify patterns and generate insights to inform and, in some cases, automate decisions, connecting intelligence and action.',
+
+        title: 'Data analytics',
+        subtitle: 'Generation of information from data',
+
+        title1: 'Data analytics',
+        description: 'Analyze all your data (real-time, historical, unstructured, structured, qualitative) to identify patterns and generate insights to inform and, in some cases, automate decisions, connecting intelligence and action.',
+        title2: 'Scroll down to be able to see all categories and their featured services:',
+
+        cat1: 'Analytics:',
+        cat2: 'Data migration:',
+        cat3: 'Data Lake:',
+        cat4: 'Predictive analytics and machine learning:',
+    },
+
     footer: {
         contactanos: 'Contact us',
         description: 'We would like to learn more about your company or institution and together define a solution that fits your needs, always looking for innovation.',

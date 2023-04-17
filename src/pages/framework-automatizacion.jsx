@@ -3,17 +3,25 @@ import { FrameworkArquitecturaImages } from '@/components/pages/FrameworkArquite
 import { FrameworkContent } from '@/components/pages/FrameworkContent'
 import { FrameworkHeader } from '@/components/pages/FrameworkHeader'
 import { NavegacionBotones } from '@/components/pages/NavegacionBotones'
-import React from 'react'
+import { LanguageContext } from '@/context/LanguageContext'
+import React, { useContext } from 'react'
 
 const FrameworkAutomatizacionPage = () => {
+
+      //Contexto que trae la logica para el sitio multidioma
+      const { frameworkAutomatizacion } = useContext( LanguageContext );
+
   return (
-    <PageLayout title={'Framework - Automatización | Mxmart Solutions'}>
+    <PageLayout 
+      title={ frameworkAutomatizacion.metaTitle }
+      description={ frameworkAutomatizacion.metaDescription }
+    >
 
         <FrameworkHeader
-            img={'images/framework-page-desarrollo-image.png'} 
+            img={'/images/framework-page-desarrollo-image.png'} 
             pageNumber={ 6 }
-            title={'Automatización'}
-            subtitle={'Infraestructura como código'}
+            title={ frameworkAutomatizacion.title }
+            subtitle={ frameworkAutomatizacion.subtitle }
         />
 
         <div className="all-framework">
@@ -26,9 +34,9 @@ const FrameworkAutomatizacionPage = () => {
 
                   <div className="main-framework-side-b">
                     <div className="framework-side-b-content">
-                        <h4>Infraestructura como código</h4>
-                        <p>Generación de stacks de desarrollo para la construcción de infraestructura tecnológica en la nube basados en código de programación, entre las principales ventajas se encuentra la generación de estructuras de centros de datos informáticos en tan sólo minutos, reduciendo considerablemente los tiempos y costos de ejecución y configuración de múltiples servicios y herramientas tecnológicas.</p>
-                        <h5>Servicios más importantes:</h5>
+                        <h4>{ frameworkAutomatizacion.title1 }</h4>
+                        <p>{ frameworkAutomatizacion.description }</p>
+                        <h5>{ frameworkAutomatizacion.title2 }</h5>
 
                       <div className="fs-center">
                         <div className="framework-servicios">

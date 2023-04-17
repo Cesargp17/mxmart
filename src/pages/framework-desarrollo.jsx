@@ -3,17 +3,25 @@ import { FrameworkArquitecturaImages } from '@/components/pages/FrameworkArquite
 import { FrameworkContent } from '@/components/pages/FrameworkContent'
 import { FrameworkHeader } from '@/components/pages/FrameworkHeader'
 import { NavegacionBotones } from '@/components/pages/NavegacionBotones'
-import React from 'react'
+import { LanguageContext } from '@/context/LanguageContext'
+import React, { useContext } from 'react'
 
 const FrameworkDesarrollo = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { frameworkDevelopment } = useContext( LanguageContext );
+
   return (
-    <PageLayout title={'Framework - Desarrollo | Mxmart Solutions'}>
+    <PageLayout 
+      title={ frameworkDevelopment.metaTitle }
+      description={ frameworkDevelopment.metaDescription }
+    >
 
         <FrameworkHeader
-            img={'images/framework-page-arquitectura-image.png'} 
+            img={'/images/framework-page-arquitectura-image.png'} 
             pageNumber={ 5 }
-            title={'Desarrollo'}
-            subtitle={'Mejores prácticas para desarrollo y operaciones de TI.'}
+            title={ frameworkDevelopment.title }
+            subtitle={ frameworkDevelopment.subtitle }
         />
 
           <div className="all-framework">
@@ -26,9 +34,9 @@ const FrameworkDesarrollo = () => {
 
                   <div className="main-framework-side-b">
                     <div className="framework-side-b-content">
-                      <h4>DevOps</h4>
-                      <p>Metodologías y mejores practicas para la integración del desarrollo de software y las operaciones de tecnológicas de la empresa. Parte de los objetivos es el agilizar el proceso de construcción del desarrollo de software y proporcionar una entrega continua y de calidad.</p>
-                      <h5>Servicios más destacados:</h5>
+                      <h4>{ frameworkDevelopment.title1 }</h4>
+                      <p>{ frameworkDevelopment.description }</p>
+                      <h5>{ frameworkDevelopment.title2 }</h5>
 
                       <div className="fs-center">
                         <div className="framework-servicios3">

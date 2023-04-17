@@ -9,7 +9,19 @@ export const LanguageProvider = ({ children }) => {
     const { locale } = useRouter();
     const language = locale === 'en' ? en : es;
     
-    const { index, footer, nosotros, navbar } = language;
+    const { 
+        index, 
+        footer, 
+        nosotros, 
+        framework, 
+        frameworkSeguridad, 
+        frameworkArquitectura, 
+        frameworkDisasterRecovery,
+        frameworkDevelopment,
+        frameworkAutomatizacion,
+        frameworkAnalitica,
+        navbar 
+      } = language;
 
   return (
     <LanguageContext.Provider value={{
@@ -17,6 +29,13 @@ export const LanguageProvider = ({ children }) => {
         index,
         footer,
         nosotros,
+        framework,
+        frameworkSeguridad,
+        frameworkArquitectura,
+        frameworkDevelopment,
+        frameworkAutomatizacion,
+        frameworkAnalitica,
+        frameworkDisasterRecovery,
         navbar,
 
         //Funciones

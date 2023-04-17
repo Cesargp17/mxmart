@@ -1,7 +1,11 @@
+import { LanguageContext } from '@/context/LanguageContext';
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 
 export const FrameworkContent = ({ classNameFramework }) => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { framework } = useContext( LanguageContext );
 
   return (
     <div className="main-framework-side-a">
@@ -61,7 +65,7 @@ export const FrameworkContent = ({ classNameFramework }) => {
             </div>
             <div className="framework-indicación">
                 <div className="framework-click"></div>
-                <p><strong>Da click en cualquier sección</strong> del framework para conocer su información correspondiente</p>
+                <p><strong>{ framework.clickBold }</strong> { framework.click }</p>
             </div>
         </div>
     </div>

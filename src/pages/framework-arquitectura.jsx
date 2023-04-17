@@ -3,17 +3,25 @@ import { FrameworkArquitecturaImages } from '@/components/pages/FrameworkArquite
 import { FrameworkContent } from '@/components/pages/FrameworkContent'
 import { FrameworkHeader } from '@/components/pages/FrameworkHeader'
 import { NavegacionBotones } from '@/components/pages/NavegacionBotones'
-import React from 'react'
+import { LanguageContext } from '@/context/LanguageContext'
+import React, { useContext } from 'react'
 
 const FrameworkArquitecturaPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { frameworkArquitectura } = useContext( LanguageContext );
+
   return (
-    <PageLayout title={'Framework - Arquitectura | Mxmart Solutions'}>
+    <PageLayout 
+        title={ frameworkArquitectura.metaTitle }
+        description={ frameworkArquitectura.metaDescription }
+    >
 
         <FrameworkHeader 
-            img={'images/framework-page-arquitectura-image.png'} 
+            img={'/images/framework-page-arquitectura-image.png'} 
             pageNumber={ 3 }
-            title={'Arquitectura'}
-            subtitle={'Construcción de infraestructuras tecnológicas en alta disponibilidad'}
+            title={ frameworkArquitectura.title }
+            subtitle={ frameworkArquitectura.subtitle }
         />
 
         <div className="all-framework">
@@ -26,9 +34,9 @@ const FrameworkArquitecturaPage = () => {
 
                     <div className="main-framework-side-b">
                         <div className="framework-side-b-content">
-                            <h4>Alta disponibilidad</h4>
-                            <p>Análisis, diseño, generación, configuración y puesta a punto de arquitecturas en AWS, diseñadas para alta disponibilidad y elasticidad de los servicios, ofreciendo optimización de los recursos y pudiéndose implementar en diferentes sistemas y plataformas web, como pudiera ser: Moodle, WordPress, Drupal, Laravel, Codelgniter por mencionar algunos, así como desarrollos realizados a la medida.</p>
-                            <h5>Servicios más destacados:</h5>
+                            <h4>{ frameworkArquitectura.title1 }</h4>
+                            <p>{ frameworkArquitectura.description }</p>
+                            <h5>{ frameworkArquitectura.title2 }</h5>
 
                             <div className="fs-center">
                                 <div className="framework-servicios3">

@@ -189,6 +189,117 @@ export default {
         poliza: 'Pólizas de servicios',
     },
 
+    framework: {
+        metaTitle: 'Framework | Mxmart Solutions',
+        metaDescription: 'Mxmart ha desarrollado un framework propio que le permite trabajar en múltiples proyectos tecnológicos con las mejores prácticas y metodologías, entregando así soluciones seguras, eficientes y optimizadas para su funcionamiento.',
+
+        title: 'Framework de mxmart',
+        subtitle: 'Pilares fundamentales para proyectos tecnológicos',
+
+        marco: 'Marco general',
+        description: 'Mxmart ha desarrollado un framework propio que le permite trabajar en múltiples proyectos tecnológicos con las mejores prácticas y metodologías, entregando así soluciones seguras, eficientes y optimizadas para su funcionamiento.',
+        description2: 'Nuestro framework está conformado por seis pilares fundamentales, cada uno de ellos proporciona diferentes herramientas para asegurar un óptimo funcionamiento y solución en base a cada proyecto.',
+
+        masInformacion: 'De click en cada uno de ellos para conocer más información:',
+        pilares: 'Pilares:',
+        pilar1: 'Seguridad ',
+        pilar2: 'Arquitectura ',
+        pilar3: 'Recuperación ante desastres ',
+        pilar4: 'Desarrollo ',
+        pilar5: 'Automatización ',
+        pilar6: 'Analítica de datos ',
+
+        clickBold: 'Da click en cualquier sección',
+        click: 'del framework para conocer su información correspondiente',
+        buttonAnterior: 'Anterior',
+        buttonSiguiente: 'Siguiente',
+    },
+
+    frameworkSeguridad: {
+        metaTitle: 'Framework - Seguridad | Mxmart Solutions',
+        metaDescription: 'Mxmart implementa en sus servicios y soluciones diferentes capas de seguridad, de acuerdo con cada proyecto es posible ir incrementando los niveles de seguridad, esto lo realizamos mediante configuraciones internas de cada tecnología, así como con el apoyo de los diferentes servicios de seguridad que nos ofrece la nube de AWS.',
+
+        title: 'Seguridad',
+        subtitle: 'Servicios de seguridad y metodologías de trabajo para proyectos tecnológicos',
+
+        title1: 'Arquitecturas y configuraciones de seguridad',
+        description: 'Mxmart implementa en sus servicios y soluciones diferentes capas de seguridad, de acuerdo con cada proyecto es posible ir incrementando los niveles de seguridad, esto lo realizamos mediante configuraciones internas de cada tecnología, así como con el apoyo de los diferentes servicios de seguridad que nos ofrece la nube de AWS.',
+    
+        title2: 'Desliza hacia abajo para poder ver todas las categorías y sus servicios más destacados:',
+
+        cat1: 'Gestión de identidad y acceso:',
+        cat2: 'Detección:',
+        cat3: 'Protección de red y aplicación:',
+        cat4: 'Protección de datos:',
+        cat5: 'Respuesta ante incidencias:',
+        cat6: 'Conformidad:',
+    },
+
+    frameworkArquitectura: {
+        metaTitle: 'Framework - Arquitectura | Mxmart Solutions',
+        metaDescription: 'Análisis, diseño, generación, configuración y puesta a punto de arquitecturas en AWS, diseñadas para alta disponibilidad y elasticidad de los servicios, ofreciendo optimización de los recursos y pudiéndose implementar en diferentes sistemas y plataformas web, como pudiera ser: Moodle, WordPress, Drupal, Laravel, Codelgniter por mencionar algunos, así como desarrollos realizados a la medida.',
+
+        title: 'Arquitectura',
+        subtitle: 'Construcción de infraestructuras tecnológicas en alta disponibilidad',
+
+        title1: 'Alta disponibilidad',
+        description: 'Análisis, diseño, generación, configuración y puesta a punto de arquitecturas en AWS, diseñadas para alta disponibilidad y elasticidad de los servicios, ofreciendo optimización de los recursos y pudiéndose implementar en diferentes sistemas y plataformas web, como pudiera ser: Moodle, WordPress, Drupal, Laravel, Codelgniter por mencionar algunos, así como desarrollos realizados a la medida.',
+        title2: 'Servicios más destacados:',
+    },
+
+    frameworkDisasterRecovery: {
+        metaTitle: 'Framework - Recuperación ante desastres | Mxmart Solutions',
+        metaDescription: 'Generación de una infraestructura tecnológica en la nube de AWS para dar continuidad a la operación y los procesos tecnológicos de la empresa, realizando una replicación de los principales sistemas e información del cliente, garantizando así una continuidad en la operación del negocio en caso de alguna contingencia. Existen diferentes opciones de recuperación y tiempos de respuesta, mucho dependiendo del RTO y RPO establecido por la institución.',
+
+        title: 'Recuperación ante desastres',
+        subtitle: 'Continuidad y operación del negocio',
+
+        title1: 'Recuperación ante desastres (On premise/Cloud)',
+        description: 'Generación de una infraestructura tecnológica en la nube de AWS para dar continuidad a la operación y los procesos tecnológicos de la empresa, realizando una replicación de los principales sistemas e información del cliente, garantizando así una continuidad en la operación del negocio en caso de alguna contingencia. Existen diferentes opciones de recuperación y tiempos de respuesta, mucho dependiendo del RTO y RPO establecido por la institución.',
+        title2: 'Servicios más destacados:',
+    },
+
+    frameworkDevelopment: {
+        metaTitle: 'Framework - Desarrollo | Mxmart Solutions',
+        metaDescription: 'Metodologías y mejores practicas para la integración del desarrollo de software y las operaciones de tecnológicas de la empresa. Parte de los objetivos es el agilizar el proceso de construcción del desarrollo de software y proporcionar una entrega continua y de calidad.',
+
+        title: 'Desarrollo',
+        subtitle: 'Mejores prácticas para desarrollo y operaciones de TI.',
+
+        title1: 'DevOps',
+        description: 'Metodologías y mejores practicas para la integración del desarrollo de software y las operaciones de tecnológicas de la empresa. Parte de los objetivos es el agilizar el proceso de construcción del desarrollo de software y proporcionar una entrega continua y de calidad.',
+        title2: 'Servicios más destacados:',
+    },
+
+    frameworkAutomatizacion: {
+        metaTitle: 'Framework - Automatización | Mxmart Solutions',
+        metaDescription: 'Generación de stacks de desarrollo para la construcción de infraestructura tecnológica en la nube basados en código de programación, entre las principales ventajas se encuentra la generación de estructuras de centros de datos informáticos en tan sólo minutos, reduciendo considerablemente los tiempos y costos de ejecución y configuración de múltiples servicios y herramientas tecnológicas.',
+
+        title: 'Automatización',
+        subtitle: 'Infraestructura como código',
+
+        title1: 'Infraestructura como código',
+        description: 'Generación de stacks de desarrollo para la construcción de infraestructura tecnológica en la nube basados en código de programación, entre las principales ventajas se encuentra la generación de estructuras de centros de datos informáticos en tan sólo minutos, reduciendo considerablemente los tiempos y costos de ejecución y configuración de múltiples servicios y herramientas tecnológicas.',
+        title2: 'Servicios más importantes:',
+    },
+
+    frameworkAnalitica: {
+        metaTitle: 'Framework - Analítica de datos | Mxmart Solutions',
+        metaDescription: 'Analizar todos sus datos (en tiempo real, históricos, no estructurados, estructurados, cualitativos) para identificar patrones y generar conocimientos para informar y, en algunos casos, automatizar decisiones, conectando la inteligencia y la acción.',
+
+        title: 'Analítica de datos',
+        subtitle: 'Generación de información a partir de los datos',
+
+        title1: 'Analítica de datos',
+        description: 'Analizar todos sus datos (en tiempo real, históricos, no estructurados, estructurados, cualitativos) para identificar patrones y generar conocimientos para informar y, en algunos casos, automatizar decisiones, conectando la inteligencia y la acción.',
+        title2: 'Desliza hacia abajo para poder ver todas las categorías y sus servicios más destacados:',
+
+        cat1: 'Análisis:',
+        cat2: 'Migración de datos:',
+        cat3: 'Lago de datos:',
+        cat4: 'Análisis predictivo y aprendizaje automático:',
+    },
+
     footer: {
         contactanos: 'Contactanos',
         description: 'Nos gustaría conocer más de su compañía o institución y juntos definir una solución que se adapte a sus necesidades, buscando siempre la innovación.',

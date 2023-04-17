@@ -5,8 +5,8 @@ export const FrameworkHeader = ({ img, pageNumber, title, subtitle }) => {
   return (
     <div className="framework-png-bkg" data-rv-view="100" style={{backgroundImage: `url( ${ img } )`}}>
         <div className="framework-title">
-            <h2>{ title }</h2>
-            <p>{ subtitle }</p> 
+            <h1>{ title }</h1>
+            <h2>{ subtitle }</h2> 
         </div>
 
         <div className="framework-paginas">

@@ -3,17 +3,25 @@ import { FrameworkArquitecturaImages } from '@/components/pages/FrameworkArquite
 import { FrameworkContent } from '@/components/pages/FrameworkContent'
 import { FrameworkHeader } from '@/components/pages/FrameworkHeader'
 import { NavegacionBotones } from '@/components/pages/NavegacionBotones'
-import React from 'react'
+import { LanguageContext } from '@/context/LanguageContext'
+import React, { useContext } from 'react'
 
 const FrameworkRecuperacionPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { frameworkDisasterRecovery } = useContext( LanguageContext );
+
   return (
-    <PageLayout title={'Framework - Recuperación ante desastres | Mxmart Solutions'}>
+    <PageLayout 
+        title={ frameworkDisasterRecovery.metaTitle }
+        description={ frameworkDisasterRecovery.metaDescription }
+    >
 
         <FrameworkHeader 
-            img={'images/framework-page-arquitectura-image.png'} 
+            img={'/images/framework-page-arquitectura-image.png'} 
             pageNumber={ 4 }
-            title={'Recuperación ante desastres'}
-            subtitle={'Continuidad y operación del negocio'}
+            title={ frameworkDisasterRecovery.title }
+            subtitle={ frameworkDisasterRecovery.subtitle }
         />
 
         <div className="all-framework">
@@ -26,10 +34,9 @@ const FrameworkRecuperacionPage = () => {
                 
                 <div className="main-framework-side-b">
                     <div className="framework-side-b-content">
-                            <h4>Recuperación ante desastres (On premise/Cloud)</h4>
-                            <p>Generación de una infraestructura tecnológica en la nube de AWS para dar continuidad a la operación y los procesos tecnológicos de la empresa, realizando una replicación de los principales sistemas e información del cliente, garantizando así una continuidad en la operación del negocio en caso de alguna contingencia.
-                                Existen diferentes opciones de recuperación y tiempos de respuesta, mucho dependiendo del RTO y RPO establecido por la institución.</p>
-                            <h5>Servicios más destacados:</h5>
+                            <h4>{ frameworkDisasterRecovery.title1 }</h4>
+                            <p>{ frameworkDisasterRecovery.description }</p>
+                            <h5>{ frameworkDisasterRecovery.title2 }</h5>
 
                             <div className="fs-center">
                                 <div className="framework-servicios2">

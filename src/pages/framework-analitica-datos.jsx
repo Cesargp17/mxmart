@@ -3,17 +3,25 @@ import { FrameworkContent } from '@/components/pages/FrameworkContent'
 import { FrameworkHeader } from '@/components/pages/FrameworkHeader'
 import { FrameworkSeguridadImages } from '@/components/pages/FrameworkSeguridadImages'
 import { NavegacionBotones } from '@/components/pages/NavegacionBotones'
-import React from 'react'
+import { LanguageContext } from '@/context/LanguageContext'
+import React, { useContext } from 'react'
 
 const FrameworkAnaliticaPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { frameworkAnalitica } = useContext( LanguageContext );
+
   return (
-    <PageLayout title={'Framework - Analítica de datos | Mxmart Solutions'}>
+    <PageLayout 
+        title={ frameworkAnalitica.metaTitle }
+        description={ frameworkAnalitica.metaDescription }
+    >
 
         <FrameworkHeader
-            img={'images/framework-page-analitica-datos-image.png'} 
+            img={'/images/framework-page-analitica-datos-image.png'} 
             pageNumber={ 7 }
-            title={'Analítica de datos'}
-            subtitle={'Generación de información a partir de los datos'}
+            title={ frameworkAnalitica.title }
+            subtitle={ frameworkAnalitica.subtitle }
         />
 
         <div className="all-framework">
@@ -26,12 +34,12 @@ const FrameworkAnaliticaPage = () => {
 
                 <div className="main-framework-side-b">
                     <div className="framework-side-b-content">
-                        <h4>Analítica de datos</h4>
-                        <p>Analizar todos sus datos (en tiempo real, históricos, no estructurados, estructurados, cualitativos) para identificar patrones y generar conocimientos para informar y, en algunos casos, automatizar decisiones, conectando la inteligencia y la acción.</p>
-                        <h5>Desliza hacia abajo para poder ver todas las categorías y sus servicios más destacados:</h5>
+                        <h4>{ frameworkAnalitica.title1 }</h4>
+                        <p>{ frameworkAnalitica.description }</p>
+                        <h5>{ frameworkAnalitica.title2 }</h5>
 
                         <FrameworkSeguridadImages
-                            title={'Análisis:'}
+                            title={ frameworkAnalitica.cat1 }
                             p1={'Amazon'}
                             p2={'Athena'}
                             p3={'Amazon Redshift'}
@@ -42,7 +50,7 @@ const FrameworkAnaliticaPage = () => {
                         />
 
                         <FrameworkSeguridadImages
-                            title={'Migración de datos:'}
+                            title={ frameworkAnalitica.cat2 }
                             p1={'AWS'}
                             p2={'Glue'}
                             p3={'Amazon'}
@@ -54,7 +62,7 @@ const FrameworkAnaliticaPage = () => {
                         />
 
                         <FrameworkSeguridadImages
-                            title={'Lago de datos:'}
+                            title={ frameworkAnalitica.cat3 }
                             p1={'Amazon'}
                             p2={'S3'}
                             p3={'AWS Lake Formation'}
@@ -66,7 +74,7 @@ const FrameworkAnaliticaPage = () => {
                         />
 
                         <FrameworkSeguridadImages
-                            title={'Análisis predictivo y aprendizaje automático:'}
+                            title={ frameworkAnalitica.cat4 }
                             p1={'AMI de aprendizaje profundo (EC2)'}
                             p3={'Amazon SageMaker'}
                             img1={'/images/Icon-AMI-Aprendizaje-Profundo.png'}
