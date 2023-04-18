@@ -300,6 +300,61 @@ export default {
         cat4: 'Análisis predictivo y aprendizaje automático:',
     },
 
+    recursos: {
+        metaTitle: 'Recursos | Mxmart Solutions',
+        metaDescription: 'Ofrecemos consultoría y soluciones eficaces que se adapten a la necesidades de las empresas, fomentando su crecimiento a través de nuestro equipo profesional con alta capacitación y experiencia.',
+
+        title: 'Recursos',
+        subtitle: 'Potenciamos el éxito de su empresa',
+
+        title1: 'Pasos para Migración a la nube',
+        t1p1: 'La migración a Amazon Web Services (AWS) permite a las organizaciones transformar la manera en la que hacen negocios al permitirles acelerar su velocidad para hacer negocios, librándolos de las restricciones de los centros de datos en sitio y ofreciendo la flexibilidad de pagar únicamente por lo que usan.',
+        t1p2: 'Este libro electrónico detallará cómo la adopción de la nube puede ofrecer importantes beneficios empresariales.',
+        
+        title2: 'Educación en la nube',
+        t2p1: 'Conoce como optimizar la eficiencia operativa en AWS',
+
+        title3: 'LMS para tu Institución',
+        t3p1: 'Conoce que es un LMS y las soluciones que te pueden ayudan a optimizarlo.',
+
+        button: 'Descargar',
+
+        footerTitle: 'Descargar gratis',
+        footerDescription: 'Completa el siguiente formulario para recibir el material',
+        eBookTitle: 'Seleccione el Ebook que desea descargar',
+        book1: 'Pasos para Migración a la nube',
+        book2: 'Educación en la nube',
+        book3: 'LMS para tu Institución',
+
+        nombre: 'Nombre*',
+        telefono: 'Teléfono',
+        email: 'Email',
+        empresa: 'Empresa',
+
+        casosExito: 'CASOS DE EXITO',
+        partners: 'PARTNERS',
+        privacy: 'Política de privacidad y cookies',
+
+        emailError: 'El email no es valido',
+        fieldsError: 'Por favor llene todos los campos',
+    },
+
+    vacantes: {
+        metaTitle: 'Trabaja con nosotros | Mxmart Solutions',
+        metaDescription: 'Únete a nuestro equipo, Descubre nuestras vacantes disponibles',
+
+        title: 'Únete a nuestro equipo',
+        subtitle: 'Descubre nuestras vacantes disponibles',
+
+        title2: 'Oportunidades:',
+
+        op1Title: 'Desarrollador de software',
+        op1Description: 'Ver más información',
+        
+        op2Title: 'Ingeniero de preventa TI',
+        op2Description: 'Ver más información',
+    },
+
     footer: {
         contactanos: 'Contactanos',
         description: 'Nos gustaría conocer más de su compañía o institución y juntos definir una solución que se adapte a sus necesidades, buscando siempre la innovación.',

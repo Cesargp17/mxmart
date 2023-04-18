@@ -20,6 +20,8 @@ export const LanguageProvider = ({ children }) => {
         frameworkDevelopment,
         frameworkAutomatizacion,
         frameworkAnalitica,
+        recursos,
+        vacantes,
         navbar 
       } = language;
 
@@ -36,6 +38,8 @@ export const LanguageProvider = ({ children }) => {
         frameworkAutomatizacion,
         frameworkAnalitica,
         frameworkDisasterRecovery,
+        recursos,
+        vacantes,
         navbar,
 
         //Funciones

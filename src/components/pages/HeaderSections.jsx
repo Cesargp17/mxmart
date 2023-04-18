@@ -19,7 +19,7 @@ export const HeaderSections = ({ portada, titulo, titulo2, descripcion, isDiffer
        ) : (
         <div className="vacantes-bkg" data-rv-view="100" style={{backgroundImage: `url(${ portada })`}}>
             <div className="vacantes-title text-center">
-                <h1 className='text-white' style={{marginBottom: '20px', fontSize: '36px'}}>{ titulo } { titulo2 ? <br /> : null } { titulo2 ? titulo2 : null }</h1>
+                <h1 className='text-white font-medium' style={{fontSize: '36px'}}>{ titulo } { titulo2 ? <br /> : null } { titulo2 ? titulo2 : null }</h1>
                 <h2>{ descripcion }</h2> 
             </div>
         </div>

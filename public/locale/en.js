@@ -300,6 +300,61 @@ export default {
         cat4: 'Predictive analytics and machine learning:',
     },
 
+    recursos: {
+        metaTitle: 'Resources | Mxmart Solutions',
+        metaDescription: 'We offer consultancy and effective solutions that adapt to the needs of companies, promoting their growth through our highly trained and experienced professional team.',
+
+        title: 'Resources',
+        subtitle: 'Empowering Your Business Successa',
+
+        title1: 'Steps to Migrate to the Cloud',
+        t1p1: 'Migrating to Amazon Web Services (AWS) enables organizations to transform the way they do business by allowing them to accelerate their speed to do business, freeing them from the constraints of on-premises data centers, and offering the flexibility to pay only for what they use.',
+        t1p2: '',
+        
+        title2: 'Cloud Education',
+        t2p1: 'Learn how to optimize operational efficiency on AWS.',
+
+        title3: 'LMS for Your Institution',
+        t3p1: 'Learn what an LMS is and the solutions that can help you optimize it.',
+
+        button: 'Download',
+
+        footerTitle: 'Free Download',
+        footerDescription: 'Complete the form below to receive the material',
+        eBookTitle: 'Select the Ebook you would like to download',
+        book1: 'Steps to Migrate to the cloud',
+        book2: 'Cloud Education',
+        book3: 'LMS for Your Institution',
+
+        nombre: 'Name*',
+        telefono: 'Phone number',
+        email: 'Email',
+        empresa: 'Company',
+
+        casosExito: 'CASE STUDIES',
+        partners: 'PARTNERS',
+        privacy: 'Privacy and Cookie Policy',
+
+        emailError: 'The email is not valid',
+        fieldsError: 'Please fill all fields',
+    },
+
+    vacantes: {
+        metaTitle: 'Work with us | Mxmart Solutionss',
+        metaDescription: 'Join our team, Discover our available vacancies',
+
+        title: 'Join our team',
+        subtitle: 'Discover our available vacancies',
+
+        title2: 'Job opportunities:',
+
+        op1Title: 'Software developer',
+        op1Description: 'See more information',
+
+        op2Title: 'IT Presales Engineer',
+        op2Description: 'See more information',
+    },
+
     footer: {
         contactanos: 'Contact us',
         description: 'We would like to learn more about your company or institution and together define a solution that fits your needs, always looking for innovation.',
