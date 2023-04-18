@@ -28,7 +28,8 @@ const { index } = useContext( LanguageContext );
             </div>
         </div>
         <video className='video' autoPlay muted loop id="video_bg">
-            <source src="https://mxmartsolutions.com/assets/images/BKG_Index_05.mp4" type="video/mp4" />
+            {/* <source src="https://mxmartsolutions.com/assets/images/BKG_Index_05.mp4" type="video/mp4" /> */}
+            <source src="/videos/video.mp4" type="video/mp4" />
         </video>
     </section>
 {/* <section>
