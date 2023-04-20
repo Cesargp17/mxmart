@@ -7,7 +7,7 @@ export const HeaderSections = ({ portada, titulo, titulo2, descripcion, isDiffer
        isDifferent === false
        ? (
         <div>
-            <section style={{backgroundImage: `url(${ portada })`, paddingTop: '120px', paddingBottom: '80px'}}>
+            <section className='h-[430px]' style={{backgroundImage: `url(${ portada })`, paddingTop: '120px', paddingBottom: '80px'}}>
                 <div style={{opacity: '0', backgroundColor: 'rgb(32, 99, 138)'}}></div>
                     <div style={{ textAlign: 'center', fontFamily: 'Montserrat, sans-serif' }} className="montserrat col-md-8 col-md-offset-2 text-xs-center">
                         <h1 className='text-white' style={{marginBottom: '20px', fontSize: '48px'}}>{ titulo } { titulo2 ? <br /> : null } { titulo2 ? titulo2 : null }</h1>

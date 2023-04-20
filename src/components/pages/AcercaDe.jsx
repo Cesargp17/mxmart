@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const AcercaDe = ({ img, title, subtitle, width = 'w-[344px]', height = 'h-[144px]' }) => {
+export const AcercaDe = ({ img, title, subtitle, width = 'w-[380px]', height = 'h-[200px]' }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between p-5">
         <div className="flex flex-col lg:flex-row items-center">    
             <img
             src={ img }
-            className={`${ width } ${ height } mt-10 mx-auto border border-gray-300 bg-gray-50 ms-20 mr-20`}
+            className={`${ width } ${ height } mt-10 mx-auto border border-gray-300 bg-gray-50 ms-20 mr-4`}
             />
 
         <div className="flex flex-col">

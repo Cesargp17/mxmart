@@ -60,12 +60,13 @@ const HomePage = () => {
 
     //Arreglo que mapea los casos de estudio
     const casosEstudio = [
-        { id: 1, title: index.caso1Title, description: index.caso1Description, tags: [ index.caso1Tag1, index.caso1Tag2 ] },
-        { id: 2, title: index.caso2Title, description: index.caso2Description, tags: [ index.caso2Tag1, index.caso2Tag2 ] },
-        { id: 3, title: index.caso3Title, description: index.caso3Description, tags: [ index.caso3Tag1, index.caso3Tag2 ] },
-        { id: 4, title: index.caso4Title, description: index.caso4Description, tags: [ index.caso4Tag1, index.caso4Tag2 ] },
-        { id: 5, title: index.caso5Title, description: index.caso5Description, tags: [ index.caso5Tag1, index.caso5Tag2 ] },
-        { id: 6, title: index.caso6Title, description: index.caso6Description, tags: [ index.caso6Tag1, index.caso6Tag2 ] },
+        { id: 1, title: index.caso7Title, description: index.caso7Description, tags: [ index.caso7Tag1, index.caso7Tag2, index.caso7Tag3 ] },
+        { id: 2, title: index.caso1Title, description: index.caso1Description, tags: [ index.caso1Tag1, index.caso1Tag2 ] },
+        { id: 3, title: index.caso2Title, description: index.caso2Description, tags: [ index.caso2Tag1, index.caso2Tag2 ] },
+        { id: 4, title: index.caso3Title, description: index.caso3Description, tags: [ index.caso3Tag1, index.caso3Tag2 ] },
+        { id: 5, title: index.caso4Title, description: index.caso4Description, tags: [ index.caso4Tag1, index.caso4Tag2 ] },
+        { id: 6, title: index.caso5Title, description: index.caso5Description, tags: [ index.caso5Tag1, index.caso5Tag2 ] },
+        { id: 7, title: index.caso6Title, description: index.caso6Description, tags: [ index.caso6Tag1, index.caso6Tag2 ] },
     ];
 
     //Este useState guarda el valor de la variable para los elementos dinamicos

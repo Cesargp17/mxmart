@@ -22,6 +22,16 @@ export const LanguageProvider = ({ children }) => {
         frameworkAnalitica,
         recursos,
         vacantes,
+        desarrollador,
+        preventa,
+        educacion,
+        assesment,
+        modernizacion,
+        aplicaciones,
+        poliza,
+        eLearning,
+        eCommerce,
+        casoMxmart,
         navbar 
       } = language;
 
@@ -40,6 +50,16 @@ export const LanguageProvider = ({ children }) => {
         frameworkDisasterRecovery,
         recursos,
         vacantes,
+        desarrollador,
+        preventa,
+        educacion,
+        assesment,
+        modernizacion,
+        aplicaciones,
+        poliza,
+        eLearning,
+        eCommerce,
+        casoMxmart,
         navbar,
 
         //Funciones

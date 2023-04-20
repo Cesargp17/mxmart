@@ -29,7 +29,7 @@ const NosotrosPage = () => {
                     <iframe
                         src={'https://www.youtube.com/embed/MUdErMRBh2k'}
                         allowFullScreen
-                        className='lg:w-96 lg:h-56'
+                        className='lg:w-[550px] lg:h-[300px]'
                     />
                 </div>
                 <p className="p-8 text-gray-900 text-lg">
@@ -58,20 +58,28 @@ const NosotrosPage = () => {
                     alt='Mxmart Solutions Public Sector Partner'
                     width={500}
                     height={168}
+                    className='lg:p-0 p-8'
                 />
             </div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-between mt-4">
-                <Image
-                    src='/images/Certificaciones.png'
-                    alt='Mxmart Solutions Certificaciones'
-                    width={400}
-                    height={265}
-                />
-                <p className="p-8 text-gray-900 text-lg">
-                { nosotros.p5 }
-                </p>
+            <div className="flex flex-col lg:flex-row items-center justify-between mt-4">
+                <div className="flex flex-col lg:flex-row">
+                    <div className="lg:order-1 order-2 w-full lg:p-0 p-8">
+                    <Image
+                        src='/images/Certificaciones.png'
+                        alt='Mxmart Solutions Certificaciones'
+                        width={400}
+                        height={265}
+                    />
+                    </div>
+                    <div className='max-w-[650px] lg:order-2'>
+                    <p className="p-8 text-gray-900 text-lg">
+                        { nosotros.p5 }
+                    </p>
+                    </div>
+                </div>
             </div>
+
             
             <div className="flex flex-col lg:flex-row items-center justify-between mt-4 mb-40">
                 <p className="p-8 text-gray-900 text-lg">

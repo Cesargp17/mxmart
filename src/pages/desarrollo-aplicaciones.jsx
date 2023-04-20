@@ -1,53 +1,61 @@
 import { PageLayout } from '@/components/layout/PageLayout'
 import { HeaderSections } from '@/components/pages/HeaderSections'
-import React from 'react'
+import { LanguageContext } from '@/context/LanguageContext';
+import React, { useContext } from 'react'
 
 const DesarrolloAppsPage = () => {
 
+    //Contexto que trae la logica para el sitio multidioma
+    const { aplicaciones } = useContext( LanguageContext );
+
+    //Arreglo que mapea los items de casos de uso
     const items = [
-        { id: 1, title: 'Serverless', icon: 'fa fa-cloud' },
-        { id: 2, title: 'Refactorización', icon: 'fa fa-code' },
+        { id: 1, title: aplicaciones.caso1, icon: 'fa fa-cloud' },
+        { id: 2, title: aplicaciones.caso2, icon: 'fa fa-code' },
     ];
 
   return (
-    <PageLayout title={'Desarrollo de aplicaciones modernas | Mxmart Solutions'}>
+    <PageLayout 
+        title={ aplicaciones.metaTitle }
+        description={ aplicaciones.metaDescription }
+    >
 
     <HeaderSections
         portada={'/images/Desarrollo-aplicaciones.png'}
-        titulo={'Desarrollo de aplicaciones'}
-        titulo2={' modernas'}
-        texto3={'Potenciamos el éxito de su empresa'}
+        titulo={ aplicaciones.title }
+        titulo2={ aplicaciones.title2 }
+        texto3={ aplicaciones.subtitle }
     />
 
     <div className="flex justify-center bg-white">
         <div className="container max-w-6xl mb-20 mt-20">
 
         <p className='p-4'>
-            Análisis, diseño, generación y puesta a punto de nuevas aplicaciones o integración de aplicaciones existentes, esto con la finalidad de construir soluciones seguras, con nuevas tecnologías, eficientes, en microservicios, pudiendo vivir en infraestructura tradicional, contenedores o servicios serverless en la nube de AWS.
+            { aplicaciones.description }
         </p>
 
         <div className='flex flex-col lg:flex-row grid grid-cols-1 lg:grid-cols-2 mt-20 items-center'>
             <div className='border-r border-solid border-gray pl-4'>
-                <h3 className='text-center text-2xl mb-4'>Ventajas del desarrollo de aplicaciones modernas</h3>
+                <h3 className='text-center text-2xl mb-4'>{ aplicaciones.title3 }</h3>
 
                 <ul className='ms-10 mt-6 list-disc p-10 lg:mb-40'>
-                    <li className='text-lg'>Recuperación de inversión en menor tiempo</li>
-                    <li className='text-lg'>Desarrollo ágil</li>
-                    <li className='text-lg'>Escalabilidad</li>
-                    <li className='text-lg'>Seguridad</li>
+                    <li className='text-lg'>{ aplicaciones.d1 }</li>
+                    <li className='text-lg'>{ aplicaciones.d2 }</li>
+                    <li className='text-lg'>{ aplicaciones.d3 }</li>
+                    <li className='text-lg'>{ aplicaciones.d4 }</li>
                 </ul>
             </div>
 
             <hr className='transform mb-10 mt-10 lg:mb-0 lg:mt-0 rotate-0 lg:rotate-90 lg:hidden' />
             
             <div className='mx-auto'>
-                <h3 className='text-center text-2xl mb-4'>Framework utilizado</h3>
+                <h3 className='text-center text-2xl mb-4'>{ aplicaciones.title4 }</h3>
 
                 <img src="/images/Framework-01_1.png" width='400px' alt="" />
             </div>
         </div>
 
-        <h3 className='text-center text-3xl mb-6 mt-20'>Casos de uso</h3>
+        <h3 className='text-center text-3xl mb-6 mt-20'>{ aplicaciones.casos }</h3>
 
         <div className="flex flex-col lg:flex-row grid grid-cols-1 lg:grid-cols-2 mt-10">
             {

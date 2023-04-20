@@ -1249,28 +1249,32 @@ header.scroll .svg-menu-toggle, header.hover_scroll .svg-menu-toggle {
 }
 
 #main_g .content .card_case:first-child {
-  background-image: url('/images/creson_case.png');
+  background-image: url('/images/erbessd_case.png');
 }
 
 #main_g .content .card_case:nth-child(2n) {
-  background-image: url('/images/unicla_case.png');
+  background-image: url('/images/creson_case.png');
 }
 
 #main_g .content .card_case:nth-child(3n) {
-  background-image: url('/images/univa_case.png');
+  background-image: url('/images/unicla_case.png');
   background-position-x: 460px;
 }
 
 #main_g .content .card_case:nth-child(4n) {
-  background-image: url('/images/IEU_case.png');
+  background-image: url('/images/univa_case.png');
   background-position-x: 435px;
 }
 
 #main_g .content .card_case:nth-child(5n) {
-  background-image: url('/images/finec_case.png');
+  background-image: url('/images/IEU_case.png');
 }
 
 #main_g .content .card_case:nth-child(6n) {
+  background-image: url('/images/finec_case.png');
+}
+
+#main_g .content .card_case:nth-child(7n) {
   background-image: url('/images/mxmart_case.png');
 }
 
@@ -4059,5 +4063,6 @@ section {
 }
 
 /* MBR */
+
 
 
