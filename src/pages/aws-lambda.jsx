@@ -1,23 +1,32 @@
 import { PageLayout } from '@/components/layout/PageLayout'
 import { HeaderSections } from '@/components/pages/HeaderSections'
+import { LanguageContext } from '@/context/LanguageContext';
 import Link from 'next/link'
-import React from 'react'
-
-const items = [
-    { id: 1, title: 'Procesar datos a escala', icon: 'fa fa-expand' },
-    { id: 2, title: 'Aplicaciones basadas en eventos', icon: 'fa fa-code' },
-    { id: 3, title: 'Backends para IoT y backends móviles', icon: 'fas fa-database' },
-    { id: 4, title: 'Procesamiento de transmisiones', icon: 'fas fa-signal' },
-];
+import React, { useContext } from 'react'
 
 const LambdaPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { lambda } = useContext( LanguageContext );
+
+    //arreglo que sirve para mapear los elementos de la seccion casos de uso mas comunes
+    const items = [
+        { id: 1, title: lambda.c1, icon: 'fa fa-expand' },
+        { id: 2, title: lambda.c2, icon: 'fa fa-code' },
+        { id: 3, title: lambda.c3, icon: 'fas fa-database' },
+        { id: 4, title: lambda.c4, icon: 'fas fa-signal' },
+    ];
+
   return (
-    <PageLayout title={'AWS Lambda | Mxmart Solutions'}>
+    <PageLayout 
+        title={ lambda.metaTitle }
+        description={ lambda.metaDescription }
+    >
 
     <HeaderSections
         portada={'/images/lambda_bg.png'}
-        titulo={'AWS Lambda'}
-        texto3={'Ejecute código sin pensar en la infraestructura'}
+        titulo={ lambda.title }
+        texto3={ lambda.subtitle }
     />
 
     <div className="flex justify-center bg-white">
@@ -25,9 +34,9 @@ const LambdaPage = () => {
 
             <div className="flex flex-col lg:flex-row items-center justify-center mx-auto">
                 <div className="flex flex-col">
-                    <h3 className='font-normal text-3xl ms-10'>Acerca de nosotros</h3>
+                    <h3 className='font-normal text-3xl ms-10'>{ lambda.acerca }</h3>
                     <p className="p-8 text-gray-900 text-lg">
-                    En Mxmart somos socios nivel "Advanced" de Amazon Web Services y contamos con la especialidad en servicios de informática sin servidor con el Service Delivery Program (SDP) de AWS Lambda. Esto nos permite brindar las mejores soluciones relacionadas a la informática sin servidores.
+                    { lambda.description }
                     </p>
                 </div>
                 <img
@@ -36,36 +45,36 @@ const LambdaPage = () => {
                 />
             </div>
 
-            <h3 className='font-normal text-3xl ms-10 mt-20'>AWS Lambda</h3>
+            <h3 className='font-normal text-3xl ms-10 mt-20'>{ lambda.title2 }</h3>
             <p className="p-8 text-gray-900 text-lg">
-            Lambda es un servicio informático que permite ejecutar código sin aprovisionar ni administrar servidores. Lambda ejecuta el código en una infraestructura de computación de alta disponibilidad y realiza todas las tareas de administración de los recursos de computación, incluido el mantenimiento del servidor y del sistema operativo, el aprovisionamiento de capacidad y el escalado automático, así como las funciones de registro. Con Lambda, puede ejecutar código para prácticamente cualquier tipo de aplicación o servicio de backend.
+            { lambda.description2 }
             </p>
-            <Link className='text-sky-600 ms-8' href={'https://aws.amazon.com/es/lambda/'} target='_blank'>Conocer más acerca de AWS Lambda</Link>
+            <Link className='text-sky-600 ms-8' href={'https://aws.amazon.com/es/lambda/'} target='_blank'>{ lambda.link }</Link>
 
             <div className='flex flex-col lg:flex-row grid grid-cols-1 lg:grid-cols-2 mt-20 items-center'>
             <div className='border-r border-solid border-gray pl-4'>
-                <h3 className='text-center text-2xl mb-4'>Ventajas de la informática sin servidores</h3>
+                <h3 className='text-center text-2xl mb-4'>{ lambda.title3 }</h3>
 
                 <ul className='ms-10 mt-6 list-disc p-10'>
-                    <li className='text-lg'>Nula administración de la infraestructura</li>
-                    <li className='text-lg'>Automatización</li>
-                    <li className='text-lg'>Ahorro en costos</li>
-                    <li className="text-lg">Recuperación ante desastres</li>
-                    <li className="text-lg">Escabilidad</li>
-                    <li className="text-lg">Optimización</li>
+                    <li className='text-lg'>{ lambda.v1 }</li>
+                    <li className='text-lg'>{ lambda.v2 }</li>
+                    <li className='text-lg'>{ lambda.v3 }</li>
+                    <li className="text-lg">{ lambda.v4 }</li>
+                    <li className="text-lg">{ lambda.v5 }</li>
+                    <li className="text-lg">{ lambda.v6 }</li>
                 </ul>
             </div>
 
             <hr className='transform mb-10 mt-10 lg:mb-0 lg:mt-0 rotate-0 lg:rotate-90 lg:hidden' />
             
             <div className='mx-auto'>
-                <h3 className='text-center text-2xl mb-4'>Framework utilizado</h3>
+                <h3 className='text-center text-2xl mb-4'>{ lambda.title4 }</h3>
 
                 <img src="/images/Framework-03_1.png" width='400px' alt="" />
             </div>
         </div>
 
-        <h3 className='text-center text-3xl mb-6 mt-20'>Casos de uso más comunes</h3>
+        <h3 className='text-center text-3xl mb-6 mt-20'>{ lambda.title5 }</h3>
 
         <div className="flex flex-col lg:flex-row grid grid-cols-1 lg:grid-cols-4 mt-10 gap-4 mb-20">
             {
@@ -78,7 +87,7 @@ const LambdaPage = () => {
             }
         </div>
 
-        <h3 className='text-center text-3xl mb-6 mt-20 mb-12'>Caso de éxito</h3>
+        <h3 className='text-center text-3xl mb-6 mt-20 mb-12'>{ lambda.title6 }</h3>
 
         <hr className='mt-10 mb-10' />
 
@@ -89,9 +98,9 @@ const LambdaPage = () => {
                     </Link>
                     <div className="p-5">
                         <Link href="/caso-de-estudio-ieu">
-                            <h5 className="text-sky-900 font-bold text-md tracking-tight mb-2">Campus Online basado en AWS</h5>
+                            <h5 className="text-sky-900 font-bold text-md tracking-tight mb-2">{ lambda.card1Title }</h5>
                         </Link>
-                        <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">IEU necesitaba dar continuidad al plan de estudios a sus alumnos y docentes de manera virtual, así como entregar una plataforma...</p>
+                        <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">{ lambda.card1Description }</p>
                     </div>
                 </div>
             <div className="bg-white shadow-md border border-gray-200 rounded-lg w-80 min-h-full mx-auto">
@@ -100,9 +109,9 @@ const LambdaPage = () => {
                 </Link>
                 <div className="p-5">
                     <Link href="/caso-de-estudio-erbessd">
-                        <h5 className="text-sky-900 font-bold text-md tracking-tight mb-2">Replicación y Retención de Amazon WorkDocs</h5>
+                        <h5 className="text-sky-900 font-bold text-md tracking-tight mb-2">{ lambda.card2Title }</h5>
                     </Link>
-                    <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">Mover manualmente objetos individuales de Amazon WorkDocs a Amazon S3 puede resultar...</p>
+                    <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">{ lambda.card2Description }</p>
                 </div>
             </div>
         </div>

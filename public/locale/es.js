@@ -722,6 +722,281 @@ export default {
         description6: 'Nos gustaría conocer más de su compañía o institución y juntos definir una solución que se adapte a sus necesidades, buscando siempre la innovación.',
     },
 
+    casoCreson: {
+        metaTitle: 'Arquitectura de alta disponibilidad para LMS | Mxmart Solutions',
+        metaDescription: 'Consigue infraestructura de TI segura, confiable y eficiente que te permita acceder a todas las aplicaciones y documentos que necesites desde cualquier lugar, momento y dispositivo.',
+
+        title: 'Caso de Estudio',
+        title2: 'Arquitectura de alta disponibilidad para LMS',
+        subtitle: 'CRESON',
+
+        acerca: 'Acerca de CRESON',
+        description: 'El Centro Regional de Formación Profesional Docente de Sonora es una institución de educación superior que tiene como responsabilidad esencial garantizar la calidad de la formación docente ejerciendo la rectoría en la formación de profesionales de la educación en el estado de Sonora; comprende la formación inicial, la formación continua y el impulso de los procesos de desarrollo profesional e investigación en materia educativa.',
+
+        description2: 'El constante crecimiento de alumnos, maestros y cursos han generado una alta demanda a los cursos en linea que CRESON ofrece para sus miles de alumnos, estos cursos en linea se ofrecen en la plataforma de LMS Moodle, este crecimiento en la interacción con los múltiples sistemas Moodle de CRESON ha derivado en la necesidad de encontrar una solución tecnológica que permita a CRESON tener sus sistemas con el menor downtime posible, estar siempre disponible y buscar la optimización de costos.',
+        description3: 'CRESON llegó a la conclusión de que la solución que buscaba debería estar en un entorno en la nube, después de analizar distintos proveedores encontró que Amazon Web Services ofrecía las herramientas y servicios necesarios para la solución que requería.',
+        
+        t1: 'La arquitectura se encuentra configurada con una extensa gama de tecnologías como balanceadores elásticos, sistemas de cache y sesiones por medio de',
+        t2: 'con Redis, distribución de información por medio de cluster de',
+        t3: 'base de datos elástica la cual se adapta a los requerimientos de las instancias gracias al servicio de',
+        t4: 'utilizando el motor de PostgreSQL.',
+        t5: 'El sistema además se encuentra con servicios de seguridad entre estos Security Groups, los cuales actúan como firewall virtuales en donde se restringe el trafico por medio re reglas de puertos y protocolos,',
+        t6: 'por medio del cual se filtran las peticiones desde el origen pudiendo analizar las mismas y bloquear aquellas que se identifican como riesgos potenciales, además de Subnets privadas en donde la mayoría de la arquitectura se encuentra, con lo cual los servicios no son expuestos directamente al público,',
+        t7: 'por medio del cual se aplican certificados SSL a todos los sitios por lo cual las peticiones se encuentran encriptadas.',
+        t8: 'Para tener alta disponibilidad se cuentan con servicios con',
+        t9: 'por medio del cual se balancean las cargas entre los servidores productivos, y estos a su vez son administrados por',
+        t10: 'los cuales son capaces de conocer su rendimiento e incrementara el numero de instancias cuando se necesita mayor capacidad de computo y la regulación de estas.',
+        
+        diagrama: 'Diagrama de la Arquitectura',
+
+        title3: 'La solución',
+        title4: 'Los beneficios',
+        description4: 'La arquitectura además de estar preparada para soportar cientos de usuarios simultáneos, también lo esta para configurar múltiples plataformas Moodle, bajo esta misma premisa la arquitectura cuenta con los sitios para 17 planteles. Los beneficios no sólo han sido tecnológicos, sino que también han sido operativos y económicos, logrando una mayor productividad y reducción de costos, pagando únicamente por el tiempo utilizado de los servicios',
+    },
+
+    casoUnicla: {
+        metaTitle: 'Sistema de Control Escolar en la nube | Mxmart Solutions',
+        metaDescription: 'Consigue infraestructura de TI segura, confiable y eficiente que te permita acceder a todas las aplicaciones y documentos que necesites desde cualquier lugar, momento y dispositivo.',
+
+        title: 'Caso de Estudio',
+        title2: 'Sistema de Control Escolar en la nube',
+
+        acerca: 'Acerca de UNICLA',
+        description: 'La Universidad Contemporánea de las Américas (UNICLA) es una institución educativa cuya oferta académica va desde el bachillerato hasta programas de posgrados en diversas áreas del conocimiento y que busca siempre estar a la vanguardia educativa, con excelencia académica y calidez humana. Con más de 23 planteles a lo largo de México, y una oferta de educación a distancia, UNICLA busca contribuir al desarrollo de una sociedad preparada, justa y equitativa.',
+
+        description2: 'La UNICLA buscaba migrar todo su entorno de soluciones tecnológicas (entre ellas un sistema administrativo de control escolar y un sitio web en WordPress) a la nube para optimizar costos y modernizar el sistema administrativo que habían desarrollado y que no podían continuar actualizando por las limitaciones de servidores físicos.',
+        description3: 'La Universidad Contemporánea de las Américas sabía que la nube ofrecía las ventajas de optimización de costos y la liberación de las limitaciones de los servidores físicos, por lo cual después de analizar diferentes nubes públicas y al presentarle una prueba de concepto de su posible arquitectura en AWS llegaron a la conclusión que la nube de AWS tenía justo lo que estaban buscando y veían incluso un mayor potencial.',
+        
+        title3: 'La solución',
+        t1: 'La arquitectura ha sido creada con la optimización de costos en mente, buscando el balance perfecto en costo-beneficio sin que el desempeño o la disponibilidad de la solución se viera afectada. Tanto el sistema administrativo como el sitio de WordPress han sido migrados a una instancia de',
+        t2: 'la cual se encuentra en un',
+        t3: 'que mantiene siempre una instancia en funcionamiento, evitando así tener que lanzar una nueva instancia cada vez que una se detenga, esta nueva instancia que se lanza de manera automática lo hace con un respaldo que',
+        t4: 'realiza en dos ocasiones al día de la propia instancia y de sus dispositivos de almacenamiento, logrando así mantener cierta continuidad.',
+        t5: 'Estas instancias son redirigidas por un',
+        t6: 'que a su vez está detrás de distribuciones de',
+        t7: 'protegidas con',
+        t8: 'y con certificados SSL gracias a',
+        t9: 'garantizando la seguridad de la solución.',
+
+        diagrama: 'Diagrama de la Arquitectura',
+        title4: 'Los beneficios',
+        description4: 'Al tener su infraestructura en la nube de AWS la UNICLA ahorra todos los costos que conlleva tener la infraestructura on premise, pero aún mejor que esto se han deshecho de la limitante que les impedía entrar en un ciclo de mejora continua para su sistema administrativo, ahora pueden sin problema alguno implementar nuevas funcionalidades, actualizar versiones y seguir innovando.'
+    },
+
+    casoUniva: {
+        metaTitle: 'Moodle sobre Amazon Web Services | Mxmart Solutions',
+        metaDescription: 'Soluciones en la nube de AWS para Instituciones Educativas, sistemas LMS como Moodle se pueden implementar en la nube de Amazon Web Services aplicando la mayor seguridad y logrando la innovación tecnológica.',
+
+        title: 'Caso de estudio',
+        title2: 'Moodle sobre Amazon Web Services',
+
+        acerca: 'Acerca de UNIVA',
+        description: 'Fundada en 1962, la Universidad del Valle de Atemajac (UNIVA), ofrece servicios educativos de nivel bachillerato, licenciatura, maestría, doctorado, diplomados, talleres, así como educación en línea, ofreciendo a miles de estudiantes cursos en línea en todas sus sedes ubicadas en 6 estados de la República Mexicana, generando una solución a las necesidades sociales de cada región.',
+
+        description2: 'La UNIVA ha implementado educación en línea a través de la plataforma de gestión de aprendizaje, Moodle, así como en diferentes planes de estudio como herramienta de apoyo para alumnos y maestros, además de su programa Univa online en la cual ofrece licenciaturas y posgrados 100% en línea. ',
+        description3: 'A medida que aumenta la cantidad de alumnos, maestros y cursos, así como las nuevas modalidades de educación a distancia, la interacción hacía la plataforma es cada vez mayor, por lo cual se necesita una solución tecnológica segura, innovadora, elástica y en alta disponibilidad. ',
+        description4: 'Uno de los desafíos más interesantes fue lograr la autenticación de más de 15,000 usuarios del directorio activo con la plataforma de Moodle, esto de manera segura y sincronizada entre los servidores físicos controladores de dominio y los servidores virtuales en la nube de AWS.  ',
+
+        description5: 'Después de una revisión profunda de los proyectos presentados por tres proveedores y cada uno planteando la solución en diferentes nubes públicas, se tomó la decisión de trabajar con la nube de Amazon Web Services, esto gracias al trabajo en equipo entre el personal de AWS y el partner Mxmart que siempre estuvieron en comunicación con el cliente para comprender el requerimiento y poder ofrecer la mejor solución tecnológica. ',
+        description6: 'Entre varios factores para la toma de decisión cabe mencionar la capacidad, profundidad e innovación constante de los diferentes servicios de AWS que los caracteriza desde 2006, otro factor importante fue el conocimiento y experiencia del partner Mxmart sobre el sistema LMS Moodle ya que esto le permitió generar una arquitectura única en su tipo, pudiendo integrar los servicios más recientes para ofrecer la mejor solución y optimizando los costos de consumo. ',
+
+        title3: 'La solución',
+        t1: 'La arquitectura se encuentra basada en seis diferentes zonas de disponibilidad, utilizando subredes privadas, dentro se encuentran instancias de alta gama en Spot en un grupo de escalamiento automatizado, esto para el procesamiento y autogeneración de los sistemas. Los servicios de',
+        t2: 'con motor de base de datos PostgreSQL nos ayudan para la administración e integridad de los datos en conjunto con los servicios de',
+        t3: 'para el resguardo de la información. ',
+        t4: 'La autenticación de los usuarios a la plataforma de Moodle se realiza a través de servidores locales del directorio activo, que en tiempo real se están sincronizando con servidores virtuales en la nube, la conexión se realiza de manera segura a través de VPN. ',
+        t5: 'Es importante mencionar que uno de los servicios que nos ayudan en los tiempos de respuesta de las peticiones es el servicio de',
+        t6: 'que está basado en un sistema de caché en memoria, con lo cual mejora la experiencia de los usuarios.',
+        t7: 'Actualmente se manejan 13 sitios de Moodle sobre la misma infraestructura, la cual a través de balanceadores de carga y rutas de acceso va redireccionando el tráfico según corresponda el perfil del usuario, convirtiéndolo así en una solución escalable y elástica. ',
+        t8: 'La seguridad e integridad de la información es un tema muy importante, es por eso que el proyecto se realizó integrando varios servicios de seguridad perimetral e interna, así como certificados de seguridad para la encriptación de la información, también se integraron servicios para la generación de respaldos de manera periódica y automatizada. ',
+   
+        diagrama: 'Diagrama de la arquitectura simplificada',
+        title4: 'Los beneficios',
+        description7: 'Al tener una infraestructura en la nube de AWS con una arquitectura distribuida en diferentes servicios, todos ellos configurados con las mejores prácticas, se está generando un proceso de innovación respecto al esquema tradicional de grandes servidores en donde se concentran todos los procesos, esto es un paso muy importante rumbo a la transformación digital.',
+        description8: 'Los beneficios no sólo son tecnológicos, sino que también se convierten en una reducción de costos en las diferentes partidas presupuestales de los departamentos, pero sobre todo y lo más importante la experiencia del usuario.',
+    },
+
+    casoIeu: {
+        metaTitle: 'Campus Online basado en AWS | Mxmart Solutions',
+        metaDescription: 'Soluciones en la nube de AWS para Instituciones Educativas, sistemas LMS como Moodle se pueden implementar en la nube de Amazon Web Services aplicando la mayor seguridad y logrando la innovación tecnológica.',
+
+        title: 'Caso de estudio',
+        title2: 'Campus Online basado en AWS',
+
+        acerca: 'Acerca de IEU',
+        description: 'La Universidad IEU es una universidad mexicana con más de 44 años de existencia, ofrece más de 150 programas educativos entre bachillerato, licenciaturas, maestrías y doctorados, en modalidades presenciales, online y ejecutivas a miles de estudiantes a lo largo de la República Mexicana con el respaldo internacional de Galileo Global Education.',
+
+        description2: 'El Instituto de Estudios Universitarios (IEU) cuenta con más de 15 años de experiencia en educación en línea y con más de 60 programas online a través de la plataforma de gestión de aprendizaje Moodle. La llegada de la pandemia de COVID-19 trajo consigo grandes cambios a los cuales las instituciones educativas tenían que adaptarse, entre ellos, el cierre de planteles educativos para evitar una mayor propagación del virus.',
+        description3: 'IEU necesitaba dar continuidad al plan de estudios a sus alumnos y docentes de manera virtual, así como entregar una plataforma integral, segura y altamente disponible donde se pudiera tener la identidad de la propia institución para generar un paso más natural de las clases presenciales a las clases en línea. Se buscaba que los usuarios pudieran identificarse con el ADN de la Institución, es decir, colores corporativos, logos, diseño del campus; la parte grafica jugo un papel muy importante no sólo en lo visual, sino también en lo funcional.',
+
+        description4: 'El trabajo en equipo que predominó en el proyecto fue clave para la generación de este, ya que los sistemas utilizados por varios años, así como los procesos internos de cada área lo hacían un reto muy interesante para integrarlo de manera adecuada. Así mismo, la arquitectura diseñada debía contar con todos los estándares de seguridad, conectividad y autenticación de los usuarios, y al mismo tiempo ser automática y escalable para soportar las cargas de trabajo.',
+        description5: 'Mxmart, en conjunto con el Instituto de Estudios Universitarios, iniciaron el plan de trabajo para el diseño, desarrollo e integración de los diferentes sistemas y orígenes de datos, así como la generación de una arquitectura en AWS que fuera segura, eficiente, optimizada y escalable, capaz de interactuar con alrededor de 20,000 usuarios. Todo esto llevando a cabo una integración hacia sus diferentes plataformas LMS (Sistema de gestión de aprendizaje) para creación de contenido e-learning y la distribución de las actividades de formación académica.',
+
+        title3: 'La solución',
+        t1: 'La arquitectura fue diseñada en alta disponibilidad para desplegarse en una región que cuenta con',
+        link: 'seis zonas de disponibilidad (AZ) y',
+        t2: 'y hacerlo de manera automatizada.',
+        t3: 'Los servicios se encuentran generados dentro de un',
+        t4: 'aprovechando subredes públicas y privadas para temas de seguridad, así como una configuración con las mejores prácticas para las aplicaciones, bases de datos e información.',
+        t5: 'Se implementaron diversas capas de seguridad con servicios especializados, grupos de seguridad, roles, así como una integración hacía la plataforma para la autenticación de los usuarios a través de Onelogin el cual fue un requisito por parte del corporativo.',
+        t6: 'El campus online es un hub de información, en donde los alumnos pueden ver la información más relevante en su carrera, como sus cursos, su progreso en el mismo y sus calificaciones. De esta forma el campus debe de comunicarse con múltiples sistemas por medio de API’s,',
+        t7: 'es otro de los principales servicios utilizados, además de la conectividad a múltiples bases de datos, las cuales mucha de esta información es generada en On Premises y en donde la conexión está basada en el servicio de AWS VPN Site to Site en donde contamos con una conexión privada, segura y encriptada, asegurando la transferencia de la información de forma segura.',
+        t8: 'Para que la información del origen fuera consistente, disminuyendo la latencia de transferencia de la información y minimizando cualquier tipo de downtime, se generó una arquitectura de servicios de base de datos en la nube de AWS, en donde pudiera tener la misma información en On Premises, está arquitectura consiste en instancias de base de datos en el Servicio de Amazon Aurora Serverless con un motor de base de PostgreSQL, Instancias de AWS RDS con SQL Server e Instancias Aurora Clúster para servicios de Business Intelligence y para mantener sincronizada las bases de datos On Premises con respecto a su contraparte en AWS, se utilizó el servicio de',
+        t9: 'La aplicación está desarrollada utilizando las librerías de AWS Amplify, la cual nos permitió desarrollar el frontend con el Lenguaje de React y el desarrollo del backend utilizando funciones AWS Lambda en varios lenguajes como NodeJs y Python, utilizando el servicio de Aws API Gateway para la generación de múltiples APIs. El almacenamiento de los contenidos se realiza con servicio de Amazon S3, generando una exposición del sitio a nivel global por medio de AmazonCloudFront y asegurando las APIs públicas con AWS WAF.',
+    
+        diagrama: 'Diagrama de la arquitectura simplificada',
+        title4: 'Los beneficios',
+        description6: 'Teniendo una infraestructura en la nube de AWS el Instituto de Estudios Universitarios cuenta ahora con una plataforma intuitiva con alta disponibilidad, escalabilidad y seguridad donde los más de 15,000 alumnos pueden interactuar con sus maestros para el seguimiento educativo de manera práctica.',
+        description7: 'Con esta nueva arquitectura y con la creación del Campus Online se mejoró la experiencia de usuario respecto a la interfaz y las pantallas, así como una mayor administración de la solución y del contenido, asegurando una transición suave a la educación en línea. Además, esto fue el primer punto de contacto para generar un convenio colaborativo entre IEU y Amazon Web Services para formar parte de'
+    },
+
+    escritoriosVirtuales: {
+        metaTitle: 'Escritorios Virtuales | Mxmart Solutions',
+        metaDescription: 'Conoce los servicios que ofrece AWS de almacenamiento y backup en la nube, escritorios virtuales, bases de datos, servidores virtuales privados y todo lo que necesitas para tu proyecto.',
+
+        title: 'Escritorios Virtuales',
+        subtitle: 'Soluciones de TI que superan las expectativas',
+
+        title2: 'Amazon WorkSpaces',
+        description: 'WorkSpaces de Amazon es un escritorio en la nube que te permite acceder a todas las aplicaciones y documentos que necesites desde cualquier lugar y momento, y desde cualquier dispositivo compatible.',
+        description2: 'Proporciona escritorios Windows o Linux en minutos, selecciona entre una gran variedad de configuraciones entre hardware y software, y proporciona miles de escritorios a empleados de todo el mundo. Una solución totalmente administrada, segura, y más rentable que los equipos tradicionales.',
+
+        title3: 'Servicio de Escritorio Remoto',
+        title4: 'Amazon WorkDocs',
+        description3: 'Con Amazon WorkDocs, crea, edita, comparte y revisa archivos con todo tu equipo de trabajo de manera sencilla y desde cualquier lugar o dispositivo. Colabora con otras personas, comparte contenido, ofrece comentarios enriquecedores y edita documentos de manera colaborativa.',
+        description4: 'Solo pagas por las cuentas de usuario activas y el almacenamiento que utilices. Facilita la colaboración con otros usuarios, clientes, así como con tu equipo trabajo.',
+
+        title5: 'Ventajas de escritorios virtuales',
+        v1: 'Seguridad',
+        v2: 'Trabajo en cualquier sitio',
+        v3: 'Arquitectura robusta',
+        v4: 'Ambientes Windows y Linux',
+        v5: 'Directorio Activo',
+        v6: 'Utilización de sistemas internos',
+        v7: 'Costo por hora o mensual',
+
+        title6: 'Framework utilizado',
+        title7: 'Casos de éxito',
+        casoTitulo: 'Escritorios virtuales en Amazon Web Services',
+        casoDescription: 'Por su expansión en la Ciudad de México, la Asesora de inversiones necesitaba crear una infraestructura de TI segura...',
+    },
+
+    casoFinec: {
+        metaTitle: 'Escritorios virtuales en Amazon Web Services | Mxmart Solutions',
+        metaDescription: 'Consigue infraestructura de TI segura, confiable y eficiente que te permita acceder a todas las aplicaciones y documentos que necesites desde cualquier lugar, momento y dispositivo.',
+
+        title: 'Caso de Estudio',
+        title2: 'Escritorios virtuales en Amazon Web Services',
+
+        acerca: 'Acerca de Finec Asset Management ',
+        description: 'Finec Servicios es una empresa que brinda soporte e infraestructura a una firma independiente de asesores de inversión especialistas en finanzas corporativas y patrimoniales. Con más de 20 años de experiencia, y vínculos establecidos en países de gran importancia en el mundo financiero (USA, Suiza, Luxemburgo y Panamá), continúan con su propósito de asesorar a empresarios e inversionistas en la región de Jalisco y la ciudad de México principalmente.',
+
+        description2: 'Por su expansión en la Ciudad de México, la Asesora de inversiones necesitaba crear una infraestructura de TI segura, confiable y eficiente en donde tuviera su información en un servidor físico en la Ciudad de México y poder acceder a ella desde su sede en Guadalajara o desde cualquier otro lugar. ',
+        description3: 'También necesitaba una solución dinámica para sus colaboradores, en donde la información que manejaran estuviera sincronizada, sin poner en riesgo la seguridad de sus datos. ',
+
+        description4: 'Finec Servicios entendía que la solución que buscaba debería estar basada en un entorno en la nube, después de analizar distintas opciones, decidió que Amazon Web Services ofrecía las herramientas y servicios necesarios para la solución que buscaba. Mxmart al ser un proveedor con el conocimiento y la experiencia necesaria fue elegido para trabajar con el proyecto, ya que planteaba la mejor arquitectura y diseño para el despliegue de la solución. ',
+
+        title3: 'La solución',
+        t1: 'La ejecución de sus sistemas se basa en servidores virtuales',
+        t2: 'en conjunto con escritorios virtuales',
+        t3: 'que utilizan los colaboradores para un trabajo de colaboración, todo esto dentro de un entorno seguro, flexible y sincronizado con otros servidores dentro de la compañía, permitiendo así cumplir con los mayores estándares de seguridad y confidencialidad. Así mismo se tiene configurada la sincronización y respaldos de la información, el monitoreo automático del entorno en la nube, pudiendo así responder de manera eficiente ante cualquier contingencia. ',
+
+        diagrama: 'Diagrama de la Arquitectura',
+        title4: 'Los beneficios',
+        description5: 'Al tener su infraestructura en nube con Amazon Web Services, Finec Servicios ahorra en gran medida con los costos de servidores físicos, infraestructura de data center, energía eléctrica, mantenimientos, red, seguridad, en fin, todo lo que conlleva tener al 100% la infraestructura on premise. ',
+        description6: 'Los responsables de tecnologías de información tienen el control de la infraestructura desde cualquier lugar y momento, así como también los colaboradores pueden acceder a su información de manera segura desde cualquier sitio. ',
+        description7: 'El crecimiento de la compañía en cuanto a información, oficinas o colaboradores se permite realizar de manera dinámica, ya que la solución es completamente escalable y replicable para cualquier requerimiento tecnológico a futuro.  ',
+    },
+
+    ambientesHibridos: {
+        metaTitle: 'Ambientes Híbridos | Mxmart Solutions',
+        metaDescription: 'Conoce los servicios que ofrece AWS de almacenamiento y backup en la nube, escritorios virtuales, bases de datos, servidores virtuales privados y todo lo que necesitas para tu proyecto.',
+
+        title: 'Ambientes Híbridos',
+        subtitle: 'Potenciamos el éxito de su empresa',
+
+        description: 'Los ambientes híbridos pueden implementarse cuando se requiere seguir con algunas cargas de trabajo en un servidor on-premise pero otras aplicaciones o servicios requieren ir a la nube, lo cual facilita el acceso a centros de datos on-premise sin perderse de los beneficios en la nube.',
+        description2: 'Las arquitecturas de nube híbrida ayudan a las organizaciones a integrar sus operaciones en las instalaciones y en la nube para admitir un amplio espectro de casos de uso mediante un conjunto común de servicios, herramientas y API en la nube en entornos en las instalaciones y en la nube.',
+        description3: 'Manejamos soluciones que brinda a prácticamente cualquier centro de datos, espacio de coubicación o instalación local la misma infraestructura, servicios, API, herramientas de administración, soporte y modelo operativo de AWS. Puede ejecutar Amazon EC2, Amazon EBS, servicios basados en contenedores, como Amazon EKS, servicios de bases de datos, como Amazon RDS, en AWS Outposts, y servicios de análisis, como Amazon EMR, de manera local.',
+
+        diagrama: 'Diagrama de una arquitectura híbrida simplificada',
+
+        title2: 'Ventajas de ambientes híbridos',
+        v1: 'Trabajo en oficina como en la nube',
+        v2: 'Seguridad',
+        v3: 'Un solo punto de autenticación',
+        v4: 'Arquitectura robusta',
+        v5: 'Ambientes Windows y Linux',
+        v6: 'Directorio Activo',
+        v7: 'Utilización de sistemas internos',
+
+        title3: 'Framework utilizado',
+        title4: 'Servicios',
+
+        s1: 'Ejecute infraestructura y servicios de AWS localmente para una experiencia híbrida verdaderamente estable',
+        s2: 'Capacidad de cómputo de tamaño variable en la nube.',
+        s3: 'Continuidad empresarial escalable y rentable para servidores físicos, virtuales y en la nube',
+        s4: 'Acelere el aprovisionamiento en la nube con infrastructure as code',
+        s5: 'Servicio de bases de datos relacionales administrado para MySQL, PostgreSQL, MariaDB, Oracle BYOL o SQL Server.',
+        s6: 'Una solución de servicios en la nube que facilita el establecimiento de una conexión de red exclusiva entre un entorno local y AWS',
+    },
+
+    analiticaDatos: {
+        metaTitle: 'Analítica de datos | Mxmart Solutions',
+        metaDescription: 'Extracción, Transformación y carga de datos desde múltiples orígenes: Bases de datos relacionales, Bases de datos no relacionales, Información estructurada o semi estructurada.',
+
+        title: 'Data Warehouse y Data Lake',
+        subtitle: 'Potenciamos el éxito de su empresa',
+
+        description: 'Extracción, transformación y carga de datos desde múltiples orígenes: Bases de datos relacionales, Bases de datos no relacionales, Información estructurada o semi estructurada. Envío hacia un data warehouse y data lake para su análisis y publicación de la información por medio de dashboards dinámicos en herramientas de reportes de Business Intelligence.',
+
+        title2: 'Ventajas de analítica de datos',
+
+        v1: 'Conección a multiples orígenes de datos',
+        v2: 'Generación de insights',
+        v3: 'Reportes automatizados',
+        v4: 'Dashboards personalizados',
+        v5: 'Cobro por conexión',
+    },
+
+    lambda: {
+        metaTitle: 'AWS Lambda | Mxmart Solutions',
+        metaDescription: 'Ejecute código sin tener que pensar en los servidores o los clústeres.',
+
+        title: 'AWS Lambda',
+        subtitle: 'Ejecute código sin pensar en la infraestructura',
+
+        acerca: 'Acerca de nosotros',
+        description: 'En Mxmart somos socios nivel "Advanced" de Amazon Web Services y contamos con la especialidad en servicios de informática sin servidor con el Service Delivery Program (SDP) de AWS Lambda. Esto nos permite brindar las mejores soluciones relacionadas a la informática sin servidores.',
+
+        title2: 'AWS Lambda',
+        description2: 'Lambda es un servicio informático que permite ejecutar código sin aprovisionar ni administrar servidores. Lambda ejecuta el código en una infraestructura de computación de alta disponibilidad y realiza todas las tareas de administración de los recursos de computación, incluido el mantenimiento del servidor y del sistema operativo, el aprovisionamiento de capacidad y el escalado automático, así como las funciones de registro. Con Lambda, puede ejecutar código para prácticamente cualquier tipo de aplicación o servicio de backend.',
+        link: 'Conocer más acerca de AWS Lambda',
+
+        title3: 'Ventajas de la informática sin servidores',
+        v1: 'Nula administración de la infraestructura',
+        v2: 'Automatización',
+        v3: 'Ahorro en costos',
+        v4: 'Recuperación ante desastres',
+        v5: 'Escabilidad',
+        v6: 'Optimización',
+
+        title4: 'Framework utilizado',
+        title5: 'Casos de uso más comunes',
+        
+        c1: 'Procesar datos a escala',
+        c2: 'Aplicaciones basadas en eventos',
+        c3: 'Backends para IoT y backends móviles',
+        c4: 'Procesamiento de transmisiones',
+
+        title6: 'Casos de éxito',
+        card1Title: 'Campus Online basado en AWS',
+        card1Description: 'IEU cuenta con más de 15 años de experiencia en educación en línea y con más de 60 programas…',
+
+        card2Title: 'Replicación y Retención de Amazon WorkDocs',
+        card2Description: 'Mover manualmente objetos individuales de Amazon WorkDocs a Amazon S3 puede resultar...',
+    },
+
     footer: {
         contactanos: 'Contactanos',
         description: 'Nos gustaría conocer más de su compañía o institución y juntos definir una solución que se adapte a sus necesidades, buscando siempre la innovación.',

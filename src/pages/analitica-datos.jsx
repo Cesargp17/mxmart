@@ -1,33 +1,42 @@
 import { PageLayout } from '@/components/layout/PageLayout'
 import { HeaderSections } from '@/components/pages/HeaderSections'
-import React from 'react'
-
-const items = [
-    { id: 1, title: 'Conección a multiples orígenes de datos', icon: 'fa fa-database' },
-    { id: 2, title: 'Generación de insights', icon: 'fa fa-star' },
-    { id: 3, title: 'Reportes automatizados', icon: 'fa fa-file-text-o' },
-    { id: 4, title: 'Dashboards personalizados', icon: 'fa fa-th' },
-    { id: 5, title: 'Cobro por conexión', icon: 'fa fa-dollar' },
-];
+import { LanguageContext } from '@/context/LanguageContext';
+import React, { useContext } from 'react'
 
 const AnaliticaDatosPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { analiticaDatos } = useContext( LanguageContext );
+
+    //arreglo que sirve para mapear los elementos de sistema de gestion de aprendizaje
+    const items = [
+        { id: 1, title: analiticaDatos.v1, icon: 'fa fa-database' },
+        { id: 2, title: analiticaDatos.v2, icon: 'fa fa-star' },
+        { id: 3, title: analiticaDatos.v3, icon: 'fa fa-file-text-o' },
+        { id: 4, title: analiticaDatos.v4, icon: 'fa fa-th' },
+        { id: 5, title: analiticaDatos.v5, icon: 'fa fa-dollar' },
+    ];
+
   return (
-    <PageLayout title={'Analítica de datos | Mxmart Solutions'}>
+    <PageLayout 
+        title={ analiticaDatos.metaTitle }
+        description={ analiticaDatos.metaDescription }
+    >
 
     <HeaderSections
         portada={'/images/Assessments.png'}
-        titulo={'Data Warehouse y Data Lake'}
-        texto3={'Potenciamos el éxito de su empresa'}
+        titulo={ analiticaDatos.title }
+        texto3={ analiticaDatos.subtitle }
     />
 
     <div className="flex justify-center bg-white">
         <div className="container max-w-6xl mb-20 mt-10">
 
             <p className='p-4'>
-                Extracción, transformación y carga de datos desde múltiples orígenes: Bases de datos relacionales, Bases de datos no relacionales, Información estructurada o semi estructurada. Envío hacia un data warehouse y data lake para su análisis y publicación de la información por medio de dashboards dinámicos en herramientas de reportes de Business Intelligence.
+                { analiticaDatos.description } 
             </p>
 
-            <h3 className='text-center text-3xl mb-6 mt-20'>Sistema de gestión de aprendizaje</h3>
+            <h3 className='text-center text-3xl mb-6 mt-20'>{ analiticaDatos.title2 }</h3>
 
             <hr className='mb-10 mt-10' />
 

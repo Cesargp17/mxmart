@@ -32,6 +32,15 @@ export const LanguageProvider = ({ children }) => {
         eLearning,
         eCommerce,
         casoMxmart,
+        casoCreson,
+        casoUnicla,
+        casoUniva,
+        casoIeu,
+        escritoriosVirtuales,
+        casoFinec,
+        ambientesHibridos,
+        analiticaDatos,
+        lambda,
         navbar 
       } = language;
 
@@ -60,6 +69,15 @@ export const LanguageProvider = ({ children }) => {
         eLearning,
         eCommerce,
         casoMxmart,
+        casoCreson,
+        casoUnicla,
+        casoUniva,
+        casoIeu,
+        escritoriosVirtuales,
+        casoFinec,
+        ambientesHibridos,
+        analiticaDatos,
+        lambda,
         navbar,
 
         //Funciones

@@ -99,6 +99,12 @@ const HomePage = () => {
 
         //Se actualiza el estado con el elemento modificado
         setIsExpandedCard({...isExpandedCard, ...updatedCardState});
+
+        // Obtener un array con los valores que son true
+        const valoresTrue = Object.values( isExpandedCard ).filter(valor => valor === true);
+        if (valoresTrue.length >= 2) {
+            onMouseOut();
+          }
       };
       
       //Esta funcion es para actualizar todos los elementos dinamicos, al quitar el mouse de algun

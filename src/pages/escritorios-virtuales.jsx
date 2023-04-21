@@ -1,16 +1,24 @@
 import { PageLayout } from '@/components/layout/PageLayout'
 import { HeaderSections } from '@/components/pages/HeaderSections'
+import { LanguageContext } from '@/context/LanguageContext'
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 
 const EscritoriosVirtualesPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { escritoriosVirtuales } = useContext( LanguageContext );
+
   return (
-    <PageLayout title='Escritorios Virtuales | Mxmart Solutions'>
+    <PageLayout 
+        title={ escritoriosVirtuales.metaTitle }
+        description={ escritoriosVirtuales.metaDescription }
+    >
 
     <HeaderSections
         portada={'/images/Mxmart_Escritorios.png'}
-        titulo={'Escritorios Virtuales'}
-        texto3={'Soluciones de TI que superan las expectativas'}
+        titulo={ escritoriosVirtuales.title }
+        texto3={ escritoriosVirtuales.subtitle }
     />
 
     <div className="bg-white flex justify-center">
@@ -25,24 +33,24 @@ const EscritoriosVirtualesPage = () => {
                     />
                 </div>
                 <div className="flex flex-col">
-                    <h3 className="font-normal text-3xl ms-8">Amazon WorkSpaces</h3>
+                    <h3 className="font-normal text-3xl ms-8">{ escritoriosVirtuales.title2 }</h3>
                     <p className="p-8 text-gray-900 text-[17px]">
-                    WorkSpaces de Amazon es un escritorio en la nube que te permite acceder a todas las aplicaciones y documentos que necesites desde cualquier lugar y momento, y desde cualquier dispositivo compatible.
+                    { escritoriosVirtuales.description }
                     <br /><br />
-                    Proporciona escritorios Windows o Linux en minutos, selecciona entre una gran variedad de configuraciones entre hardware y software, y proporciona miles de escritorios a empleados de todo el mundo. Una solución totalmente administrada, segura, y más rentable que los equipos tradicionales.
+                    { escritoriosVirtuales.description2 }
                     </p>
                 </div>
             </div>
 
-            <h3 className="font-normal text-3xl ms-8 text-center mb-20 mt-20">Servicio de Escritorio Remoto</h3>
+            <h3 className="font-normal text-3xl ms-8 text-center mb-20 mt-20">{ escritoriosVirtuales.title3 }</h3>
 
             <div className="flex flex-col lg:flex-row items-center justify-between mt-10">
                 <div className="flex flex-col">
-                    <h3 className="font-normal text-3xl ms-8">Amazon WorkSpaces</h3>
+                    <h3 className="font-normal text-3xl ms-8">{ escritoriosVirtuales.title4 }</h3>
                     <p className="p-8 text-gray-900 text-[17px]">
-                    WorkSpaces de Amazon es un escritorio en la nube que te permite acceder a todas las aplicaciones y documentos que necesites desde cualquier lugar y momento, y desde cualquier dispositivo compatible.
+                    { escritoriosVirtuales.description3 }
                     <br /><br />
-                    Proporciona escritorios Windows o Linux en minutos, selecciona entre una gran variedad de configuraciones entre hardware y software, y proporciona miles de escritorios a empleados de todo el mundo. Una solución totalmente administrada, segura, y más rentable que los equipos tradicionales.
+                    { escritoriosVirtuales.description4 }
                     </p>
                 </div>
                 <div className="aspect-w-16 aspect-h-9">
@@ -56,29 +64,29 @@ const EscritoriosVirtualesPage = () => {
 
             <div className='flex flex-col lg:flex-row grid grid-cols-1 lg:grid-cols-2 mt-20 items-center'>
             <div className='border-r border-solid border-gray pl-4'>
-                <h3 className='text-center text-2xl mb-4'>Ventajas de escritorios virtuales</h3>
+                <h3 className='text-center text-2xl mb-4'>{ escritoriosVirtuales.title5 }</h3>
 
                 <ul className='ms-10 mt-6 list-disc p-10'>
-                    <li className='text-lg'>Seguridad</li>
-                    <li className='text-lg'>Trabajo en cualquier sitio</li>
-                    <li className='text-lg'>Arquitectura robusta</li>
-                    <li className='text-lg'>Ambientes Windows y Linux</li>
-                    <li className='text-lg'>Directorio Activo</li>
-                    <li className='text-lg'>Utilización de sistemas internos</li>
-                    <li className='text-lg'>Costo por hora o mensual</li>
+                    <li className='text-lg'>{ escritoriosVirtuales.v1 }</li>
+                    <li className='text-lg'>{ escritoriosVirtuales.v2 }</li>
+                    <li className='text-lg'>{ escritoriosVirtuales.v3 }</li>
+                    <li className='text-lg'>{ escritoriosVirtuales.v4 }</li>
+                    <li className='text-lg'>{ escritoriosVirtuales.v5 }</li>
+                    <li className='text-lg'>{ escritoriosVirtuales.v6 }</li>
+                    <li className='text-lg'>{ escritoriosVirtuales.v7 }</li>
                 </ul>
             </div>
 
             <hr className='transform mb-10 mt-10 lg:mb-0 lg:mt-0 rotate-0 lg:rotate-90 lg:hidden' />
             
             <div className='mx-auto'>
-                <h3 className='text-center text-2xl mb-4'>Framework utilizado</h3>
+                <h3 className='text-center text-2xl mb-4'>{ escritoriosVirtuales.title6 }</h3>
 
                 <img src="/images/Framework-02_1.png" width='400px' alt="" />
             </div>
         </div>
 
-        <h3 className='text-center text-3xl mb-6 mt-20 mb-12'>Caso de éxito</h3>
+        <h3 className='text-center text-3xl mb-6 mt-20 mb-12'>{ escritoriosVirtuales.title7 }</h3>
 
         <div className="flex justify-center items-center mb-20">
             <div className="bg-white shadow-md border border-gray-200 rounded-lg w-80 min-h-full">
@@ -87,9 +95,9 @@ const EscritoriosVirtualesPage = () => {
                 </Link>
                 <div className="p-5">
                     <Link href="/caso-de-estudio-finec">
-                        <h5 className="text-sky-900 font-bold text-md tracking-tight mb-2">Ecommerce montado en AWS</h5>
+                        <h5 className="text-sky-900 font-bold text-md tracking-tight mb-2">{ escritoriosVirtuales.casoTitulo }</h5>
                     </Link>
-                    <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">El comercio electrónico durante los últimos años ha venido evolucionando y acelerando las ventas a través de internet desde cualquier dispositivo y en cualquier horario...</p>
+                    <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">{ escritoriosVirtuales.casoDescription }</p>
                 </div>
             </div>
         </div>

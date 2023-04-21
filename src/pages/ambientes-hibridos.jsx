@@ -1,59 +1,68 @@
 import { PageLayout } from '@/components/layout/PageLayout'
 import { Diagrama } from '@/components/pages/Diagrama'
 import { HeaderSections } from '@/components/pages/HeaderSections'
-import React from 'react'
-
-const servicios = [
-    { id: 1, title: 'AWS Outposts', description: 'Ejecute infraestructura y servicios de AWS localmente para una experiencia híbrida verdaderamente establ', img: '/images/AWS_Outposts.png', href: 'https://aws.amazon.com/es/outposts/' },
-    { id: 2, title: 'Amazon EC2', description: 'Capacidad de cómputo de tamaño variable en la nube.', img: '/images/AWS_EC2.png', href: 'https://aws.amazon.com/es/ec2/' },
-    { id: 3, title: 'Amazon EBS', description: 'Continuidad empresarial escalable y rentable para servidores físicos, virtuales y en la nube', img: '/images/Amazon_EBS.png', href: 'https://aws.amazon.com/es/ebs/' },
-    { id: 4, title: 'Amazon EKS', description: 'Acelere el aprovisionamiento en la nube con infrastructure as code', img: '/images/Amazon_EKS.png', href: 'https://aws.amazon.com/es/eks/' },
-    { id: 5, title: 'Amazon RDS', description: 'Servicio de bases de datos relacionales administrado para MySQL, PostgreSQL, MariaDB, Oracle BYOL o SQL Server.', img: '/images/AWS_RDS.png', href: 'https://aws.amazon.com/es/rds/' },
-    { id: 6, title: 'AWS Direct Connect', description: 'Una solución de servicios en la nube que facilita el establecimiento de una conexión de red exclusiva entre un entorno local y AWS', img: '/images/AWS_Direct_Connect.png', href: 'https://aws.amazon.com/es/directconnect/?nc1=h_ls' },
-];
+import { LanguageContext } from '@/context/LanguageContext';
+import React, { useContext } from 'react'
 
 const AmbientesHibridosPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { ambientesHibridos } = useContext( LanguageContext );
+
+    //arreglo que sirve para mapear los elementos de la seccion servicios
+    const servicios = [
+        { id: 1, title: 'AWS Outposts', description: ambientesHibridos.s1, img: '/images/AWS_Outposts.png', href: 'https://aws.amazon.com/es/outposts/' },
+        { id: 2, title: 'Amazon EC2', description: ambientesHibridos.s2, img: '/images/AWS_EC2.png', href: 'https://aws.amazon.com/es/ec2/' },
+        { id: 3, title: 'Amazon EBS', description: ambientesHibridos.s3, img: '/images/Amazon_EBS.png', href: 'https://aws.amazon.com/es/ebs/' },
+        { id: 4, title: 'Amazon EKS', description: ambientesHibridos.s4, img: '/images/Amazon_EKS.png', href: 'https://aws.amazon.com/es/eks/' },
+        { id: 5, title: 'Amazon RDS', description: ambientesHibridos.s5, img: '/images/AWS_RDS.png', href: 'https://aws.amazon.com/es/rds/' },
+        { id: 6, title: 'AWS Direct Connect', description: ambientesHibridos.s6, img: '/images/AWS_Direct_Connect.png', href: 'https://aws.amazon.com/es/directconnect/?nc1=h_ls' },
+    ];
+
   return (
-    <PageLayout title={'Ambientes Híbridos | Mxmart Solutions'}>
+    <PageLayout 
+        title={ ambientesHibridos.metaTitle }
+        description={ ambientesHibridos.metaDescription }
+    >
 
     <HeaderSections
         portada={'/images/Mxmart_Ambientes.png'}
-        titulo={'Ambientes Híbridos'}
-        texto3={'Potenciamos el éxito de su empresa'}
+        titulo={ ambientesHibridos.title }
+        texto3={ ambientesHibridos.subtitle }
     />
 
     <div className="flex justify-center bg-white">
         <div className="container max-w-6xl mb-20 mt-10">
 
             <p className='p-4'>
-            Los ambientes híbridos pueden implementarse cuando se requiere seguir con algunas cargas de trabajo en un servidor on-premise pero otras aplicaciones o servicios requieren ir a la nube, lo cual facilita el acceso a centros de datos on-premise sin perderse de los beneficios en la nube.
+            { ambientesHibridos.description }
             <br /><br />
-            Las arquitecturas de nube híbrida ayudan a las organizaciones a integrar sus operaciones en las instalaciones y en la nube para admitir un amplio espectro de casos de uso mediante un conjunto común de servicios, herramientas y API en la nube en entornos en las instalaciones y en la nube.
+            { ambientesHibridos.description2 }
             <br /><br />
-            Manejamos soluciones que brinda a prácticamente cualquier centro de datos, espacio de coubicación o instalación local la misma infraestructura, servicios, API, herramientas de administración, soporte y modelo operativo de AWS. Puede ejecutar Amazon EC2, Amazon EBS, servicios basados en contenedores, como Amazon EKS, servicios de bases de datos, como Amazon RDS, en AWS Outposts, y servicios de análisis, como Amazon EMR, de manera local.
+            { ambientesHibridos.description3 }
             </p>
 
-            <Diagrama img={'Ambiente-hibrido-Diagrama.png'} text={'Diagrama de una arquitectura híbrida simplificada'}/>
+            <Diagrama img={'Ambiente-hibrido-Diagrama.png'} text={ ambientesHibridos.diagrama }/>
 
             <div className='flex flex-col lg:flex-row grid grid-cols-1 lg:grid-cols-2 mt-20 items-center'>
                 <div className='border-r border-solid border-gray pl-4'>
-                    <h3 className='text-center text-2xl mb-4'>Ventajas de ambientes híbridos</h3>
+                    <h3 className='text-center text-2xl mb-4'>{ ambientesHibridos.title2 }</h3>
 
                     <ul className='ms-10 mt-6 list-disc p-10'>
-                        <li className='text-lg'>Trabajo en oficina como en la nube</li>
-                        <li className='text-lg'>Seguridad</li>
-                        <li className='text-lg'>Un solo punto de autenticación</li>
-                        <li className="text-lg">Arquitectura robusta</li>
-                        <li className="text-lg">Ambientes Windows y Linux</li>
-                        <li className="text-lg">Directorio Activo</li>
-                        <li className="text-lg">Utilización de sistemas internos</li>
+                        <li className='text-lg'>{ ambientesHibridos.v1 }</li>
+                        <li className='text-lg'>{ ambientesHibridos.v2 }</li>
+                        <li className='text-lg'>{ ambientesHibridos.v3 }</li>
+                        <li className="text-lg">{ ambientesHibridos.v4 }</li>
+                        <li className="text-lg">{ ambientesHibridos.v5 }</li>
+                        <li className="text-lg">{ ambientesHibridos.v6 }</li>
+                        <li className="text-lg">{ ambientesHibridos.v7 }</li>
                     </ul>
                 </div>
 
                 <hr className='transform mb-10 mt-10 lg:mb-0 lg:mt-0 rotate-0 lg:rotate-90 lg:hidden' />
                 
                 <div className='mx-auto'>
-                    <h3 className='text-center text-2xl mb-4'>Framework utilizado</h3>
+                    <h3 className='text-center text-2xl mb-4'>{ ambientesHibridos.title3 }</h3>
 
                     <img src="/images/Framework-02_1.png" width='400px' alt="" />
                 </div>
@@ -61,7 +70,7 @@ const AmbientesHibridosPage = () => {
 
             <hr className='mt-10 mb-10' />
 
-            <h3 className='text-center text-3xl mb-6 mt-20'>Servicios</h3>
+            <h3 className='text-center text-3xl mb-6 mt-20'>{ ambientesHibridos.title4 }</h3>
 
             <div className='flex flex-col lg:flex-row justify-center grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {
