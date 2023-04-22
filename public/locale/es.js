@@ -997,6 +997,142 @@ export default {
         card2Description: 'Mover manualmente objetos individuales de Amazon WorkDocs a Amazon S3 puede resultar...',
     },
 
+    casoErbessd: {
+        metaTitle: 'Replicación y Retención de Amazon WorkDocs | Mxmart Solutions',
+        metaDescription: 'ERBESSD Instruments es una empresa innovadora que desarrolla tecnología de monitoreo de vibración y del estado de maquinaria.',
+
+        title: 'Caso de Estudio',
+        title2: 'Replicación y Retención deAmazon WorkDocs',
+        subtitle: 'ERBESSD Instruments',
+
+        acerca: 'Acerca de ERBESSD',
+        description: 'ERBESSD Instruments es una empresa innovadora que desarrolla tecnología de monitoreo de vibración y del estado de maquinaria. Durante más de treinta años, la familia de empresas ERBESSD ha liderado la industria en el suministro de productos de análisis de vibraciones y balanceo dinámico intuitivos y fáciles de usar que facilitan el trabajo y a un precio accesible.',
+
+        description2: 'Amazon WorkDocs es un servicio completamente administrado y seguro de creación de contenido, almacenamiento y colaboración. Con Amazon WorkDocs, puede crear, editar y compartir contenido de manera sencilla y, como se almacena de manera centralizada en AWS, puede acceder a él desde cualquier lugar o dispositivo. Por medio de Amazon WorkDocs, es fácil colaborar con otras personas, compartir contenido, ofrecer comentarios enriquecedores y editar documentos de manera colaborativa.',
+        description3: 'Por razones de cumplimiento ERBESSD requería que la información almacenada en WorkDocs pueda ser enviada de manera automática a 2 regiones diferentes de la región donde encuentra el sitio de WorkDocs y que pueda retenerse por una periodo de tiempo determinado.',
+
+        description4: 'ERBESSD sabía que la solución que buscaba debería estar en un entorno en la nube, y después de analizar distintos proveedores, ademas de la guia de Mxmart, encontró que Amazon Web Services ofrecía las herramientas y servicios necesarios para la solución que requería.',
+
+        title3: 'La solución',
+        t1: 'Mover manualmente objetos individuales de',
+        t2: 'a',
+        t3: 'puede resultar tedioso. por eso hemos diseñado una forma de automatizar el proceso y disponer de los archivos en S3 para su posterior análisis, procesamiento y respaldo.',
+        t4: 'La solucion esta basada en una constante comunicación en donde',
+        t5: 'esta escuchando las notificaciones de WorkDocs para procesar todos los eventos generados, Amazon API Gateway esta integrado con',
+        t6: 'que pone en cola los eventos de Amazon API Gateway y activa una',
+        t7: 'que se encarga de mover los archivos a un bucket S3 previamente creado y configurado. Amazon SQS utiliza una fila para volver a procesar los eventos de la API en caso de que se produzca un fallo al sincronizar los archivos de Amazon WorkDocs con Amazon S3.',
+        t8: 'Finalmente, el bucket S3 en donde llegan los archivos de Amazon WorkDocs esta configurado para replicar de forma asíncrona todos los archivos a otros dos buckets que estab en regiones diferentes.',
+
+        diagrama: 'Diagrama de la Arquitectura',
+        title4: 'Los beneficios',
+        description5: 'La solución permite a ERBESSD centrarse en el análisis de los datos y evitar los esfuerzos manuales de mover los archivos desde Amazon WorkDocs a Amazon S3, ahorrando tiempo y mejorando así la productividad y la eficiencia en general cumpiendo con todos los requesitos de compliance y archivado que necesitaban.',
+    },
+
+    aurora: {
+        metaTitle: 'Amazon Aurora | Mxmart Solutions',
+        metaDescription: 'Conoce los servicios que ofrece AWS de almacenamiento y backup en la nube, escritorios virtuales, bases de datos, servidores virtuales privados y todo lo que necesitas para tu proyecto.',
+
+        title: 'Modernización de base de datos',
+        subtitle: 'Potenciamos el éxito de su empresa',
+
+        title1: 'Especialistas en bases de datos',
+        description: 'En Mxmart somos socios nivel "Select" de Amazon Web Services y contamos con la especialidad en bases de datos con el Service Delivery Program (SDP) de Relational Database Service (RDS) en la nube de AWS. Esto nos permite brindar las mejores soluciones relacionadas a la migración de bases de datos On Premises hacia servicios administrados en AWS, permitiendo la administración y gestión de diferentes motores de Bases de Datos relacionales y no relacionales.',
+
+        title2: 'Amazon Aurora',
+        description2: 'Amazon Aurora es una base de datos relacional compatible con MySQL y PostgreSQL creada especialmente para la nube y que combina el rendimiento y disponibilidad de las bases de datos tradicionales con la simplicidad y rentabilidad de las bases de datos de código abierto.',
+        description3: 'Es hasta cinco veces más rápida que las bases de datos de MySQL estándar y tres veces más rápida que las bases de datos de PostgreSQL estándar. Ofrece la seguridad, disponibilidad y fiabilidad de las bases de datos de nivel comercial a una décima parte del costo. Amazon Aurora está completamente administrada por Amazon Relational Database Service (RDS), que automatiza las tareas administrativas demandantes como el aprovisionamiento de hardware, la configuración de bases de datos, la aplicación de parches y las copias de seguridad.',
+        link: 'Conocer más acerca de Amazon Aurora',
+        
+        title3: 'Ventajas de la modernización y migración de bases de datos',
+        v1: 'Reducción en costo de licenciamiento',
+        v2: 'Pago por uso',
+        v3: 'Habilitación de soluciones en menor tiempo',
+        v4: 'Recuperación ante desastres',
+        v5: 'Base de datos (Relacionales, noSQL, grafos, etc)',
+        v6: 'Múltiples capacidades de computo',
+        v7: 'Seguridad',
+        v8: 'Optimización',
+
+        framework: 'Framework utilizado',
+
+        title4: 'Casos de uso más comunes',
+
+        c1: 'Migrar a bases de datos administradas',
+        c2: 'Actualización de versiones de motores de bases de datos (SQL Server, MySql, Postgress, Oracle y MariaDB)',
+        c3: 'Aplicaciones empresariales (SAP, Oracle) y aplicaciones tipo Saas',
+        c4: 'Crear aplicaciones web y móviles para uso en alta disponibilidad',
+
+        title5: 'Otros casos de uso',
+
+        c5: 'Seguridad y gestión de múltiples bases de datos.',
+        c6: 'Modernización de plataformas web.',
+        c7: 'Optimización de recursos informáticos para el despliegue de las bases de datos',
+
+        title6: 'Casos de éxito',
+        cardTitle: 'Moodle sobre Amazon Web Services y Amazon Aurora',
+        cardDescription: 'La UNIVA ha implementado educación en línea a través de la plataforma de gestión de aprendizaje, Moodle, así...',
+    },
+
+    infraestructura: {
+        metaTitle: 'Infraestructura para servidores | Mxmart Solutions',
+        metaDescription: 'Migración de servidores On Premises u otras nubes hacia AWS, generación de disaster recovery o para realizar lift and shift',
+
+        title: 'Modernización de',
+        title2: 'infraestructura para servidores',
+        subtitle: 'Potenciamos el éxito de su empresa',
+
+        description: 'En Mxmart contamos con la experiencia en migración de servidores On Premises u otras nubes públicas o privadas hacia AWS, en la generación de disaster recovery y en la implementación de la estrategía lift and shift',
+
+        title3: 'Ventajas de la modernización de infraestructura para servidores',
+        title4: 'Framework utilizado',
+
+        v1: 'Reducción en costo de licenciamiento',
+        v2: 'Pago por uso',
+        v3: 'Habilitación de soluciones en menor tiempo',
+        v4: 'Recuperación ante desastres',
+        v5: 'Múltiples capacidades de computo',
+        v6: 'Optimización',
+
+        title5: 'Tipos de migraciones',
+
+        n1: 'Nube Pública',
+        n2: 'Nube Privada',
+        n3: 'Nube Híbrida',
+        n4: 'Multi-Cloud',
+
+        d1: 'Modelo de TI cuyos servicios informáticos e infraestructura se gestionan por un proveedor externo y se comparten con varias organizaciones a través de la red pública de Internet.',
+        d2: 'A diferencia de la nube pública, en una nube privada se usan recursos informáticos dedicados y de propiedad reservada; por lo que solo una organización aloja y gestiona el sistema.',
+        d3: 'Es un modelo que combina al menos una nube privada y al menos una nube pública, que interactúan para proporcionar un conjunto flexible de servicios informáticos de nube.',
+        d4: 'Es el uso de múltiples servicios de computación y almacenamiento en la nube de diferentes proveedores en una sola arquitectura heterogénea para mejorar las capacidades y el costo de la infraestructura de la nube.',
+    },
+
+    dr: {
+        metaTitle: 'Recuperación ante Desastres | Mxmart Solutions',
+        metaDescription: 'Conoce los servicios que ofrece AWS de almacenamiento y backup en la nube, escritorios virtuales, bases de datos, servidores virtuales privados y todo lo que necesitas para tu proyecto.',
+
+        title: 'Recuperación ante Desastres',
+        subtitle: 'Potenciamos el éxito de su empresa',
+
+        description: 'Como parte de la seguridad informática es importante considerar siempre un DR (Recuperación ante Desastres) que ayuda a reducir al máximo los efectos de un desastre en las funciones de las organizaciones, ante cualquier eventualidad, poder ser capaces de reanudar rápidamente las funciones de la organización.',
+        description2: 'El 70% de instituciones en Latinoamérica no tienen un plan de continuidad, y ante cualquier eventualidad, solamente el 18% de la información es la que pueden recuperar sin un Plan de Continuidad. Contar con un DR reducirá el riesgo de parar operaciones y garantizará la continuidad de la organización.',
+
+        title2: 'Beneficios de implementar un DR',
+        b1: 'Continuidad de los servicios',
+        b2: 'Proteger la institución de fallas generales en los servicios informáticos',
+        b3: 'Minimizar los riesgos generados por la falta de servicios',
+        b4: 'Garantizar el acceso de la información',
+        b5: 'Mantener la disponibilidad de los recursos informáticos',
+        b6: 'Minimizar la toma de decisiones erróneas al presentarse algún desastre',
+        b7: 'Atención continua a los clientes, proveedores, accionistas, colaboradores',
+        b8: 'Capacidad de recuperación exitosa',
+
+        description3: 'El primer paso para una estrategia de recuperación de desastres es tener copias de seguridad y componentes de cargas de trabajo redundantes. Establecer objetivos de tiempo y punto de recuperación mismos que se establecen en función de la ubicación y la función de los recursos y los datos de la carga de trabajo.',
+        description4: 'Es importante utilizar estrategias de recuperación definidas para cumplir los objetivos de recuperación, probar la implementación de recuperación de desastres (para validar la implementación haga pruebas regularmente). Administre la desviación de configuración en el sitio o región DR: Asegúrese de que su infraestructura, sus datos y su configuración se encuentren en su sitio o región DR según sea necesario. Con los servicios de AWS configure una recuperación automática.',
+
+        description5: 'Servicios como',
+        description6: 'minimiza el tiempo de inactividad y la pérdida de datos con una recuperación rápida y confiable de las aplicaciones en las instalaciones y las que estén basadas en la nube a través de almacenamiento asequible, informática mínima y recuperación a un momento dado. Reduzca sus costos mediante la eliminación de los recursos del sitio de recuperación inactivo, y solo pague por la totalidad de su sitio de recuperación de desastres cuando sea necesario.'
+    },
+
     footer: {
         contactanos: 'Contactanos',
         description: 'Nos gustaría conocer más de su compañía o institución y juntos definir una solución que se adapte a sus necesidades, buscando siempre la innovación.',

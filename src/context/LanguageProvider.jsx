@@ -41,6 +41,10 @@ export const LanguageProvider = ({ children }) => {
         ambientesHibridos,
         analiticaDatos,
         lambda,
+        casoErbessd,
+        aurora,
+        infraestructura,
+        drp,
         navbar 
       } = language;
 
@@ -78,6 +82,10 @@ export const LanguageProvider = ({ children }) => {
         ambientesHibridos,
         analiticaDatos,
         lambda,
+        casoErbessd,
+        aurora,
+        infraestructura,
+        drp,
         navbar,
 
         //Funciones

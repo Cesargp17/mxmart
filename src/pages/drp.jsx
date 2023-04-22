@@ -1,39 +1,45 @@
 import { PageLayout } from '@/components/layout/PageLayout'
 import { HeaderSections } from '@/components/pages/HeaderSections'
+import { LanguageContext } from '@/context/LanguageContext';
 import Link from 'next/link';
-import React from 'react'
-
-const firstItems = [
-    { id: 1, title: 'Continuidad de los servicios', icon: 'fas fa-walking' },
-    { id: 2, title: 'Proteger la institución de fallas generales en los servicios informáticos', icon: 'fas fa-shield-alt' },
-    { id: 3, title: 'Minimizar los riesgos generados por la falta de servicios', icon: 'fas fa-balance-scale-left' },
-    { id: 4, title: 'Garantizar el acceso de la información', icon: 'fas fa-sign-in-alt' },
-    { id: 5, title: 'Mantener la disponibilidad de los recursos informáticos', icon: 'fas fa-tachometer-alt' },
-    { id: 6, title: 'Minimizar la toma de decisiones erróneas al presentarse algún desastre', icon: 'fas fa-user-shield' },
-    { id: 7, title: 'Atención continua a los clientes, proveedores, accionistas, colaboradores', icon: 'fas fa-headset' },
-    { id: 8, title: 'Capacidad de recuperación exitosa', icon: 'fas fa-history' },
-];
+import React, { useContext } from 'react'
 
 const DrpPage = () => {
+
+    //Contexto que trae la logica para el sitio multidioma
+    const { drp } = useContext( LanguageContext );
+
+    //arreglo que sirve para mapear los elementos de beneficios
+    const firstItems = [
+        { id: 1, title: drp.b1, icon: 'fas fa-walking' },
+        { id: 2, title: drp.b2, icon: 'fas fa-shield-alt' },
+        { id: 3, title: drp.b3, icon: 'fas fa-balance-scale-left' },
+        { id: 4, title: drp.b4, icon: 'fas fa-sign-in-alt' },
+        { id: 5, title: drp.b5, icon: 'fas fa-tachometer-alt' },
+        { id: 6, title: drp.b6, icon: 'fas fa-user-shield' },
+        { id: 7, title: drp.b7, icon: 'fas fa-headset' },
+        { id: 8, title: drp.b8, icon: 'fas fa-history' },
+    ];
+
   return (
-    <PageLayout title={'Recuperación ante Desastres | Mxmart Solutions'}>
+    <PageLayout title={ drp.metaTitle } description={ drp.metaDescription }>
 
     <HeaderSections
         portada={'/images/Mxmart_DRP.png'}
-        titulo={'Recuperación ante Desastres'}
-        texto3={'Potenciamos el éxito de su empresa'}
+        titulo={ drp.title }
+        texto3={ drp.subtitle }
     /> 
 
     <div className="flex justify-center bg-white">  
         <div className="container max-w-6xl mb-20 mt-20">
 
             <p className='p-4'>
-            Como parte de la seguridad informática es importante considerar siempre un DR (Recuperación ante Desastres) que ayuda a reducir al máximo los efectos de un desastre en las funciones de las organizaciones, ante cualquier eventualidad, poder ser capaces de reanudar rápidamente las funciones de la organización.
+            { drp.description }
             <br /><br />
-            El 70% de instituciones en Latinoamérica no tienen un plan de continuidad, y ante cualquier eventualidad, solamente el 18% de la información es la que pueden recuperar sin un Plan de Continuidad. Contar con un DR reducirá el riesgo de parar operaciones y garantizará la continuidad de la organización.
+            { drp.description2 }
             </p>
 
-            <h3 className='text-center text-3xl mb-6 mt-20'>Beneficios de implementar un DR</h3>
+            <h3 className='text-center text-3xl mb-6 mt-20'>{ drp.title2 }</h3>
 
             <div className="flex flex-col lg:flex-row grid grid-cols-1 lg:grid-cols-4 mt-10 gap-4 mb-20">
                 {
@@ -49,9 +55,9 @@ const DrpPage = () => {
             <hr className='mt-10 mb-10' />
 
             <p className='p-4'>
-            El primer paso para una estrategia de recuperación de desastres es tener copias de seguridad y componentes de cargas de trabajo redundantes. Establecer objetivos de tiempo y punto de recuperación mismos que se establecen en función de la ubicación y la función de los recursos y los datos de la carga de trabajo.
+            { drp.description3 }
             <br /><br />
-            Es importante utilizar estrategias de recuperación definidas para cumplir los objetivos de recuperación, probar la implementación de recuperación de desastres (para validar la implementación haga pruebas regularmente). Administre la desviación de configuración en el sitio o región DR: Asegúrese de que su infraestructura, sus datos y su configuración se encuentren en su sitio o región DR según sea necesario. Con los servicios de AWS configure una recuperación automática.
+            { drp.description4 }
             </p>
 
             <div className="flex flex-col lg:flex-row items-center justify-between mt-4">
@@ -60,8 +66,8 @@ const DrpPage = () => {
                 className="w-full lg:w-[400px]"
                 />
                 <p className="p-8 text-gray-900 text-lg">
-                Servicios como <Link className='text-sky-700 font-bold' href='https://aws.amazon.com/es/cloudendure-disaster-recovery/' target='_blank'> AWS Elastic Disaster Recovery (AWS DRS) </Link>
-                minimiza el tiempo de inactividad y la pérdida de datos con una recuperación rápida y confiable de las aplicaciones en las instalaciones y las que estén basadas en la nube a través de almacenamiento asequible, informática mínima y recuperación a un momento dado. Reduzca sus costos mediante la eliminación de los recursos del sitio de recuperación inactivo, y solo pague por la totalidad de su sitio de recuperación de desastres cuando sea necesario.
+                { drp.description5 } <Link className='text-sky-700 font-bold' href='https://aws.amazon.com/es/cloudendure-disaster-recovery/' target='_blank'> AWS Elastic Disaster Recovery (AWS DRS) </Link>
+                { drp.description6 }
                 </p>
             </div>
 

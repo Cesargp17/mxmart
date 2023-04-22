@@ -997,6 +997,143 @@ export default {
         card2Description: 'Manually moving individual objects from Amazon WorkDocs to Amazon S3 can be tedious...',
     },
 
+    casoErbessd: {
+        metaTitle: 'Amazon WorkDocs Replication & Retention | Mxmart Solutions',
+        metaDescription: 'ERBESSD Instruments is an innovative developer of vibration and machine condition monitoring technology.',
+
+        title: 'Case Study',
+        title2: 'Amazon WorkDocs Replication & Retention',
+        subtitle: 'ERBESSD Instruments',
+
+        acerca: 'About ERBESSD',
+        description: 'ERBESSD Instruments is an innovative developer of vibration and machine condition monitoring technology. For over thirty years, the ERBESSD family of companies has led the industry in providing intuitive, easy-to-use vibration analysis and dynamic balancing products that make your job easier and affordable.',
+
+        description2: 'Amazon WorkDocs is a fully managed and secure content creation, storage and collaboration service. With Amazon WorkDocs, you can easily create, edit, and share content, and because it is stored centrally on AWS, you can access it from any location or device. Through Amazon WorkDocs, it`s easy to collaborate with others, share content, provide rich feedback, and collaboratively edit documents.',
+        description3: 'For compliance reasons ERBESSD required that the information stored in WorkDocs can be automatically sent to 2 different regions of the region where the WorkDocs site is located and that it can be retained for a set period of time.',
+
+        description4: 'ERBESSD knew that the solution it was looking for should be in a cloud environment, and after analyzing different providers, in addition to Mxmart`s guidance, it found that Amazon Web Services offered the tools and services needed for the solution it required.',
+
+        title3: 'The solution',
+        t1: 'Manually moving individual objects from',
+        t2: 'to',
+        t3: 'can be tedious, so we designed a way to automate the process and make the files available in S3 for further analysis, processing and backup.',
+        t4: 'The solution is based on a constant communication where',
+        t5: 's listening for WorkDocs notifications to process all the events generated, Amazon API Gateway is integrated with',
+        t6: 'which queues the events from Amazon API Gateway and triggers a',
+        t7: 'that takes care of moving the files to a previously created and configured S3 bucket. Amazon SQS uses a queue to reprocess API events in the event of a failure to synchronize files from Amazon WorkDocs to Amazon S3.',
+        t8: 'Finally, the S3 bucket where the Amazon WorkDocs files arrive is configured to asynchronously replicate all files to two other buckets that are in different regions.',
+
+        diagrama: 'Architecture Diagram',
+        title4: 'The benefits',
+        description5: 'The solution allows ERBESSD to focus on data analysis and avoid the manual efforts of moving files from Amazon WorkDocs to Amazon S3, saving time and improving overall productivity and efficiency by meeting all the compliance and archiving requirements they needed.',
+    },
+
+    aurora: {
+        metaTitle: 'Amazon Aurora | Mxmart Solutions',
+        metaDescription: 'Find out about the services offered by AWS for storage and backup in the cloud, virtual desktops, databases, virtual private servers and everything you need for your project.',
+
+        title: 'Amazon Aurora',
+        subtitle: 'Relational database compatible with MySQL and PostgreSQL created for the cloud',
+
+        title1: 'About us',
+        description: 'In Mxmart we have the knowledge, certified staff and the experience to develop and implement all kinds of cloud architectures. We are Consulting Partner Select of AWS and we guide our customers through their digital transformation, advising them on the implementation of Amazon Web Services always looking for resource optimization. Amazon Aurora allows us to offer our customers a high performance database, scalable, secure, highly available and fully optimized for the cloud.',
+
+        title2: 'Amazon Aurora',
+        description2: 'Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases.',
+        description3: 'Amazon Aurora is up to five times faster than standard MySQL databases and three times faster than standard PostgreSQL databases. It provides the security, availability, and reliability of commercial databases at 1/10th the cost. Amazon Aurora is fully managed by Amazon Relational Database Service (RDS), which automates time-consuming administration tasks like hardware provisioning, database setup, patching, and backups.',
+
+        link: 'Learn more about Amazon Aurora',
+        
+        title3: 'Advantages of database modernization and migration',
+        v1: 'Reduction in licensing cost',
+        v2: 'Pay as you go',
+        v3: 'Enabling solutions in less time',
+        v4: 'Disaster Recovery',
+        v5: 'Database (Relational, noSQL, graphs, etc)',
+        v6: 'Multiple computing capabilities',
+        v7: 'Security',
+        v8: 'Optimization',
+
+        framework: 'Framework used',
+
+        title4: 'Most common use cases',
+
+        c1: 'Migrating to managed databases',
+        c2: 'Update of database engine versions (SQL Server, MySql, Postgress, Oracle and MariaDB)',
+        c3: 'Business applications (SAP, Oracle) and Saas type ',
+        c4: 'Create web and mobile applications for use in high availability',
+
+        title5: 'Other use cases',
+
+        c5: 'Security and management multiple databases.',
+        c6: 'Modernization of web platforms.',
+        c7: 'Optimization of computing resources for the deployment of databases',
+
+        title6: 'Learn about our case studies',
+        cardTitle: 'Moodle on Amazon Web Services and Amazon Aurora',
+        cardDescription: 'UNIVA has implemented online education through the learning management platform, Moodle, as well as in different curricula...',
+    },
+
+    infraestructura: {
+        metaTitle: 'Infrastructure for servers | mxmart solutions',
+        metaDescription: 'At Mxmart we have the experience in migrating On Premises servers or other public or private clouds to AWS, in the generation of disaster recovery and in the implementation of the lift and shift strategy.',
+
+        title: 'Server infrastructure',
+        title2: 'modernization',
+        subtitle: 'We boost your company`s success',
+
+        description: 'At Mxmart we have the experience in migrating On Premises servers or other public or private clouds to AWS, in the generation of disaster recovery and in the implementation of the lift and shift strategy.',
+
+        title3: 'Advantages of server infrastructure modernization',
+        title4: 'Framework used',
+
+        v1: 'Reduction in licensing costs',
+        v2: 'Pay-per-use',
+        v3: 'Enabling solutions in less time',
+        v4: 'Disaster recovery',
+        v5: 'Multiple computing capabilities',
+        v6: 'Optimization',
+
+        title5: 'Types of migrations',
+
+        n1: 'Public Cloud',
+        n2: 'Private Cloud',
+        n3: 'Hybrid Cloud',
+        n4: 'Multi-Cloud',
+
+        d1: 'IT model whose computing services and infrastructure are managed by an external provider and shared with several organizations through the public Internet network.',
+        d2: 'Unlike the public cloud, a private cloud uses dedicated and proprietary computing resources; therefore, only one organization hosts and manages the system.',
+        d3: 'A model that combines at least one private cloud and at least one public cloud, which interact to provide a flexible set of cloud computing services.',
+        d4: 'Is the use of multiple cloud computing and storage services from different providers in a single heterogeneous architecture to enhance the capabilities and cost of cloud infrastructure.',
+    },
+
+    drp: {
+        metaTitle: 'DR | Mxmart Solutions',
+        metaDescription: 'The disaster recovery has become more common than we could imagine, and without a doubt, most organizations and institutions should have one. In addition to interrupting operations, disasters can lead to data loss, which can be caused by data center errors, server damage or cyber-attacks.',
+
+        title: 'Disaster Recovery',
+        subtitle: 'We boost your company`s success',
+
+        description: 'The disaster recovery has become more common than we could imagine, and without a doubt, most organizations and institutions should have one. In addition to interrupting operations, disasters can lead to data loss, which can be caused by data center errors, server damage or cyber-attacks.',
+        description2: 'We provide managed services that minimize downtime and data loss through fast and reliable recovery of physical, virtual and AWS cloud-based servers. We also have customized solutions that managed services cannot cover.',
+
+        title2: 'Benefits',
+        b1: 'Continuity of services',
+        b2: 'Protect the institution from general failures in computer services',
+        b3: 'Minimize the risks generated by the lack of services',
+        b4: 'Guarantee access to information',
+        b5: 'Maintain availability of computing resources',
+        b6: 'Minimize wrong decision making when a disaster occurs',
+        b7: 'Continuous attention to customers, suppliers, shareholders, collaborators',
+        b8: 'Successful recovery capacity',
+
+        description3: 'The first step to a disaster recovery strategy is to have redundant backups and workload components. Establish recovery time and recovery point objectives themselves that are set based on the location and function of the workload resources and data.',
+        description4: 'It is important to use defined recovery strategies to meet recovery objectives, test the disaster recovery implementation (to validate the implementation test regularly). Manage configuration drift in the DR site or region: Ensure that your infrastructure, data and configuration are in your DR site or region as needed. With AWS services set up automatic recovery.',
+
+        description5: 'Services like',
+        description6: 'minimizes downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications through affordable storage, minimal compute, and recovery to a given moment. Reduce your costs by eliminating idle recovery site resources, and only pay for your entire disaster recovery site when needed.'
+    },
+
     footer: {
         contactanos: 'Contact us',
         description: 'We would like to learn more about your company or institution and together define a solution that fits your needs, always looking for innovation.',
