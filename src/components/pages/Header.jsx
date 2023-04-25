@@ -31,7 +31,7 @@ const { index } = useContext( LanguageContext );
             <source src="https://res.cloudinary.com/djxmfnsct/video/upload/v1682454518/yd7ad5sq1mfev6ffyqh2.mp4" type="video/mp4" />
         </video> */}
 
-        <video playsInline autoPlay muted loop id="video_bg">
+        <video className="video" playsInline autoPlay muted loop id="video_bg">
 
           <source src="https://mxmartsolutions.com/assets/images/BKG_Index_05.mp4" type="video/mp4" />
 
