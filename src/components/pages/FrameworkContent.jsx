@@ -10,7 +10,7 @@ export const FrameworkContent = ({ classNameFramework }) => {
   return (
     <div className="main-framework-side-a">
         <div className="main-title-png">
-            <div className={ classNameFramework }>
+            <div className={`${classNameFramework} mx-auto mb-6 w-[240px] h-[240px] md:h-[400px] md:w-max `}>
 
                 <div className="f-side-a">
                     <div className="f-analitica-de-datos">
