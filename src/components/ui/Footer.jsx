@@ -60,7 +60,11 @@ export const Footer = () => {
                                         <div className="captcha_div">
                                             <div id="captcha" className="col-xs-12 g-recaptcha g-recaptcha-response-required" data-sitekey="6Lduvh4bAAAAAMJ1A507Jv02dPbhtpNpsU8fRGxT " required=""></div>
                                             <div className="col-auto">
-                                                <button type="submit" className="btn btn-primary btn-contact">{ footer.enviar } </button>
+                                                {/* <button type="submit" className="btn btn-primary btn-contact">{ footer.enviar } </button> */}
+                                                <button className="inline-block px-4 py-2 text-white bg-gradient-to-r from-blue-500 to-blue-800 rounded-md w-[130px] h-[50px]">
+                                                    { footer.enviar }
+                                                </button>
+
                                                 <div id="errorFormulario" style={{float:'right'}}></div>
                                             </div>
                                         </div>

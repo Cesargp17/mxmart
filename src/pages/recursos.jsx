@@ -208,8 +208,8 @@ const RecursosPage = () => {
                               <input value={ Empresa } onChange={ ( e ) => setEmpresa( e.target.value ) } type="text" name="empresa" placeholder={ recursos.empresa } data-form-field="empresa"  className="form-control text-sm" id="empresa-formbuilder-8e"/>
                            </div>
                            <div className="col-auto">
-                            <button type='submit' className="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-4 px-10 rounded">
-                                { recursos.button }
+                            <button type='submit' className="inline-block px-4 py-2 text-white bg-gradient-to-r from-blue-500 to-blue-800 rounded-md w-[130px] h-[50px]">
+                            { recursos.button }
                             </button>
                            </div>
                            {

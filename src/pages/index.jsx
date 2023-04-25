@@ -142,10 +142,11 @@ const HomePage = () => {
                 <h2 className='text-3xl lg:text-5xl text-white font-bold' data-aos="fade-up" data-aos-duration="1500">{ index.aboutTitle }</h2>
                 <img data-aos="fade-up" data-aos-duration="1500" src="/images/arrow.png" alt="" width={17} height={25} className="arrow_mxmart "/>
             </div>
-            <div className='flex flex-row justify-center grid grid-cols-4 lg:grid-cols-7 mx-auto max-w-5xl mt-10'>
+            <div className='flex flex-row justify-center grid grid-cols-3 md:grid-cols-7 mx-auto max-w-5xl mt-10 place-items-center'>
                 {
-                    awsBadges.map( badge =>(
+                    awsBadges.map( (badge, index) =>(
                         <Image
+                            className={`${index === 6 && 'mx-auto col-start-2 col-end-3 md:col-start-7 md:col-end-7'}`}
                             key={ badge.id }
                             src={ badge.img }
                             alt={ badge.alt }
@@ -157,11 +158,11 @@ const HomePage = () => {
             </div>
 
             <h3 className='text-center text-white max-w-5xl mx-auto mt-8 p-4'>{ index.aboutText }</h3>
-            <div className='flex flex-row justify-center grid grid-cols-4 lg:grid-cols-7 mx-auto max-w-5xl mt-10'>
+            <div className='flex flex-row justify-center grid grid-cols-3 md:grid-cols-7 mx-auto max-w-5xl mt-10 place-items-center'>
                 {
-                    awsCertifications.map( certification =>(
+                    awsCertifications.map( (certification, index) =>(
                         <Image
-                            key={ certification.id }
+                            className={`${index === 6 && 'mx-auto col-start-2 col-end-3 md:col-start-7 md:col-end-7'}`}
                             src={ certification.img }
                             alt={ certification.alt }
                             width={120}

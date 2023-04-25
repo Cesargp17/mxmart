@@ -17,6 +17,8 @@ const FrameworkDesarrollo = () => {
       description={ frameworkDevelopment.metaDescription }
     >
 
+        <br /><br />
+
         <FrameworkHeader
             img={'/images/framework-page-arquitectura-image.png'} 
             pageNumber={ 5 }

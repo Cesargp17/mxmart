@@ -1106,7 +1106,7 @@ export default {
         d4: 'Es el uso de múltiples servicios de computación y almacenamiento en la nube de diferentes proveedores en una sola arquitectura heterogénea para mejorar las capacidades y el costo de la infraestructura de la nube.',
     },
 
-    dr: {
+    drp: {
         metaTitle: 'Recuperación ante Desastres | Mxmart Solutions',
         metaDescription: 'Conoce los servicios que ofrece AWS de almacenamiento y backup en la nube, escritorios virtuales, bases de datos, servidores virtuales privados y todo lo que necesitas para tu proyecto.',
 
@@ -1131,6 +1131,97 @@ export default {
 
         description5: 'Servicios como',
         description6: 'minimiza el tiempo de inactividad y la pérdida de datos con una recuperación rápida y confiable de las aplicaciones en las instalaciones y las que estén basadas en la nube a través de almacenamiento asequible, informática mínima y recuperación a un momento dado. Reduzca sus costos mediante la eliminación de los recursos del sitio de recuperación inactivo, y solo pague por la totalidad de su sitio de recuperación de desastres cuando sea necesario.'
+    },
+
+    policy: {
+        metaTitle: 'Aviso de Privacidad | Mxmart Solutions',
+        metaDescription: 'En Mxmart respetamos su derecho a la privacidad y a la protección de sus datos personales. Nosotros no vendemos o rentamos a terceros sus datos. Solamente transferimos o compartimos a terceros sus datos personales en los términos establecidos en este Aviso de Privacidad. Estas comunicaciones se realizan únicamente si usted las ha consentido o bien cuando no se requiere su consentimiento, en términos de la legislación aplicable.',
+
+        title: 'Aviso de Privacidad',
+        subtitle: 'Potenciamos el éxito de su empresa',
+
+        title2: 'Aviso de Privacidad',
+        d1: 'Mxmart de Mexico, S.A. de C.V. ("Mxmart" o "Nosotros"), sociedad con domicilio en Av. Labna 1530, Col. Mirador del Sol, C.P. 45054, Zapopan, Jalisco, es el responsable del tratamiento de sus datos personales.',
+        title3: 'El compromiso de Mxmart con su privacidad',
+        d2: 'En Mxmart respetamos su derecho a la privacidad y a la protección de sus datos personales. Nosotros no vendemos o rentamos a terceros sus datos. Solamente transferimos o compartimos a terceros sus datos personales en los términos establecidos en este Aviso de Privacidad. Estas comunicaciones se realizan únicamente si usted las ha consentido o bien cuando no se requiere su consentimiento, en términos de la legislación aplicable.',
+        d3: 'Asimismo, para nosotros resulta importante que usted cuente con la capacidad de realizar decisiones bien informadas acerca de la forma en que usamos sus datos personales. Este Aviso de Privacidad explica las políticas y prácticas de privacidad que se rigen en Mxmart con relación al tratamiento que hacemos de sus datos personales (entendiendo por tratamiento la obtención, el uso, la divulgación, y almacenamiento de dichos datos) y las medidas que tomamos para proteger sus datos. Este Aviso está dirigido a: (1) Nuestros clientes, cuando utilizan nuestra página web, localizada en',
+        d4: '(el "Sitio web").',
+
+        title4: '1. ¿Qué son los datos personales?',
+        d5: 'Se consideran datos personales cualquier información concerniente a una persona física, que la identifique o que pueda ser asociada a una persona identificable.',
+        
+        title5: '2. ¿Qué datos personales son obtenidos por Mxmart?',
+        d6: 'Para los fines establecidos en este Aviso de Privacidad, podemos obtener los datos personales que se refieren a continuación:',
+        d7: 'a. Datos de identificación: información que permite diferenciarlo de otros individuos. Estos datos incluyen: nombre y empresa a la que representa;',
+        d8: 'b. Datos de contacto: información que nos permite mantenernos en contacto con usted. Esos datos incluyen su correo electrónico, teléfono particular u otro teléfono de contacto;',
+        d9: 'c. Registros electrónicos: esta información incluye dirección IP con la que accede al Sitio web, tipo de navegador; actividad en el sitio, entre otros registros.',
+        
+        title6: '3. ¿Qué datos personales sensibles son obtenidos por Mxmart?',
+        d10: 'Mxmart puede obtener ciertos datos personales que son considerados como sensibles en términos de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (la "LFPDPPP").',
+        
+        title7: '4. Obtención de sus datos personales',
+        d11: 'Mxmart obtiene datos de usted ya sea personalmente o de manera directa (v.g. a través de correo electrónico, vía telefónica o a través de su interacción con el Sitio web). Algunos ejemplos son los siguientes:',
+        d12: 'Cuando usted usa el Sitio web;',
+        d13: 'Cuando se pone en contacto con nosotros, cualquiera que sea el motivo de su comunicación, a través del Sitio web, o a través de linea telefonica',
+        d14: 'Cuando usted participa en alguna promoción o encuesta.',
+        d15: 'Mxmart puede obtener de manear automática cierta información cuando usted visita el Sitio web. Esta información incluye la dirección IP asociada a su equipo de cómputo y el sistema operativo que utiliza, la página web desde la cual usted fue enlazado a nuestro Sitio web, su actividad dentro del Sitio web, la fecha y hora en la que visitó nuestro sitio web. Esta información puede ser obtenida a través del uso de "Cookies" y "Web Beacons". Para mayor información sobre estas tecnologías, consulte más adelante la sección específica.',
+        d16: 'Mxmart también puede obtener información de usted de manera indirecta cuando ésta nos es proporcionada por terceros a quienes hemos contratado para apoyarnos en procesos específicos. Es posible que conjuntemos la información que recibimos de estos terceros con aquella que ya tenemos de usted.',
+        
+        title8: '5. Uso de sus datos personales',
+        d17: 'En general, los datos personales que obtenemos de usted son utilizados para procesar sus solicitudes; para proveerle servicios de alta calidad y para hacerle saber de oportunidades que consideramos que podrían ser de su interés. Algunas finalidades específicas para las cuales sus datos son procesados son las siguientes:',
+        d18: 'a. Informarle sobre posibles oportunidades que podrían ser de su interés;',
+        d19: 'b. Para fines de mercadotecnia. Podemos hacerle llegar publicaciones, encuestas, o información promocional de diversos tipos ("Información Promocional").',
+        d20: 'Por favor considere que el hacerle llegar Información Promocional no es una actividad que consideremos esencial para mantener la relación que sostenemos con usted. Si usted prefiere no recibir Información Promocional, Mxmart le facilita el hacernos saber esta decisión. Para conocer más acerca de los medios que Mxmart le ofrece para que usted pueda limitar la forma en que Mxmart usa o divulga sus datos personales, por favor consulte la sección "Opciones para Limitar el Uso o Divulgación de sus Datos Personales" establecida en este Aviso.',
+        d21: 'Usted puede contactarnos en cualquier momento para rechazar el recibir Información Promocional. El hecho de que usted decida no recibir Información Promocional no afectará su posibilidad de recibir de nosotros los servicios o productos que usted nos solicite.',
+        
+        title9: '6. Transferencias de sus datos personales',
+        d22: 'Mxmart puede compartir o transferir sus datos personales en los términos que se describen a continuación.',
+        d23: 'a. Empresas que nos prestan servicios. Mxmart puede remitir sus datos personales a empresas que nos prestan algún servicio. Estos servicios se prestan por instrucciones nuestras, en los términos de los contratos correspondientes. En caso de que alguno de estos proveedores requiera tener acceso a sus datos personales, nosotros exigiremos a dicho proveedor que únicamente utilice sus datos personales en la medida que dicho uso resulte necesario para la ejecución del servicio contratado. Mxmart solicita a estas empresas mantener de manera confidencial la información que reciben y a regresar dicha información a Mxmart cuando ya no requieren utilizarla. ',
+        d24: 'b. Otros usos o divulgación de sus datos personales. Adicionalmente, Mxmart puede usar o divulgar sus datos personales cuando consideremos, de buena fe, que la legislación aplicable nos permite usar o divulgar sus datos, en términos de los artículos 4 y 37 de la LFPDPPP. Lo anterior incluye, por ejemplo, cuando dicha transferencia resulte necesaria para protegerlo a usted, para cumplir con algún proceso legal o con requerimientos de autoridades, para responder a reclamaciones o para proteger los derechos de propiedad o la seguridad de Mxmart, de sus afiliadas, de los empleados de Mxmart, de los Socios o los derechos de terceros.',
+        d25: 'Se hace notar que la información relacionada con nuestros Socios, incluyendo sus datos personales, podrían ser comunicados o transferidos a un tercero, en el contexto de la negociación de una fusión o una venta de activos o una adquisición.',
+
+        title10: '7. Sus derechos "ARCO"',
+        d26: 'De conformidad con la LFPDPPP, usted goza de los derechos para acceder, rectificar y cancelar los datos personales que nos ha proporcionado. También cuenta con el derecho de oponerse a ciertas actividades de tratamiento que llevamos a cabo y con el derecho de revocar en cualquier momento el consentimiento que nos haya otorgado para procesar sus datos en la medida que la ley lo permita. Los derechos de Acceso, Rectificación, Cancelación y Oposición antes mencionados, son comúnmente conocidos como "Derechos ARCO". Para el ejercicio de sus Derechos ARCO o de su derecho de revocación, por favor contáctenos a la siguiente dirección de correo electrónico:',
+        d27: 'Nosotros le comunicaremos, cuando menos: (i) la información que usted deberá proporcionarnos para identificarse y los documentos que necesitará adjuntar a su solicitud; en su caso, la información que su representante legal deberá proporcionar para identificarse y para acreditar que está actuando en su nombre y representación; (ii) los plazos en los que recibirá una respuesta con relación a su solicitud; (iii) información respecto a cómo debe de presentar su solicitud, incluyendo los formularios que puede utilizar (en caso de existir) y; (iv) la modalidad o medio en que le entregaremos la información a usted (que generalmente será mediante la entrega de copias o mensajes de datos).',
+
+        title11: '8. Dudas o quejas',
+        d28: 'Si usted tiene alguna pregunta o desea contactarnos por alguna razón, incluyendo para formular una queja, usted puede realizar cualquiera de los siguientes procedimientos:',
+        d29: 'Comuníquese con nosotros al (33) 32712247',
+        d30: 'Envíenos un correo a',
+        d31: 'Si usted no desea recibir Información Promocional, incluyendo nuestros correos electrónicos, usted: (a) recibirá la opción de rechazar recibir esta información en el Sitio web; (b) solicitar su cancelación a las listas haciendo clic en la palabra "eliminar" que aparece como un hipervínculo en cualquiera de los correos electrónicos; (c) puede llamarnos a nuestro Centro de Atención para Compras en Línea al teléfono (33) 32712247; o (d) puede enviarnos un correo a',
+
+        title12: '9. Aspectos específicos de privacidad en nuestro sitio web',
+        d32: 'Cookies',
+        d33: 'En nuestro Sitio web utilizamos "Cookies". Las cookies son pequeños archivos de datos que se almacenan en el disco duro de su equipo de cómputo o del dispositivo de comunicación electrónica que usted utiliza cuando navega en nuestro Sitio. Estos archivos de datos permiten intercambiar información de estado entre nuestro Sitio web y el navegador que usted utiliza. La "información de estado" puede revelar medios de identificación de sesión, medios de autenticación o sus preferencias como usuario, así como cualquier otro dato almacenado por el navegador respecto del Sitio web.',
+        d34: 'Las cookies nos permiten monitorear el comportamiento de un usuario en línea. Utilizamos la información que es obtenida a través de cookies para ayudarnos a optimizar su experiencia. A través del uso de cookies podemos, por ejemplo, personalizar en su favor nuestra página de inicio de manera que nuestras pantallas se desplieguen de mejor manera de acuerdo a su tipo de navegador. Las cookies también nos permiten ofrecerle recomendaciones personalizadas respecto de servicios, y correos electrónicos.',
+        d35: 'Las cookies no son software espía, y Mxmart no recopila datos de múltiples sitios o comparte con terceros la información que obtenemos a través de cookies.',
+        d36: 'Como la mayoría de los sitios web, nuestros servidores registran su dirección IP, la dirección URL desde la que accedió a nuestro Sitio web, el tipo de navegador, y la fecha y hora de sus compras y otras actividades. Utilizamos esta información para la administración del sistema, solución de problemas técnicos, investigación de fraudes y para nuestras comunicaciones con usted.',
+        d37: 'Por último, le informamos que el Sitio web utiliza web beacons. Los web beacons también nos permiten monitorear su comportamiento en medios electrónicos Utilizamos web beacons para determinar cuándo y cuántas veces una página ha sido vista. Utilizamos esta información para fines de mercadotecnia, pero únicamente para nuestras propias prácticas de mercadotecnia.',
+        d38: 'Su navegador aceptará las cookies y permitirá la recolección automática de información a menos que usted cambie la configuración predeterminada del navegador. La mayoría de navegadores web permiten que usted pueda gestionar sus preferencias de cookies.',
+        d39: 'Puede ajustar su navegador para que rechace o elimine cookies.',
+        d40: 'Si se inhabilitan las cookies del Sitio web, nuestro Sitio no se cargará apropiadamente.',
+
+        title13: '10. Uso del sitio realizado por menores de edad',
+        d41: 'Recomendamos a los padres de familia el asumir un papel proactivo en el uso que sus hijos hacen del Internet. No es nuestra intención el recopilar información de niños y, en general, de menores de 18 años de edad. Si eres menor de 18 años, no debes proporcionar información al Sitio Web.',
+
+        title14: '11. Modificaciones al aviso de privacidad',
+        d42: 'Mxmart se reserva el derecho de modificar este Aviso de Privacidad en cualquier momento. Sin embargo, nosotros le informaremos el hecho de que se han realizado modificaciones al Aviso, haciendo patente en la parte superior del Aviso la fecha en que fue actualizado por última vez. El Aviso actualizado será publicado en nuestro Sitio Web. Le sugerimos revise nuestro Aviso de Privacidad para asegurarse de que comprende cómo serán utilizados sus datos personales. Toda modificación a nuestro Aviso de Privacidad estará vigente a los 30 días naturales contados a partir de su publicación.',
+        d43: 'En caso de que realicemos una modificación relevante a este Aviso, pondremos a su disposición nuevamente el Aviso de Privacidad en los términos establecidos por la ley. Estos cambios incluyen entre otros: un cambio en: nuestra identidad; las finalidades que dieron origen o son necesarias para la relación entre usted y nosotros; la incorporación de nuevas finalidades que requieran su consentimiento; la obtención de datos personales sensibles, patrimoniales adicionales o financieros a aquellos previamente informados y las demás casos que establece la regulación aplicable.',
+
+        title15: 'FECHA DE LA ÚLTIMA ACTUALIZACIÓN',
+        d44: 'Estimado usuario, se le notifica que el Aviso de Privacidad fue modificado el día 15 de junio de 2021.',
+
+        l1: '1. ¿Qué son los datos personales?',
+        l2: '2. ¿Qué datos personales son obtenidos por Mxmart?',
+        l3: '3. ¿Qué datos personales sensibles son obtenidos por Mxmart?',
+        l4: '4. Obtención de sus datos personales',
+        l5: '5. Uso de sus datos personales',
+        l6: '6. Transferencias de sus datos personales',
+        l7: '7. Sus derechos "ARCO"',
+        l8: '8. Dudas o quejas',
+        l9: '9. Aspectos específicos de privacidad en nuestro sitio web',
+        l10: '10. Uso del sitio realizado por menores de edad',
+        l11: '11. Modificaciones al aviso de privacidad',
     },
 
     footer: {

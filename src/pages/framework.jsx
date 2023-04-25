@@ -17,6 +17,8 @@ const FrameworkPage = () => {
         description={ framework.metaDescription }
     >
 
+        <br /><br />
+
         <FrameworkHeader 
             img={'/images/framework-page-image.png'} 
             pageNumber={ 1 }

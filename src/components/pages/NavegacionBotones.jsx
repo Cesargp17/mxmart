@@ -14,16 +14,16 @@ export const NavegacionBotones = ({ anterior, siguiente, isMobile }) => {
         ? (
           <div className="framework-footer">
             <div className="f-navegacion-movil">
-                <Link className='button text-center items-center' href={`${anterior}`}>{ framework.buttonAnterior }</Link>
+                <Link className='button text-xs items-center flex h-[20px] w-[120px]' href={`${anterior}`}>{ framework.buttonAnterior }</Link>
                 <p></p>
-                <Link className='button text-center items-center' href={`${siguiente}`}>{ framework.buttonSiguiente }</Link>
+                <Link className='button text-xs items-center flex h-[20px] w-[120px]' href={`${siguiente}`}>{ framework.buttonSiguiente }</Link>
             </div>
           </div>
         ) : (
-          <div className="f-navegacion">
-            <Link className='button text-center items-center' href={`${anterior}`}>{ framework.buttonAnterior }</Link>
+          <div className="f-navegacion mt-4">
+            <Link className='button text-center text-sm items-center h-[40px] w-[100px]' href={`${anterior}`}>{ framework.buttonAnterior }</Link>
             <p></p>
-            <Link className='button text-center items-center' href={`${siguiente}`}>{ framework.buttonSiguiente }</Link>
+            <Link className='button text-center text-sm items-center h-[40px] w-[100px]' href={`${siguiente}`}>{ framework.buttonSiguiente }</Link>
           </div>
         )
       }

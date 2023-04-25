@@ -45,6 +45,7 @@ export const LanguageProvider = ({ children }) => {
         aurora,
         infraestructura,
         drp,
+        policy,
         navbar 
       } = language;
 
@@ -86,6 +87,7 @@ export const LanguageProvider = ({ children }) => {
         aurora,
         infraestructura,
         drp,
+        policy,
         navbar,
 
         //Funciones

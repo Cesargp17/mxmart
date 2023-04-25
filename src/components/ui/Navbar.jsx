@@ -120,7 +120,7 @@ export const Navbar = ({ isHome }) => {
 
   return (
     <>
-    <header className={`${ isHome && 'lg:justify-center bg-home scroll-home' } ${ isHoverNavbar & !isHome && 'hover-navbar' }`} id="navbar">
+    <header className={` ${ asPath.startsWith('/framework') && 'bg-[#212121]' }  ${ isHome && 'lg:justify-center bg-home scroll-home headerTextHome' } ${ isHoverNavbar & !isHome && 'hover-navbar' }`} id="navbar">
         <div className="div_logo">
             <Link href="/" aria-label='Logo de la empresa Mxmart Solutions - Página principal'>
                 <div className={`header_logo ${ isHome && 'hidden' }`}></div>

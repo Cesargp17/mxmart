@@ -17,6 +17,8 @@ const FrameworkAutomatizacionPage = () => {
       description={ frameworkAutomatizacion.metaDescription }
     >
 
+        <br /><br />
+
         <FrameworkHeader
             img={'/images/framework-page-desarrollo-image.png'} 
             pageNumber={ 6 }

@@ -16,6 +16,7 @@ const FrameworkSeguridadPage = () => {
         title={ frameworkSeguridad.metaTitle }
         description={ frameworkSeguridad.metaDescription }
     >
+        <br /><br />
 
         <FrameworkHeader 
             img={'/images/framework-page-seguridad-image.png'} 

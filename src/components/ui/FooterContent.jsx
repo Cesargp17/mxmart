@@ -1,4 +1,5 @@
 import { LanguageContext } from '@/context/LanguageContext';
+import Link from 'next/link';
 import React, { useContext } from 'react'
 
 export const FooterContent = () => {
@@ -31,9 +32,9 @@ export const FooterContent = () => {
         <hr/>
         <div className="disclaimer_block ">
             <span>©2014-2023 MXMART DE MEXICO SA DE CV</span>
-            <a href='#' onClick={ ( e ) => e.preventDefault() }>
+            <Link href='/aviso-de-privacidad'>
                 <span>{ footer.privacy }</span>     
-            </a>
+            </Link>
         </div>
     </footer> 
   )

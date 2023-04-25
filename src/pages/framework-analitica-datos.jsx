@@ -17,6 +17,8 @@ const FrameworkAnaliticaPage = () => {
         description={ frameworkAnalitica.metaDescription }
     >
 
+        <br /><br />
+
         <FrameworkHeader
             img={'/images/framework-page-analitica-datos-image.png'} 
             pageNumber={ 7 }

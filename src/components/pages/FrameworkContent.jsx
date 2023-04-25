@@ -11,7 +11,6 @@ export const FrameworkContent = ({ classNameFramework }) => {
     <div className="main-framework-side-a">
         <div className="main-title-png">
             <div className={ classNameFramework }>
-                <div className="f-side-0"></div>
 
                 <div className="f-side-a">
                     <div className="f-analitica-de-datos">

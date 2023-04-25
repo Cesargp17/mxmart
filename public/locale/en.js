@@ -1134,6 +1134,97 @@ export default {
         description6: 'minimizes downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications through affordable storage, minimal compute, and recovery to a given moment. Reduce your costs by eliminating idle recovery site resources, and only pay for your entire disaster recovery site when needed.'
     },
 
+    policy: {
+        metaTitle: 'Privacy Policy | Mxmart Solutions',
+        metaDescription: 'At Mxmart we respect your right to privacy and the protection of your personal data. We do not sell or rent your data to third parties. We only transfer or share to third parties your personal data on the terms set forth in this Privacy Policy. These communications are made only if you have consented to them or when your consent is not required, in terms of applicable law.',
+
+        title: 'Privacy Policy',
+        subtitle: 'We boost your company`s success',
+
+        title2: 'Privacy Policy',
+        d1: 'Mxmart de Mexico, S.A. de C.V. ("Mxmart" or "We"), a company located at Av. Labna 1530, Col. Mirador del Sol, C.P. 45054, Zapopan, Jalisco, is responsible for the processing of your personal data.',
+        title3: 'Mxmart`s commitment to your privacy',
+        d2: 'At Mxmart we respect your right to privacy and the protection of your personal data. We do not sell or rent your data to third parties. We only transfer or share to third parties your personal data on the terms set forth in this Privacy Policy. These communications are made only if you have consented to them or when your consent is not required, in terms of applicable law.',
+        d3: 'It is also important to us that you have the ability to make informed decisions about how we use your personal data. This Privacy Notice explains the privacy policies and practices that govern Mxmart`s treatment of your personal information (meaning the collection, use, disclosure, and storage of that information) and the measures we take to protect your information. This Notice is addressed to: (1) Our customers, when they use our website, located at',
+        d4: '(the "Website").',
+
+        title4: '1. What are personal data?',
+        d5: 'Personal data is any information concerning a natural person, which identifies him or her, or which can be associated with an identifiable person.',
+        
+        title5: '2. What personal data is collected by Mxmart?',
+        d6: 'For the purposes set out in this Privacy Policy, we may obtain the personal data referred below:',
+        d7: 'a. Identifying information: information that allows you to be distinguished from other individuals. This data includes: name and the company you represent;',
+        d8: 'b. Contact Information - information that allows us to keep in touch with you. This data includes your email address, home phone number or other contact phone number;',
+        d9: 'c. Electronic Records - This information includes IP address by which you access the Website, browser type, site activity, and other records.',
+        
+        title6: '3. What sensitive personal data is collected by Mxmart?',
+        d10: 'Mxmart may obtain certain personal data that is considered sensitive in terms of the Federal Law on the Protection of Personal Data in the Possession of Individuals (the "LFPDPPP").',
+        
+        title7: '4. Gathering Your Personal Data',
+        d11: 'Mxmart obtains data from you either in person or directly (e.g. through email, telephone or through your interaction with the Website). Some examples are as follows:',
+        d12: 'When you use the Website.',
+        d13: 'When you contact us, for whatever reason, through the Website, or via a telephone line.',
+        d14: 'When you participate in any promotion or survey.',
+        d15: 'Mxmart may automatically collect certain information when you visit the Website. This information includes the IP address associated with your computer and the operating system you use, the web page from which you linked to our Website, your activity within the Website, and the date and time you visited our Website. This information may be collected through the use of "Cookies" and "Web Beacons". For more information on these technologies, please see the specific section below.',
+        d16: 'Mxmart may also obtain information from you indirectly when it is provided to us by third parties whom we have hired to support specific processes. We may combine the information we receive from these third parties with information we already have about you.',
+        
+        title8: '5. Use of your personal data',
+        d17: 'In general, the personal data we collect from you is used to process your requests; to provide you with high quality services and to let you know about opportunities we think might be of interest to you. Some specific purposes for which your data is processed are as follows:',
+        d18: 'a. To inform you about possible opportunities that may be of interest to you.',
+        d19: 'b. For marketing purposes. We may send you publications, surveys, or promotional information of various types ("Promotional Information").',
+        d20: 'Please note that providing you with Promotional Information is not an activity that we consider essential to maintaining our relationship with you. If you prefer not to receive Promotional Information, Mxmart makes it easy for you to let us know. To learn more about the ways in which Mxmart may limit its use or disclosure of your Personal Information, please see the "Choices to Limit the Use or Disclosure of Your Personal Information" section of this Notice.',
+        d21: 'You may contact us at any time to opt out of receiving Promotional Information. The fact that you choose not to receive Promotional Information will not affect your ability to receive the services or products you request from us.',
+        
+        title9: '6. Transfers of your personal data',
+        d22: 'Mxmart may share or transfer your personal data on the terms described below.',
+        d23: 'a. Companies that provide services to us. Mxmart may forward your personal information to companies that provide services to us. These services are provided on our instructions, under the terms of the relevant contracts. If any of these providers requires access to your personal data, we will require that provider to use your personal data only to the extent that such use is necessary to perform the contracted service. Mxmart asks these companies to keep the information they receive confidential and to return such information to Mxmart when they no longer require it. ',
+        d24: 'b. Other Uses or Disclosures of Your Personal Information. Additionally, Mxmart may use or disclose your personal information when we believe, in good faith, that applicable law permits us to use or disclose your information, in terms of Articles 4 and 37 of the LFPDPPP. This includes, for example, when such transfer is necessary to protect you, to comply with legal process or governmental requests, to respond to claims, or to protect the rights of ownership or security of Mxmart, its affiliates, Mxmart`s employees, Partners or the rights of third parties.',
+        d25: 'Please note that information regarding our Partners, including your personal data, may be disclosed or transferred to a third party in the context of negotiating a merger or a sale of assets or an acquisition.',
+
+        title10: '7. Your "ARCO" rights',
+        d26: 'DIn accordance with the LFPDPPP, you have the right to access, rectify and cancel the personal data you have provided. You also have the right to object to certain processing activities that we carry out and the right to revoke at any time the consent that you have given us to process your data to the extent permitted by law. The rights of Access, Rectification, Cancellation and Opposition mentioned above are commonly known as "ARCO Rights". To exercise your ARCO Rights or your right of revocation, please contact us at the following e-mail address:',
+        d27: 'We will notify you at least: (i) the information that you will be required to provide to identify yourself and the documents that you will need to attach to your request; where appropriate, the information that your legal representative will be required to provide to identify himself or herself and to prove that he or she is acting on your behalf; (ii) the deadlines by which you will receive a response to your request; (iii) information regarding how you should submit your request, including the forms that you may use (if any); and (iv) the manner or means by which we will deliver the information to you (which will generally be by delivery of copies or data messages).',
+
+        title11: '8. Doubts or complaints',
+        d28: 'If you have any questions or wish to contact us for any reason, including to make a complaint, you may do so by following these procedures:',
+        d29: 'Contact us at (33) 32712247',
+        d30: 'Send us an email to',
+        d31: 'If you do not wish to receive Promotional Information, including our emails, you (a) be given the option to decline to receive this information on the Website; (b) request to be removed from the lists by clicking on the word "remove" that appears as a hyperlink in any of the emails; (c) call our Online Shopping Service Center at (33) 32712247; or (d) send an email to',
+
+        title12: '9. Specific privacy issues on our website',
+        d32: 'Cookies',
+        d33: 'We use "Cookies" on our website. Cookies are small data files that are stored on the hard drive of your computer or electronic communication device that you use when browsing our Site. These data files allow us to exchange status information between our Site and the browser you use. "Status information" may reveal means of session identification, means of authentication or your user preferences, as well as any other data stored by the browser with respect to the Site.',
+        d34: 'Cookies allow us to monitor a user`s behavior online. We use the information that is collected through cookies to help us optimize your experience. Through the use of cookies we can, for example, customize our home page in your favor so that our screens display better according to your browser type. Cookies also allow us to provide you with personalized recommendations regarding services and emails.',
+        d35: 'Cookies are not spyware, and Mxmart does not collect data from multiple sites or share the information we obtain through cookies with third parties.',
+        d36: 'Like most websites, our servers record your IP address, the URL from which you accessed our Website, your browser type, and the date and time of your purchases and other activities. We use this information for system administration, technical troubleshooting, fraud investigation and for our communications with you.',
+        d37: 'Finally, please note that the Website uses web beacons. Web beacons also allow us to monitor your behavior on electronic media. We use web beacons to determine when and how many times a page has been viewed. We use this information for marketing purposes, but only for our own marketing practices.',
+        d38: 'Your browser will accept cookies and allow the automatic collection of information unless you change your browser`s default settings. Most web browsers allow you to manage your cookie preferences.',
+        d39: 'You can set your browser to reject or delete cookies.',
+        d40: 'If the Website`s cookies are disabled, our Site will not load properly.',
+
+        title13: '10. Use of the site by minors',
+        d41: 'We encourage parents to take a proactive role in their children`s use of the Internet. It is not our intention to collect information from children and, in general, from children under 18 years of age. If you are under 18, you should not provide information to the Website.',
+
+        title14: '11. Changes to the Privacy Policy',
+        d42: 'Mxmart reserves the right to modify this Privacy Policy at any time. However, we will inform you of the fact that changes have been made to the Policy, by noting at the top of the Policy the date it was last updated. The updated Policy We encourage you to review our Privacy Policy to ensure that you understand how your personal information will be used. Any changes to our Privacy Policy will be effective 30 calendar days from the date of publication.',
+        d43: 'If we make a material change to this Policy, we will make the Privacy Notice available to you again in accordance with the law. These changes include, but are not limited to: a change in: our identity; the purposes that gave rise to or are necessary for the relationship between you and us; the incorporation of new purposes that require your consent; the obtaining of additional sensitive personal, proprietary or financial data to those previously informed; and the other cases established by applicable regulation.',
+
+        title15: 'DATE OF LAST UPDATE',
+        d44: 'Dear User, Please be advised that the Privacy Notice was changed on June 15, 2021.',
+
+        l1: '1. What are personal data?',
+        l2: '2. What personal data is collected by Mxmart?',
+        l3: '3. What sensitive personal data is collected by Mxmart?',
+        l4: '4. Gathering Your Personal Data',
+        l5: '5. Use of your personal data',
+        l6: '6. Transfers of your personal data',
+        l7: '7. Your "ARCO" rights',
+        l8: '8. Doubts or complaints',
+        l9: '9. Specific privacy issues on our website',
+        l10: '10. Use of the site by minors',
+        l11: '11. Changes to the Privacy Policy',
+    },
+
     footer: {
         contactanos: 'Contact us',
         description: 'We would like to learn more about your company or institution and together define a solution that fits your needs, always looking for innovation.',

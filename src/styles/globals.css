@@ -139,6 +139,15 @@ header a {
   text-transform: uppercase;
 }
 
+.headerTextHome {
+  text-decoration: none !important;
+  color: #ffffffb9;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 header #li_menu0f {
   padding: 0 2px !important;
   padding-top: 4px !important;

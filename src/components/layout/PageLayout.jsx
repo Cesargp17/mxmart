@@ -3,8 +3,8 @@ import React, { useEffect } from 'react'
 import { Footer } from '../ui/Footer'
 import { Navbar } from '../ui/Navbar'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import { useRouter } from 'next/router';
 
 const currentUrl = typeof window == 'undefined' ? '' : window.location.origin;
@@ -15,9 +15,9 @@ export const PageLayout = ({ children, title, description, isWhite, isHome = fal
 
     const canonicalUrl = locale === 'es' ? `${currentUrl}${ asPath }` : `${currentUrl}/en${ asPath }`
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
+    // useEffect(() => {
+    //     AOS.init();
+    // }, [])
     
 
   return (

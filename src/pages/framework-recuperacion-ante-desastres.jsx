@@ -17,6 +17,8 @@ const FrameworkRecuperacionPage = () => {
         description={ frameworkDisasterRecovery.metaDescription }
     >
 
+        <br /><br />
+
         <FrameworkHeader 
             img={'/images/framework-page-arquitectura-image.png'} 
             pageNumber={ 4 }
