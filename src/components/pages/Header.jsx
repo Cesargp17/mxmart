@@ -32,10 +32,8 @@ const { index } = useContext( LanguageContext );
         </video> */}
 
         <video className="video" playsInline autoPlay muted loop id="video_bg">
-
-          <source src="https://mxmartsolutions.com/assets/images/BKG_Index_05.mp4" type="video/mp4" />
-
-        </video>
+             <source src="https://res.cloudinary.com/djxmfnsct/video/upload/v1682454582/mvrt6mzi73s09lpmf1qf.mp4" type="video/mp4" />
+        </video>
     </section>
 {/* <section>
     <div className="heroe_layer">
